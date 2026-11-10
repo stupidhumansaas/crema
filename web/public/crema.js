@@ -204,7 +204,9 @@ function renderHome(){
   $("#logoWallSec").hidden=!wall.length;
   const tasteArt={fruity:'<circle cx="42" cy="61" r="23"/><circle cx="68" cy="56" r="22"/><path d="M42 38c2-16 13-25 28-25-2 13-11 19-24 20M60 35c-3-11-1-18 3-24M31 53c-4 4-5 9-4 13M62 44c-5 2-8 6-8 11"/>',chocolate:'<path d="M32 84c-20-18-16-42 3-57S76 11 87 28c13 21-5 49-25 58-13 6-23 5-30-2Z"/><path d="M36 78c1-18 13-19 17-32s12-21 26-20M42 34l-2 15M64 67l-4 13M71 37l-3 15"/>',floral:'<path d="M55 50C23 32 42 8 55 34 66 5 90 23 66 44 99 35 101 65 70 59 90 85 62 99 57 67 38 94 16 72 46 58 15 61 20 31 47 46Z"/><circle cx="57" cy="51" r="8"/><path d="M58 69v32M58 92c-15 0-21-7-21-15 12 0 20 4 21 15"/>'};
   $("#tastes").innerHTML=Object.entries(TASTES).map(([k,t],i)=>`<a class="taste ${t.cls}" href="#beans" data-taste="${esc(k)}"><div class="taste-top"><span>0${i+1} / The flavour collection</span><span class="taste-count">${B.filter(b=>b.taste===k).length} coffees</span></div><svg class="taste-art" viewBox="0 0 110 110" aria-hidden="true">${tasteArt[t.slug]}</svg><div><b>${esc(k)}</b><span class="taste-desc">${t.blurb}</span></div><span class="taste-arrow" aria-hidden="true">↗</span></a>`).join("");
-  $("#fresh").innerHTML=B.filter(b=>b.notes[0]!=="Not stated").sort((a,b)=>a.addedDays-b.addedDays).slice(0,4).map(b=>beanCard(b)).join("");
+  const recentRoasters=new Set();
+  const recentBeans=B.filter(b=>b.notes.some(n=>!/^not (stated|listed)$/i.test(n))).sort((a,b)=>a.addedDays-b.addedDays).filter(b=>{if(recentRoasters.has(b.roaster))return false;recentRoasters.add(b.roaster);return true;});
+  $("#fresh").innerHTML=recentBeans.slice(0,4).map(b=>beanCard(b)).join("");
     $("#homeMachines").innerHTML=[...SYSTEMS,"Not stated"].filter(s=>P.some(p=>p.system===s)).map(s=>`<a class="pill" href="#pods" data-system="${esc(s)}">${s==="Not stated"?"Machine not stated":esc(s)} · ${P.filter(p=>p.system===s).length}</a>`).join("");
   $("#homePods").innerHTML=P.filter(p=>p.notes[0]!=="Not stated").sort((a,b)=>a.addedDays-b.addedDays).slice(0,4).map(p=>podCard(p)).join("");
   const seeds=ALL.filter(b=>liked.has(b.id));

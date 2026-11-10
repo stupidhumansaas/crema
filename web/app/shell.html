@@ -99,8 +99,8 @@
   <div class="brewbox">
     <h3>Not listed? Tell us what you like</h3>
     <div class="filters" style="margin:10px 0 0">
-      <select id="smRoast"><option value="Light-Medium">Light, fruity, bright</option><option value="Medium" selected>Medium, balanced</option><option value="Dark">Dark, strong, bold</option></select>
-      <select id="smTaste"></select>
+      <select id="smRoast" aria-label="Your preferred roast"><option value="Light-Medium">Light, fruity, bright</option><option value="Medium" selected>Medium, balanced</option><option value="Dark">Dark, strong, bold</option></select>
+      <select id="smTaste" aria-label="Your preferred taste"></select>
       <button class="btn primary small" id="smGo">Show me coffees</button>
     </div>
     <div class="grid" id="smCustom" style="margin-top:16px"></div>
@@ -115,13 +115,13 @@
 <div class="view" id="v-beans"><section><div class="wrap">
   <div class="sec-head"><div><h2>Beans</h2><p id="beanCount"></p></div></div>
   <div class="filters">
-    <input id="fq" placeholder="Search name, note, origin…">
-    <select id="ftaste"><option value="">All tastes</option></select>
-    <select id="froast"><option value="">Any roast</option></select>
-    <select id="fstrength"><option value="">Any strength</option><option value="light">Light & Bright</option><option value="mid">Smooth & Balanced</option><option value="bold">Bold & Rich</option></select>
-    <select id="fproc"><option value="">Any process</option></select>
+    <input id="fq" aria-label="Search coffee beans" placeholder="Search name, note, origin…">
+    <select id="ftaste" aria-label="Filter coffees by taste"><option value="">All tastes</option></select>
+    <select id="froast" aria-label="Filter coffees by roast"><option value="">Any roast</option></select>
+    <select id="fstrength" aria-label="Filter coffees by strength"><option value="">Any strength</option><option value="light">Light & Bright</option><option value="mid">Smooth & Balanced</option><option value="bold">Bold & Rich</option></select>
+    <select id="fproc" aria-label="Filter coffees by process"><option value="">Any process</option></select>
     <label class="check"><input type="checkbox" id="fdecaf"> Decaf only</label>
-    <select id="fsort"><option value="new">Newest</option><option value="lo">Price per cup: low to high</option><option value="hi">Price per cup: high to low</option></select>
+    <select id="fsort" aria-label="Sort coffees"><option value="new">Newest</option><option value="lo">Price per cup: low to high</option><option value="hi">Price per cup: high to low</option></select>
   </div>
   <div class="grid" id="beanGrid"></div><div style="text-align:center;margin-top:20px"><button class="btn" id="bmore" hidden>Show more coffees</button></div>
 </div></section></div>
@@ -136,10 +136,10 @@
   <p style="color:var(--muted)">Which machine do you have?</p>
   <div class="machines" id="podMachines"></div>
   <div class="filters">
-    <select id="ptaste"><option value="">All tastes</option></select>
-    <select id="pmat"><option value="">Any material</option></select>
+    <select id="ptaste" aria-label="Filter pods by taste"><option value="">All tastes</option></select>
+    <select id="pmat" aria-label="Filter pods by capsule material"><option value="">Any material</option></select>
     <label class="check"><input type="checkbox" id="pdecaf"> Decaf only</label>
-    <select id="psort"><option value="new">Newest</option><option value="lo">Price per pod: low to high</option><option value="int-lo">Intensity: mild first</option><option value="int-hi">Intensity: strong first</option></select>
+    <select id="psort" aria-label="Sort pods"><option value="new">Newest</option><option value="lo">Price per pod: low to high</option><option value="int-lo">Intensity: mild first</option><option value="int-hi">Intensity: strong first</option></select>
   </div>
   <div class="grid" id="podGrid"></div>
 </div></section></div>
@@ -158,7 +158,7 @@
 <div class="view" id="v-roasters"><section><div class="wrap">
   <div class="sec-head"><div><h2>Roasters</h2><p>Independent roasters across the UK.</p></div></div>
   <div class="filters">
-    <input id="rq" placeholder="Search by roaster or city…">
+    <input id="rq" aria-label="Search roasters by name or city" placeholder="Search by roaster or city…">
     <div class="filt-pills">
       <button type="button" class="pill-btn dark" id="pillRegion"><svg viewBox="0 0 24 24" class="pi" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z"/></svg><span id="regionLbl">Region</span></button>
       <button type="button" class="pill-btn accent" id="pillFilt"><svg viewBox="0 0 24 24" class="pi" aria-hidden="true"><path d="M4 6h10M18 6h2M4 12h2M10 12h10M4 18h8M16 18h4" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/><circle cx="16" cy="6" r="2.4" fill="currentColor"/><circle cx="8" cy="12" r="2.4" fill="currentColor"/><circle cx="14" cy="18" r="2.4" fill="currentColor"/></svg>Filters <span class="dd-n" id="filtN" hidden></span></button>
@@ -384,10 +384,10 @@
     <div class="sec-head"><div><h2>Wholesale roasters</h2><p id="wsCount"></p></div></div>
     <p class="notice" style="margin-bottom:16px">Wholesale terms aren't in the data yet. The <b>Example</b> card shows how a listing will look once roasters send their terms.</p>
     <div class="filters">
-      <input id="wpc" placeholder="Postcode or town, e.g. BS1 or Bristol" maxlength="30" autocomplete="off">
-      <select id="wsupply"><option value="">Bean or pod supply</option><option value="beans">Whole bean supply</option><option value="pods">Pod supply</option></select>
-      <select id="wqty"></select>
-      <select id="wsvc"><option value="">Any support</option></select>
+      <input id="wpc" aria-label="Find wholesale roasters by postcode or town" placeholder="Postcode or town, e.g. BS1 or Bristol" maxlength="30" autocomplete="off">
+      <select id="wsupply" aria-label="Wholesale supply type"><option value="">Bean or pod supply</option><option value="beans">Whole bean supply</option><option value="pods">Pod supply</option></select>
+      <select id="wqty" aria-label="Wholesale order quantity"></select>
+      <select id="wsvc" aria-label="Wholesale support services"><option value="">Any support</option></select>
     </div>
     <label class="check" style="margin:0 0 12px"><input type="checkbox" id="wMachine"> I need a machine too (lease, rent or included)</label>
     <div id="wMachinePanel" hidden style="margin:0 0 16px">

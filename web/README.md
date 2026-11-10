@@ -2,7 +2,8 @@
 
 ## Running the site (Next.js + Supabase)
 The site is now a Next.js app in this folder, with its data in Supabase. It's hosted on Vercel.
-- `app/shell.html` is the page markup, `app/globals.css` the styles and `public/crema.js` the page script (moved out of the old `src/index.html`).
+- `app/shell.html` is the page markup, `app/globals.css` holds shared styles and colour tokens, `app/editorial.css` defines the responsive editorial design, and `public/crema.js` is the page script (moved out of the old `src/index.html`).
+- The design pairs Fraunces and Hanken Grotesk with cream, espresso, rust and olive. Photography is served locally from `public/images/`; its source URLs are documented there. `components/Boot.tsx` loads the directory and handles the responsive navigation.
 - `/api/directory` serves the whole directory from Supabase and is cached for 10 minutes. `/api/profile` saves weekly-picks profiles and `/api/enquiry` saves wholesale enquiries.
 - Database schema: `supabase/migrations/0001_init.sql`.
 

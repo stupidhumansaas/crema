@@ -294,3 +294,5 @@ footer .cols a:hover{color:#fff}
 .card-title{text-decoration:none;color:inherit}
 .card-title:hover{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:4px}
 @media(max-width:1150px) and (min-width:641px){.taste-count{max-width:50px;text-align:right}.taste-top{gap:12px}}
+@media(max-width:640px){.hero-photo figcaption{right:115px}.hero-photo figcaption span:first-child{font-size:1.4rem}.hero-photo figcaption span:last-child{font-size:.49rem;letter-spacing:.1em}}
+@media(max-width:640px){#smGrid,#wsGrid{grid-template-columns:1fr}.ws-card .roaster .top>div:last-child{min-width:0}.swap-go{flex-wrap:wrap}.ws-card .body{padding:18px}.ws-card .roaster .top{padding:18px 18px 0}}
