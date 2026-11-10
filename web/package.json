@@ -1,0 +1,23 @@
+{
+  "name": "crema-web",
+  "private": true,
+  "scripts": {
+    "prebuild": "node scripts/copy-logos.mjs",
+    "predev": "node scripts/copy-logos.mjs",
+    "dev": "NODE_OPTIONS=--experimental-websocket next dev",
+    "build": "next build",
+    "start": "next start",
+    "seed": "node --experimental-websocket --env-file=.env.local scripts/seed.mjs"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.119.0",
+    "next": "^16.4.6",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.43",
+    "@types/react": "^19.3.0",
+    "typescript": "^5.9.3"
+  }
+}

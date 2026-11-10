@@ -1,0 +1,1793 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Crema — UK speciality coffee</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%2044%2040%22%20%20aria-hidden%3D%22true%22%3E%3Cdefs%3E%3CradialGradient%20id%3D%22fav%22%20cx%3D%2242%25%22%20cy%3D%2240%25%22%20r%3D%2264%25%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23f4cf8e%22/%3E%3Cstop%20offset%3D%22.45%22%20stop-color%3D%22%23dfa35a%22/%3E%3Cstop%20offset%3D%22.78%22%20stop-color%3D%22%23b56a2c%22/%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%237c3a12%22/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect%20x%3D%2230.5%22%20y%3D%2216.6%22%20width%3D%2211.4%22%20height%3D%226.8%22%20rx%3D%223.4%22%20fill%3D%22%23fff%22%20stroke%3D%22%232b1a12%22%20stroke-width%3D%221.5%22/%3E%3Ccircle%20cx%3D%2218%22%20cy%3D%2220%22%20r%3D%2216%22%20fill%3D%22%23fff%22%20stroke%3D%22%232b1a12%22%20stroke-width%3D%221.5%22/%3E%3Ccircle%20cx%3D%2218%22%20cy%3D%2220%22%20r%3D%2212.4%22%20fill%3D%22%233b1a08%22/%3E%3Ccircle%20cx%3D%2217.6%22%20cy%3D%2219.6%22%20r%3D%2211.3%22%20fill%3D%22url%28%23fav%29%22/%3E%3Cg%20fill%3D%22%23fbe2b4%22%20opacity%3D%22.55%22%3E%3Cellipse%20cx%3D%2212.6%22%20cy%3D%2215.4%22%20rx%3D%222.2%22%20ry%3D%22.9%22%20transform%3D%22rotate%28-30%2012.6%2015.4%29%22/%3E%3Cellipse%20cx%3D%2215.8%22%20cy%3D%2225.6%22%20rx%3D%221.7%22%20ry%3D%22.7%22%20transform%3D%22rotate%2820%2015.8%2025.6%29%22/%3E%3C/g%3E%3Cpath%20d%3D%22M24.4%2011.6a10.2%2010.2%200%200%201%204%206%22%20fill%3D%22none%22%20stroke%3D%22%23fff6e6%22%20stroke-width%3D%221.2%22%20stroke-linecap%3D%22round%22%20opacity%3D%22.9%22/%3E%3Cg%20fill%3D%22%234a200a%22%3E%3Ccircle%20cx%3D%2224%22%20cy%3D%2226.2%22%20r%3D%22.95%22/%3E%3Ccircle%20cx%3D%2226%22%20cy%3D%2224%22%20r%3D%22.6%22/%3E%3Ccircle%20cx%3D%2222.1%22%20cy%3D%2227.9%22%20r%3D%22.55%22/%3E%3Ccircle%20cx%3D%2225.4%22%20cy%3D%2226.9%22%20r%3D%22.45%22/%3E%3Ccircle%20cx%3D%2226.9%22%20cy%3D%2222%22%20r%3D%22.4%22/%3E%3C/g%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600..800&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#ffffff; --paper:#ffffff; --surface:#f3f5fb; --ink:#121a3f; --muted:#59617f; --line:#dde2ee;
+  --blue:#6a3dc8; --blue-deep:#55309f; --blue-tint:#f3ebff; --pink:#ff7aa2; --pink-tint:#ffe3ec; --peach:#ffd8bf;
+  --accent:#ff7a45; --accent-ink:#fff; --yellow:#ffc93c; --yellow-tint:#fff3cf;
+  --green:#00875a; --green-bg:#dbf3e8;
+  --fruity:#ff6f91; --choc:#8a4b2f; --floral:#9b6bf2;
+  --r:6px; --shadow:none;
+}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--bg);color:var(--ink);font:16px/1.55 "Hanken Grotesk",system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:"Bricolage Grotesque","Hanken Grotesk",system-ui,sans-serif;font-weight:750;line-height:1.08;letter-spacing:-.025em;margin:0 0 .4em}
+h1{font-size:clamp(2.2rem,5.4vw,4rem);letter-spacing:-.035em} h2{font-size:clamp(1.55rem,3vw,2.1rem)} h3{font-size:1.12rem;letter-spacing:-.01em}
+a{color:inherit}
+button{font:inherit;cursor:pointer}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+.sample{background:var(--ink);color:#fff;font-size:.82rem;text-align:center;padding:7px 12px}
+.sample b{color:var(--yellow)}
+header{position:sticky;top:0;z-index:20;background:#fff;border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;gap:24px;height:68px}
+.logo{display:flex;align-items:center;gap:9px;text-decoration:none;color:var(--ink)}
+.logo svg{width:42px;height:38px;flex:none}
+.logo span{font:800 1.42rem/1 "Bricolage Grotesque",system-ui,sans-serif;letter-spacing:-.045em}
+.links{display:flex;gap:2px;margin-left:auto;align-self:stretch}
+.links a{display:flex;align-items:center;white-space:nowrap;text-decoration:none;padding:0 11px;font-weight:600;font-size:.93rem;border-bottom:3px solid transparent;border-top:3px solid transparent;color:var(--ink)}
+.links a:hover{color:var(--blue)}
+.links a.on{border-bottom-color:var(--blue);color:var(--blue)}
+.links a.ws{color:var(--green)} .links a.ws.on{border-bottom-color:var(--green)}
+@media(max-width:900px){.nav{height:auto;flex-wrap:wrap;padding-top:12px;gap:6px}.links{margin-left:-11px;width:calc(100% + 11px);overflow-x:auto;flex-wrap:nowrap;height:46px}}
+section{padding:56px 0}
+.hero{padding:64px 0 48px}
+#v-home>.hero{background:linear-gradient(115deg,#f3e8ff 0%,#ffe3ec 55%,#ffe6d3 100%);color:var(--ink);position:relative;overflow:hidden;padding:76px 0 64px}
+#v-home>.hero .wrap{position:relative;z-index:1}
+#v-home>.hero .globe{position:absolute;right:-90px;top:50%;width:560px;height:560px;transform:translateY(-50%);z-index:0;pointer-events:none}
+#v-home>.hero h1{max-width:760px}
+#v-home>.hero p.lede{color:#5b4a73}
+#v-home>.hero .stats b{color:var(--blue)}#v-home>.hero .stats span{color:#6d5c86}
+#v-home>.hero .btn{border-color:var(--ink);color:var(--ink)}
+#v-home>.hero .btn.primary{background:var(--blue);border-color:var(--blue);color:#fff}
+#v-home>.hero .btn.green{background:var(--accent);border-color:var(--accent);color:#fff}
+#v-home>.hero .search input{background:#fff;border-color:#fff;box-shadow:0 0 0 1px rgba(106,61,200,.12)}
+#v-home>.hero .search .btn.primary{background:var(--ink);border-color:var(--ink);color:#fff}
+@media(max-width:600px){#v-home>.hero h1 br{display:none}}
+@media(max-width:820px){#v-home>.hero .globe{width:340px;height:340px;right:-140px;top:auto;bottom:-120px;transform:none;opacity:.6}}
+.hero p.lede{font-size:1.18rem;color:var(--muted);max-width:580px}
+.stats{display:flex;gap:36px;margin:22px 0 28px;flex-wrap:wrap}
+.stats b{font:800 2.2rem/1 "Bricolage Grotesque",sans-serif;letter-spacing:-.03em;display:block;margin-bottom:4px}
+.stats span{color:var(--muted);font-size:.9rem}
+.btn{display:inline-flex;align-items:center;gap:8px;border:2px solid var(--ink);background:transparent;color:var(--ink);padding:10px 18px;border-radius:4px;font-weight:700;text-decoration:none;font-size:.95rem}
+.btn:hover{background:var(--surface)}
+.btn.primary{background:var(--blue);border-color:var(--blue);color:#fff}
+.btn.primary:hover{background:var(--blue-deep);border-color:var(--blue-deep)}
+.btn.green{background:var(--green);border-color:var(--green);color:#fff}
+.btn.small{padding:6px 12px;font-size:.86rem}
+.btns{display:flex;gap:10px;flex-wrap:wrap}
+.search{display:flex;gap:8px;max-width:580px;margin-top:24px}
+.search input{min-width:0}
+.search input,.field input,.field select,.field textarea{flex:1;border:1.5px solid var(--line);background:#fff;border-radius:4px;padding:12px 16px;font:inherit;color:var(--ink)}
+.search input:focus,.field input:focus,.field select:focus,.field textarea:focus,.filters input:focus,.filters select:focus{border-color:var(--blue);outline:none}
+.field textarea,.field input,.field select{width:100%}
+.sec-head{display:flex;align-items:end;justify-content:space-between;gap:16px;margin-bottom:22px}
+.sec-head p{color:var(--muted);margin:0}
+.sec-head a{font-weight:700;white-space:nowrap;color:var(--blue);text-decoration-thickness:2px;text-underline-offset:4px}
+.grid{display:grid;gap:20px;grid-template-columns:repeat(auto-fill,minmax(240px,1fr))}
+.card{background:#fff;border:1.5px solid var(--line);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column}
+.bean{cursor:pointer;transition:border-color .12s}
+.bean:hover{border-color:var(--ink)}
+.bag{height:156px;display:flex;align-items:center;justify-content:center;position:relative}
+.bag.photo{overflow:hidden;border-radius:8px;background:#f4f1ea}
+.bag.photo img{width:100%;height:100%;object-fit:cover}
+.detail .bag.photo img{object-fit:contain;background:#fff}
+.bag .pouch{width:84px;height:112px;border-radius:4px 4px 8px 8px;background:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;font:800 1.25rem "Bricolage Grotesque",sans-serif;letter-spacing:-.03em;position:relative}
+.bag .pouch:before{content:"";position:absolute;top:0;left:0;right:0;height:12px;border-radius:4px 4px 0 0;background:currentColor;opacity:.18}
+.bag .pouch small{white-space:nowrap;font:600 .62rem "Hanken Grotesk",sans-serif;opacity:.7;margin-top:4px;letter-spacing:0}
+.t-fruity{background:var(--fruity);color:var(--fruity)}
+.t-choc{background:var(--choc);color:var(--choc)}
+.t-floral{background:var(--floral);color:var(--floral)}
+.heart{position:absolute;top:10px;right:10px;width:36px;height:36px;border-radius:50%;border:0;background:#fff;color:var(--ink);font-size:1.05rem;line-height:1}
+.heart.on{background:var(--accent);color:#fff}
+.body{padding:14px 16px 16px;display:flex;flex-direction:column;gap:7px;flex:1}
+.body .rname{color:var(--muted);font-size:.85rem;font-weight:600}
+.body h3{margin:0}
+.chips{display:flex;flex-wrap:wrap;gap:5px}
+.chip{font-size:.75rem;font-weight:600;padding:3px 8px;border-radius:3px;background:var(--surface);color:#3a4266}
+.chip.match{background:#ffe6d6;color:#a63c00}
+.meta{display:flex;justify-content:space-between;align-items:center;margin-top:auto;padding-top:10px;font-size:.88rem;color:var(--muted);border-top:1px solid var(--line)}
+.meta{gap:10px}.meta span{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.meta b{color:var(--ink);font-size:1rem;white-space:nowrap;flex:none}
+.feature{display:grid;grid-template-columns:1fr 1.2fr;border-radius:8px;overflow:hidden;background:var(--surface)}
+.feature .art{background:var(--pink);min-height:280px;display:flex;align-items:center;justify-content:center;color:#fff;font:800 5rem "Bricolage Grotesque",sans-serif;letter-spacing:-.05em}
+.feature .txt{padding:36px}
+.eyebrow{display:inline-block;font-size:.88rem;font-weight:700;color:var(--blue);margin-bottom:6px}
+@media(max-width:720px){.feature{grid-template-columns:1fr}.feature .art{min-height:150px;font-size:3.5rem}.feature .txt{padding:24px}}
+.tastes{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+@media(max-width:720px){.tastes{grid-template-columns:1fr}}
+.taste{border-radius:8px;padding:26px;color:#fff;text-decoration:none;min-height:180px;display:flex;flex-direction:column;justify-content:end;transition:transform .12s}
+.taste:hover{transform:translateY(-2px)}
+.taste b{font:800 1.7rem/1.1 "Bricolage Grotesque",sans-serif;letter-spacing:-.03em;margin-bottom:6px}
+.taste span{opacity:.9}
+.band{background:var(--green-bg);border-radius:8px;padding:36px;display:flex;gap:24px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.band h2{color:var(--green)}
+.band.swap{background:var(--peach)} .band.swap .eyebrow{color:#b4461a} .band.swap p{color:#6b3a20!important}
+.band.brew{background:var(--blue-tint)}
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:18px;align-items:center}
+.filt-pills{display:flex;gap:10px;justify-content:center}
+.pill-btn{border:0;border-radius:999px;padding:12px 22px;font:800 .95rem "Hanken Grotesk",sans-serif;display:flex;align-items:center;gap:9px;cursor:pointer;white-space:nowrap}
+.pill-btn .pi{width:17px;height:17px;flex:none}
+.pill-btn.dark{background:var(--ink);color:#fff}.pill-btn.dark .pi{fill:#fff}
+.pill-btn.accent{background:var(--accent);color:#fff}.pill-btn.accent .pi{fill:#fff}
+.pill-btn.sel{box-shadow:inset 0 0 0 2.5px #ffd8bf}
+.dd-n{background:#fff;color:var(--accent);border-radius:999px;font-size:.74rem;line-height:1;padding:3px 8px;font-weight:800}
+.sheet-bg{position:fixed;inset:0;background:rgba(18,26,63,.45);z-index:80;animation:shFade .2s ease}
+.sheet[hidden],.sheet-bg[hidden]{display:none}
+.sheet{position:fixed;left:0;right:0;bottom:0;z-index:81;background:#fff;border-radius:22px 22px 0 0;max-width:620px;margin:0 auto;max-height:86vh;display:flex;flex-direction:column;box-shadow:0 -12px 44px rgba(18,26,63,.22);animation:shUp .26s cubic-bezier(.2,.85,.25,1)}
+@keyframes shUp{from{transform:translateY(100%)}to{transform:none}}
+@keyframes shFade{from{opacity:0}to{opacity:1}}
+.sheet-grab{display:block;width:44px;height:5px;border-radius:3px;background:#e4dfd4;border:0;margin:11px auto 2px;cursor:pointer}
+.sheet-head{padding:8px 24px 4px}.sheet-head h3{margin:0;font-size:1.5rem;font-family:"Bricolage Grotesque",sans-serif;letter-spacing:-.02em}
+.sheet-body{overflow:auto;padding:8px 18px 12px}
+.sheet-foot{padding:14px 18px;border-top:1px solid var(--line)}
+.btn.block{width:100%;justify-content:center;text-align:center;display:flex}
+.rrow{display:flex;align-items:center;justify-content:space-between;width:100%;padding:17px 6px;border:0;border-bottom:1px solid var(--line);background:none;font:600 1.1rem "Hanken Grotesk",sans-serif;color:var(--ink);cursor:pointer;text-align:left}
+.rrow:last-child{border-bottom:0}
+.rrow.on{color:var(--accent);font-weight:800}
+.rrow .tick{opacity:0;font-weight:800}
+.rrow.on .tick{opacity:1}
+.frow{display:flex;align-items:center;gap:14px;padding:14px;border:1.5px solid var(--line);border-radius:16px;margin:12px 0;cursor:pointer}
+.frow .ftile{width:46px;height:46px;border-radius:13px;background:#f6f1ff;display:grid;place-items:center;flex:none}
+.frow .ftile svg{width:23px;height:23px;fill:none;stroke:var(--blue);stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+.ftxt{flex:1;min-width:0}.ftxt b{display:block;font-size:1.08rem}.ftxt small{color:var(--muted);font-size:.9rem}
+.sw{width:50px;height:30px;border-radius:999px;background:#dcd6cb;position:relative;transition:.2s;flex:none}
+.sw:before{content:"";position:absolute;top:3px;left:3px;width:24px;height:24px;border-radius:50%;background:#fff;transition:.2s;box-shadow:0 1px 3px rgba(0,0,0,.25)}
+.frow input:checked+.sw{background:var(--accent)}
+.frow input:checked+.sw:before{transform:translateX(20px)}
+.frow:has(input:checked){border-color:var(--accent);background:#fff6f1}
+body.sheet-open{overflow:hidden}
+.pm-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:4px 0 20px}
+@media(max-width:560px){.pm-grid{grid-template-columns:1fr}}
+.pm{background:#faf6ef;border:1.5px solid var(--line);border-radius:14px;padding:16px}
+.pm b{font-family:"Bricolage Grotesque",sans-serif;font-size:2rem;display:block;line-height:1;margin-bottom:4px}
+.pm span{font-size:.85rem;color:var(--muted)}
+.pm .delta{color:var(--green);font-weight:700;font-size:.8rem;white-space:nowrap}
+.pbar{display:flex;align-items:flex-end;gap:5px;height:96px;margin-top:8px}
+.pbar i{flex:1;background:var(--blue);border-radius:3px 3px 0 0;min-height:3px;opacity:.85}
+.ptable{width:100%;border-collapse:collapse;font-size:.92rem}
+.ptable td,.ptable th{text-align:left;padding:9px 6px;border-bottom:1px solid var(--line)}
+.ptable th{color:var(--muted);font-weight:700;font-size:.74rem;text-transform:uppercase;letter-spacing:.04em}
+.ptable td.n,.ptable th.n{text-align:right;font-weight:700}
+.wpanel{background:#f6f1ff;border:1.5px solid var(--line);border-radius:14px;padding:16px;margin:0 0 22px}
+.wpanel .pm{background:#fff}
+.terrpre{background:#faf6ef;border:1.5px solid var(--line);border-radius:8px;padding:10px;overflow:auto;font-size:.78rem;margin:0;word-break:break-all;white-space:pre-wrap}
+.terrkey{background:#1a1a2e;color:#8fd3a0;border-color:#1a1a2e;letter-spacing:.04em}
+.roleseg{display:inline-flex;border:1.5px solid var(--line);border-radius:12px;overflow:hidden;margin:0 0 22px}
+.roleseg button{border:0;background:#fff;padding:10px 18px;font-weight:700;color:var(--muted);cursor:pointer;font-size:.9rem;font-family:inherit}
+.roleseg button+button{border-left:1.5px solid var(--line)}
+.roleseg button.on{background:var(--ink);color:#fff}
+.smeter{display:inline-flex;gap:3px;align-items:center;vertical-align:middle}
+.smeter i{width:7px;height:12px;border-radius:2px;background:#e7e1d6}
+.smeter.big i{width:11px;height:18px;border-radius:3px}
+.smeter.s-light i.on{background:#e9a23b}.smeter.s-mid i.on{background:#c56a2d}.smeter.s-bold i.on{background:#7a3a12}
+.strength-box{display:flex;align-items:center;gap:14px;flex-wrap:wrap;background:#faf6ef;border:1.5px solid var(--line);border-radius:12px;padding:12px 16px;margin:4px 0 14px}
+.strength-box .sb-main{display:flex;align-items:center;gap:12px}
+.strength-box b{font-family:"Bricolage Grotesque",sans-serif;font-size:1.05rem}
+.strength-box .sb-plain{color:var(--muted);font-size:.9rem;flex:1 1 220px;min-width:0}
+.card .smeter{margin-top:2px}
+.kit-suggest{margin-top:14px;padding-top:12px;border-top:1px solid var(--line)}
+.kit-suggest .ksrow{display:flex;gap:8px;margin-top:6px;max-width:460px}
+.kit-suggest input{flex:1;min-width:0}
+#guideToggle{color:var(--blue);font-weight:700;font-size:.9rem;text-decoration:none;white-space:nowrap}
+.brew-head{margin-bottom:10px}
+#brewBody h4{font-size:.95rem;color:var(--muted);text-transform:uppercase;letter-spacing:.04em}
+.map-tools{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-bottom:14px}
+.map-wrap{position:relative;max-width:520px;margin:0 auto;background:linear-gradient(170deg,#f3eefc,#fff);border:1.5px solid var(--line);border-radius:16px;padding:8px}
+.map-wrap svg{width:100%;height:auto;display:block}
+.uk-outline{fill:#efe7fb;stroke:#d9c9f3;stroke-width:1}
+.dot{fill:var(--blue);stroke:#fff;stroke-width:.8;cursor:pointer;transition:r .1s}
+.dot.cafe{fill:var(--accent)}
+.dot:hover,.dot.hi{fill:var(--pink);r:5}
+.map-pop{position:absolute;z-index:5;background:#fff;border:1.5px solid var(--line);border-radius:10px;box-shadow:0 8px 22px rgba(18,26,63,.16);padding:8px 12px;font-size:.88rem;max-width:200px;pointer-events:auto;transform:translate(-50%,-115%)}
+.map-pop b{display:block;font-size:.95rem}.map-pop a{color:var(--blue);font-weight:700;text-decoration:none}
+.map-legend{display:flex;gap:16px;justify-content:center;margin:8px 0 0;font-size:.82rem;color:var(--muted)}
+.map-legend i{width:11px;height:11px;border-radius:50%;display:inline-block;vertical-align:-1px;margin-right:4px}
+.near-row{display:flex;align-items:center;gap:12px;padding:12px 6px;border-bottom:1px solid var(--line);cursor:pointer}
+.near-row .nd{margin-left:auto;font-weight:800;color:var(--accent);white-space:nowrap}
+.near-row .nlogo{width:38px;height:38px;border-radius:8px;flex:none;display:grid;place-items:center;background:#f6f1ff;overflow:hidden;font-weight:800;font-size:.8rem}
+.near-row .nlogo img{width:100%;height:100%;object-fit:contain;background:#fff}
+.sec-head span img{max-width:100%;max-height:100%;object-fit:contain}
+.linkbtn{background:none;border:0;color:var(--blue);font-weight:800;cursor:pointer;text-decoration:underline;font-size:inherit}
+.dd[open]>summary{border-color:var(--blue);color:var(--blue)}
+.dd-n{background:var(--blue);color:#fff;border-radius:999px;font-size:.72rem;line-height:1;padding:3px 7px;font-weight:800}
+.dd-panel{position:absolute;z-index:40;top:calc(100% + 6px);left:0;width:min(340px,88vw);background:#fff;border:1.5px solid var(--line);border-radius:10px;box-shadow:0 14px 34px rgba(18,26,63,.18);padding:6px;max-height:62vh;overflow:auto}
+.dd-opt{display:flex;align-items:center;gap:10px;padding:9px 10px;border-radius:6px;font-weight:600;font-size:.92rem;cursor:pointer}
+.dd-opt:hover{background:#f6f1ff}
+.dd-opt input{accent-color:var(--blue);width:17px;height:17px;margin:0;flex:none}
+.dd-opt small{margin-left:auto;opacity:.6;font-weight:700}
+.dd-opt.off{opacity:.42;cursor:default}
+.dd-opt.off:hover{background:none}
+.dd-sep{font-size:.72rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);font-weight:800;padding:12px 10px 4px}
+.dd-acts{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:10px 10px 6px;border-top:1px solid var(--line);margin-top:6px}
+.dd-acts a{font-size:.85rem;color:var(--muted)}
+.dd-acts button{background:none;border:0;color:var(--blue);font-weight:800;cursor:pointer;font-size:.88rem;padding:0}
+.filters select,.filters input{border:1.5px solid var(--line);background:#fff;border-radius:4px;padding:9px 12px;font:inherit}
+.filters input{flex:1;min-width:180px}
+.filters input[type=checkbox]{flex:none;min-width:0;accent-color:var(--blue);width:16px;height:16px;margin:0}
+.filters .check{margin:0;border:1.5px solid var(--line);border-radius:4px;padding:8px 12px;cursor:pointer;background:#fff}
+.pill{border:1.5px solid var(--line);background:#fff;border-radius:4px;padding:8px 14px;font-weight:600}
+.pill:hover{border-color:var(--ink)}
+.pill.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+.grid>.empty{grid-column:1/-1}
+.empty{padding:40px;text-align:center;color:var(--muted);background:var(--surface);border-radius:var(--r)}
+.roaster .top{padding:18px 18px 0;display:flex;gap:12px;align-items:center}
+.mono{width:48px;height:48px;border-radius:4px;background:var(--ink);color:#fff;display:flex;align-items:center;justify-content:center;font:800 1.05rem "Bricolage Grotesque",sans-serif;letter-spacing:-.03em;flex:none}
+.badge{display:inline-block;font-size:.72rem;font-weight:700;padding:3px 8px;border-radius:3px;background:var(--green-bg);color:var(--green)}
+/* detail */
+.detail{display:grid;grid-template-columns:360px 1fr;gap:36px;align-items:start}
+.detail .bag{height:360px;border-radius:8px}
+.detail .bag .pouch{width:150px;height:200px;font-size:2.1rem}
+@media(max-width:820px){.detail{grid-template-columns:1fr}.detail .bag{height:240px}}
+.spec{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:8px;margin:18px 0}
+.spec div{background:var(--surface);border-radius:4px;padding:10px 12px}
+.spec small{display:block;color:var(--muted);font-size:.78rem}
+.back{display:inline-block;margin:24px 0 0;color:var(--muted);text-decoration:none;font-weight:600}
+.back:hover{color:var(--blue)}
+.why{font-size:.82rem;color:var(--muted)}
+/* wholesale */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;counter-reset:s}
+@media(max-width:720px){.steps{grid-template-columns:1fr}}
+.steps div{background:var(--surface);border-radius:var(--r);padding:22px}
+.steps div:before{counter-increment:s;content:counter(s);display:inline-flex;width:30px;height:30px;border-radius:4px;background:var(--green);color:#fff;align-items:center;justify-content:center;font-weight:800;margin-bottom:10px}
+.ws-card .body{gap:8px}
+.ws-row{display:flex;justify-content:space-between;font-size:.9rem;border-top:1px solid var(--line);padding-top:8px}
+.ws-row span{color:var(--muted)}
+.check{display:flex;gap:8px;align-items:center;font-size:.9rem;font-weight:600;margin-top:4px}
+.form{background:var(--surface);border-radius:8px;padding:28px;display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.form .full{grid-column:1/-1}
+@media(max-width:720px){.form{grid-template-columns:1fr}}
+.field label{display:block;font-size:.86rem;font-weight:700;margin-bottom:5px}
+.desc{font-size:1.02rem;line-height:1.6;margin:14px 0 4px;max-width:62ch}
+.notice{background:var(--yellow-tint);border-left:4px solid var(--yellow);border-radius:4px;padding:14px 16px;font-size:.92rem}
+footer{background:var(--ink);color:#b9c0dc;margin-top:56px;padding:44px 0;font-size:.9rem}
+footer .cols{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:20px}
+footer b{color:#fff;display:block;margin-bottom:8px}
+footer a{display:block;text-decoration:none;padding:2px 0}
+footer a:hover{color:#fff}
+@media(max-width:720px){footer .cols{grid-template-columns:1fr 1fr}}
+.capsule{width:72px;height:72px;border-radius:50%;background:#fff;box-shadow:inset 0 0 0 8px rgba(0,0,0,.07);display:flex;flex-direction:column;align-items:center;justify-content:center;font:800 1.05rem "Bricolage Grotesque",sans-serif;letter-spacing:-.03em;color:inherit}
+.capsule small{font:600 .55rem "Hanken Grotesk",sans-serif;opacity:.7;letter-spacing:0}
+.detail .capsule{width:170px;height:170px;font-size:2rem}.detail .capsule small{font-size:.8rem}
+.sys{position:absolute;left:10px;bottom:10px;background:#fff;color:var(--ink);font-size:.72rem;font-weight:700;padding:4px 8px;border-radius:3px}
+.int{display:flex;gap:2px;align-items:center}.int i{width:7px;height:12px;border-radius:1px;background:var(--line)}.int i.on{background:var(--accent)}
+.machines{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}
+.kit{display:flex;flex-wrap:wrap;gap:8px}
+.kit label{display:flex;align-items:center;gap:7px;border:1.5px solid var(--line);background:#fff;border-radius:4px;padding:8px 14px;cursor:pointer;font-weight:600}
+.kit label:hover{border-color:var(--ink)}
+.kit label:has(input:checked){background:var(--blue);color:#fff;border-color:var(--blue)}
+.kit input{accent-color:var(--accent)}
+.kit-group{margin-bottom:16px}.kit-group small{display:block;color:var(--muted);font-weight:700;margin-bottom:6px;font-size:.86rem}
+.brewbox{background:var(--surface);border-radius:8px;padding:26px;margin-top:28px}
+.recipe{display:grid;grid-template-columns:repeat(auto-fill,minmax(120px,1fr));gap:8px;margin:14px 0}
+.recipe div{background:#fff;border-radius:4px;padding:10px 12px}.recipe small{display:block;color:var(--muted);font-size:.76rem}.recipe b{font-size:1.1rem}
+.alt{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+.steps-list{padding-left:0;list-style:none;counter-reset:st}
+.steps-list li{counter-increment:st;display:flex;gap:14px;padding:14px 0;border-top:1px solid var(--line)}
+.steps-list li:before{content:counter(st);flex:none;width:30px;height:30px;border-radius:4px;background:var(--blue);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800}
+.chip.kitfit{background:var(--green-bg);color:var(--green)}
+.smk{cursor:pointer}
+.smk .body{gap:8px}
+.smk .brand{font-size:.85rem;color:var(--muted);font-weight:700}
+.smbox{background:var(--surface);border-radius:8px;padding:26px;display:grid;grid-template-columns:1.2fr 1fr;gap:24px}
+@media(max-width:820px){.smbox{grid-template-columns:1fr}}
+.why-list{margin:0;padding-left:18px}.why-list li{margin:6px 0}
+.disclaim{font-size:.8rem;color:var(--muted);margin-top:28px}
+.view{display:none}.view.on{display:block}
+/* roaster logos */
+.logo-tile{background:#fff;border:1.5px solid var(--line);padding:6px}
+.logo-tile img{max-width:100%;max-height:100%;object-fit:contain;display:block}
+.logo-tile.dark{background:var(--ink);border-color:var(--ink)}
+.mono.logo-tile{width:64px;height:48px}
+.feature .art.logo-tile{background:#fff;border:0;border-right:1.5px solid var(--line);padding:40px}
+.feature .art.logo-tile img{max-height:160px;max-width:80%}
+.feature .art.logo-tile.dark{background:var(--ink)}
+.bag .pouch.has-logo{padding:22px 10px 8px}
+.bag .pouch.has-logo img{max-width:100%;max-height:52px;object-fit:contain}
+.bag .pouch.has-logo.dark{background:var(--ink);color:#fff}
+.detail .bag .pouch.has-logo img{max-height:100px}
+
+
+
+
+/* roaster offers */
+.pill[disabled]{opacity:.4;cursor:default}
+.pill small{font-weight:600}
+.offer-list{display:flex;flex-wrap:wrap;gap:8px}
+.offer{padding:7px 12px;border-radius:4px;font-weight:600;font-size:.92rem}
+.offer.yes{background:var(--green-bg);color:var(--green)}
+.offer.no{background:var(--surface);color:var(--muted);text-decoration:line-through}
+/* about page */
+.about{max-width:760px}
+.about h2{margin-top:36px}
+.about p,.about li{line-height:1.65}
+.about .promise{background:var(--green-bg);border-radius:8px;padding:20px 24px;margin:18px 0}
+/* grind settings table */
+.grind-rows{display:grid;gap:8px;margin-top:12px}
+.grind-row{display:flex;justify-content:space-between;align-items:center;gap:16px;background:#fff;border-radius:6px;padding:12px 16px}
+.grind-row b{display:block;font-size:1.02rem}
+.grind-set{text-align:right;flex:none}
+.grind-set small{display:block;color:var(--muted);font-size:.75rem}
+.grind-set span{font:800 1.6rem/1.1 "Bricolage Grotesque",sans-serif;color:var(--blue);letter-spacing:-.02em}
+.grind-row.off{opacity:.6}.grind-row.off .grind-set span{color:var(--muted)}
+/* grinders on the shop page */
+.grinder .meta span{white-space:normal}
+/* buy-direct panel on supermarket swaps */
+.swap-go{display:flex;align-items:center;gap:8px;flex:none}
+.direct{display:grid;grid-template-columns:240px 1fr;gap:0;border-radius:8px;overflow:hidden;background:var(--green-bg);border:1.5px solid #bfe6d3}
+.direct-logo{background:#fff;display:flex;align-items:center;justify-content:center;padding:28px;border-right:1.5px solid #bfe6d3}
+.direct-logo.dark{background:var(--ink)}
+.direct-logo img{max-width:100%;max-height:140px;object-fit:contain}
+.direct-txt{padding:30px}
+.direct-txt .eyebrow{color:var(--green)}
+.direct-txt h2{color:var(--ink)}
+.direct-txt p{max-width:620px;color:#2e4a3d}
+.direct:not(:has(.direct-logo)){grid-template-columns:1fr}
+@media(max-width:720px){.direct{grid-template-columns:1fr}.direct-logo{border-right:0;border-bottom:1.5px solid #bfe6d3;padding:22px}}
+/* bigger, more prominent logos */
+.logo-banner{height:150px;display:flex;align-items:center;justify-content:center;padding:18px 26px;background:#fff;border-bottom:1.5px solid var(--line)}
+.logo-banner img{max-width:100%;max-height:100%;object-fit:contain}
+.logo-banner.dark{background:var(--ink);border-bottom-color:var(--ink)}
+.roaster .top.named{padding-top:14px}
+.logo-wall{display:grid;grid-template-columns:repeat(6,1fr);gap:12px}
+@media(max-width:900px){.logo-wall{grid-template-columns:repeat(4,1fr)}}
+@media(max-width:560px){.logo-wall{grid-template-columns:repeat(3,1fr)}}
+.wall-tile{aspect-ratio:1/1;display:flex;align-items:center;justify-content:center;padding:14%;background:#fff;border:1.5px solid var(--line);border-radius:10px;transition:border-color .12s,box-shadow .12s;overflow:hidden}
+.wall-tile:hover{border-color:var(--ink);box-shadow:0 4px 14px rgba(18,26,63,.08)}
+.wall-tile.dark{background:var(--ink);border-color:var(--ink)}
+.wall-tile img{max-width:100%;max-height:100%;object-fit:contain}
+.bag .pouch.has-logo{width:124px;height:140px;padding:20px 12px 8px}
+.bag .pouch.has-logo img{max-height:92px;max-width:100%}
+.bag:has(.pouch.has-logo){height:176px}
+.detail .bag .pouch.has-logo{width:220px;height:260px;padding:30px 20px 14px}
+.detail .bag:has(.pouch.has-logo){height:360px}
+@media(max-width:820px){.detail .bag:has(.pouch.has-logo){height:300px}.detail .bag .pouch.has-logo{width:180px;height:220px}}
+.detail .bag .pouch.has-logo img{max-height:180px}
+.feature .art.logo-tile{min-height:320px;padding:36px}
+.feature .art.logo-tile img{max-height:240px;max-width:88%}
+@media(max-width:720px){.feature .art.logo-tile{border-right:0;border-bottom:1.5px solid var(--line);padding:28px}}
+
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
+
+/* profile */
+.links a.acct{color:var(--blue)}
+.acct-grid{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:28px;align-items:start}
+@media(max-width:860px){.acct-grid{grid-template-columns:1fr}.email-prev{position:static}}
+.acct-status{display:flex;gap:10px;align-items:center;flex-wrap:wrap;background:#f6f1ff;border-left:4px solid var(--blue);border-radius:4px;padding:12px 16px;font-size:.92rem;margin-bottom:22px}
+.acct-status.ok{background:#eefaf3;border-left-color:var(--green)}
+.pf h3{margin:22px 0 8px;font-size:1.05rem}
+.pf .opts{display:flex;flex-wrap:wrap;gap:8px}
+.pf .opts label{display:flex;gap:7px;align-items:center;border:1.5px solid var(--line);border-radius:4px;padding:8px 12px;cursor:pointer;background:#fff;font-size:.92rem;font-weight:600}
+.pf .opts input{accent-color:var(--blue);width:16px;height:16px;margin:0}
+.pf .consent{display:flex;gap:10px;align-items:flex-start;margin-top:14px;font-size:.92rem;line-height:1.45}
+.pf .consent input{accent-color:var(--blue);width:18px;height:18px;margin:2px 0 0;flex:none}
+.pf .row2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:560px){.pf .row2{grid-template-columns:1fr}}
+.pf .acts{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px;align-items:center}
+.btn.ghost-red{border-color:#c9475a;color:#c9475a}
+.email-prev{border:1.5px solid var(--line);border-radius:8px;background:#fff;overflow:hidden;position:sticky;top:84px}
+.email-prev .eh{background:linear-gradient(120deg,#efe6ff,#ffe3ec 55%,#ffe9da);padding:16px 18px}
+.email-prev .eh small{display:block;color:var(--muted);font-size:.8rem}
+.email-prev .eh b{font-family:"Bricolage Grotesque",sans-serif;font-size:1.15rem}
+.email-prev ol{list-style:none;margin:0;padding:6px 18px 4px}
+.email-prev li{display:flex;gap:12px;padding:12px 0;border-bottom:1px solid var(--line)}
+.email-prev li:last-child{border-bottom:0}
+.email-prev .dot{flex:none;width:40px;height:40px;border-radius:6px;display:grid;place-items:center;font-weight:800;font-size:.8rem;color:#fff;background:var(--blue);overflow:hidden}
+.email-prev .dot img{width:100%;height:100%;object-fit:contain;background:#fff}
+.email-prev li a{font-weight:700;text-decoration:none;color:var(--ink)}
+.email-prev li a:hover{color:var(--blue)}
+.email-prev .sub{font-size:.84rem;color:var(--muted)}
+.email-prev .why2{font-size:.84rem;color:var(--blue);margin-top:2px}
+.email-prev .ef{padding:12px 18px 16px;font-size:.78rem;color:var(--muted);border-top:1px solid var(--line)}
+</style>
+</head>
+<body>
+<div class="sample"><b>Prototype — private preview.</b> A working demo of Crema, not the finished site. The name, branding and some data aren't final; prices are the roaster's listed price where we have one, and anything marked <b>Example</b> is a placeholder.</div>
+<header><div class="wrap nav">
+  <a class="logo" href="#home" aria-label="Crema home"><svg viewBox="0 0 44 40"  aria-hidden="true"><defs><radialGradient id="lgc" cx="42%" cy="40%" r="64%"><stop offset="0" stop-color="#f4cf8e"/><stop offset=".45" stop-color="#dfa35a"/><stop offset=".78" stop-color="#b56a2c"/><stop offset="1" stop-color="#7c3a12"/></radialGradient></defs><rect x="30.5" y="16.6" width="11.4" height="6.8" rx="3.4" fill="#fff" stroke="#2b1a12" stroke-width="1.5"/><circle cx="18" cy="20" r="16" fill="#fff" stroke="#2b1a12" stroke-width="1.5"/><circle cx="18" cy="20" r="12.4" fill="#3b1a08"/><circle cx="17.6" cy="19.6" r="11.3" fill="url(#lgc)"/><g fill="#fbe2b4" opacity=".55"><ellipse cx="12.6" cy="15.4" rx="2.2" ry=".9" transform="rotate(-30 12.6 15.4)"/><ellipse cx="15.8" cy="25.6" rx="1.7" ry=".7" transform="rotate(20 15.8 25.6)"/></g><path d="M24.4 11.6a10.2 10.2 0 0 1 4 6" fill="none" stroke="#fff6e6" stroke-width="1.2" stroke-linecap="round" opacity=".9"/><g fill="#4a200a"><circle cx="24" cy="26.2" r=".95"/><circle cx="26" cy="24" r=".6"/><circle cx="22.1" cy="27.9" r=".55"/><circle cx="25.4" cy="26.9" r=".45"/><circle cx="26.9" cy="22" r=".4"/></g></svg><span>crema</span></a>
+  <nav class="links">
+    <a href="#home" data-v="home">Discover</a>
+    <a href="#map" data-v="map">Map</a>
+    <a href="#roasters" data-v="roasters">Roasters</a>
+    <a href="#beans" data-v="beans">Beans</a>
+    <a href="#pods" data-v="pods">Pods &amp; Capsules</a>
+    <a href="#swap" data-v="swap">Supermarket swap</a>
+    <a href="#for-you" data-v="for-you">For you</a>
+    <a href="#brew" data-v="brew">Brew</a>
+    <a href="#shop" data-v="shop">Shop</a>
+    <a href="#wholesale" data-v="wholesale" class="ws">Wholesale</a>
+    <a href="#account" data-v="account" class="acct" id="acctLink">Log in</a>
+  </nav>
+</div></header>
+
+<main>
+<!-- HOME -->
+<div class="view" id="v-home">
+  <section class="hero"><svg class="globe" viewBox="0 0 44 40"  aria-hidden="true" opacity=".85"><defs><radialGradient id="hgc" cx="42%" cy="40%" r="64%"><stop offset="0" stop-color="#f4cf8e"/><stop offset=".45" stop-color="#dfa35a"/><stop offset=".78" stop-color="#b56a2c"/><stop offset="1" stop-color="#7c3a12"/></radialGradient></defs><rect x="30.5" y="16.6" width="11.4" height="6.8" rx="3.4" fill="#fff" stroke="#ffd2df" stroke-width="1.5"/><circle cx="18" cy="20" r="16" fill="#fff" stroke="#ffd2df" stroke-width="1.5"/><circle cx="18" cy="20" r="12.4" fill="#3b1a08"/><circle cx="17.6" cy="19.6" r="11.3" fill="url(#hgc)"/><g fill="#fbe2b4" opacity=".55"><ellipse cx="12.6" cy="15.4" rx="2.2" ry=".9" transform="rotate(-30 12.6 15.4)"/><ellipse cx="15.8" cy="25.6" rx="1.7" ry=".7" transform="rotate(20 15.8 25.6)"/></g><path d="M24.4 11.6a10.2 10.2 0 0 1 4 6" fill="none" stroke="#fff6e6" stroke-width="1.2" stroke-linecap="round" opacity=".9"/><g fill="#4a200a"><circle cx="24" cy="26.2" r=".95"/><circle cx="26" cy="24" r=".6"/><circle cx="22.1" cy="27.9" r=".55"/><circle cx="25.4" cy="26.9" r=".45"/><circle cx="26.9" cy="22" r=".4"/></g></svg><div class="wrap">
+    <h1>Every great UK roaster, <br>every bean, one place.</h1>
+    <p class="lede">Find speciality coffee by taste, discover roasters across the UK, choose the right pods for your machine, and source beans for your café.</p>
+    <div class="stats"><div><b id="st-r">0</b><span>roasters</span></div><div><b id="st-b">0</b><span>coffees listed</span></div><div><b id="st-w">0</b><span>roasters with coffees listed</span></div></div>
+    <div class="btns"><a class="btn primary" href="#beans">Explore beans</a><a class="btn" href="#roasters">Browse roasters</a><a class="btn green" href="#wholesale">Wholesale for cafés</a></div>
+    <form class="search" id="homeSearch"><input id="homeQ" placeholder="Search beans, notes, origins…" aria-label="Search"><button class="btn primary">Search</button></form>
+  </div></section>
+
+  <section id="logoWallSec"><div class="wrap">
+    <div class="sec-head"><div><h2>Roasters you'll find here</h2><p>Independent UK roasters, from big names to one-person roasteries.</p></div><a href="#roasters">All roasters</a></div>
+    <div class="logo-wall" id="logoWall"></div>
+  </div></section>
+  <section style="padding-top:0"><div class="wrap"><div class="feature" id="featured"></div></div></section>
+
+  <section><div class="wrap">
+    <div class="sec-head"><div><h2>Explore by taste</h2><p>Start with what you like in the cup.</p></div></div>
+    <div class="tastes" id="tastes"></div>
+  </div></section>
+
+  <section><div class="wrap">
+    <div class="sec-head"><div><h2>Recently added</h2><p>The latest coffees added to the directory.</p></div><a href="#beans">View all beans</a></div>
+    <div class="grid" id="fresh"></div>
+  </div></section>
+
+  <section><div class="wrap">
+    <div class="sec-head"><div><h2>Pods &amp; capsules</h2><p>Speciality coffee for your machine. Pick yours to see what fits.</p></div><a href="#pods">All pods</a></div>
+    <div class="machines" id="homeMachines"></div>
+    <div class="grid" id="homePods"></div>
+  </div></section>
+
+  <section style="padding-top:0"><div class="wrap"><div class="band swap">
+    <div><span class="eyebrow">Supermarket swap</span><h2 style="color:var(--ink)">Like your supermarket coffee? Find its independent twin</h2><p style="margin:0;color:var(--muted)">Pick the bag or pods you buy now and we'll suggest freshly roasted coffees with a similar taste.</p></div>
+    <a class="btn primary" href="#swap">Find my swap</a>
+  </div></div></section>
+
+  <section id="homeForYou" hidden><div class="wrap">
+    <div class="sec-head"><div><h2>Picked for you</h2><p id="fyLede"></p></div><a href="#for-you">See all</a></div>
+    <div class="grid" id="homeRecs"></div>
+  </div></section>
+
+  <section><div class="wrap"><div class="band brew">
+    <div><span class="eyebrow">Brewing guides</span><h2 style="color:var(--ink)">Get the best out of every bag</h2><p style="margin:0;color:var(--muted)">Tell us what equipment you have. Every coffee page will then show the best method and recipe for your kit.</p></div>
+    <a class="btn primary" href="#brew">Choose my equipment</a>
+  </div></div></section>
+
+  <section style="padding-top:0"><div class="wrap"><div class="band">
+    <div><span class="eyebrow" style="color:var(--green)">For cafés, restaurants &amp; offices</span><h2>Source wholesale coffee direct from roasters</h2><p style="margin:0;color:var(--muted)">Compare minimum orders, per-kg prices and support like barista training, then send one enquiry to several roasters.</p></div>
+    <a class="btn green" href="#wholesale">Go to wholesale</a>
+  </div></div></section>
+</div>
+
+<!-- SWAP -->
+<div class="view" id="v-swap"><section><div class="wrap">
+  <span class="eyebrow">Supermarket swap</span>
+  <h1 style="font-size:clamp(1.8rem,4vw,2.6rem)">What do you usually buy?</h1>
+  <p class="lede" style="color:var(--muted);max-width:640px">Pick the coffee you get at the supermarket. We'll suggest independent coffees with a similar taste, freshly roasted by UK roasters.</p>
+  <div class="filters" style="margin-top:18px"><input id="smQ" placeholder="Search brand or coffee, e.g. Lavazza, Rich Italian, Tassimo" aria-label="Search supermarket coffees"><select id="smSys" aria-label="Pod machine"><option value="">Any machine</option></select></div>
+  <div class="machines" id="smTabs"></div>
+  <p class="why" id="smCount"></p>
+  <div class="grid" id="smGrid"></div>
+  <div class="brewbox">
+    <h3>Not listed? Tell us what you like</h3>
+    <div class="filters" style="margin:10px 0 0">
+      <select id="smRoast"><option value="Light-Medium">Light, fruity, bright</option><option value="Medium" selected>Medium, balanced</option><option value="Dark">Dark, strong, bold</option></select>
+      <select id="smTaste"></select>
+      <button class="btn primary small" id="smGo">Show me coffees</button>
+    </div>
+    <div class="grid" id="smCustom" style="margin-top:16px"></div>
+  </div>
+  <p class="disclaim">Crema isn't linked to these brands; names belong to their owners. Profiles come from each brand's own descriptions. Prices are typical shelf prices, checked November 2026, and may change.</p>
+</div></section></div>
+
+<!-- SWAP DETAIL -->
+<div class="view" id="v-swapd"><section><div class="wrap" id="swapDetail"></div></section></div>
+
+<!-- BEANS -->
+<div class="view" id="v-beans"><section><div class="wrap">
+  <div class="sec-head"><div><h2>Beans</h2><p id="beanCount"></p></div></div>
+  <div class="filters">
+    <input id="fq" placeholder="Search name, note, origin…">
+    <select id="ftaste"><option value="">All tastes</option></select>
+    <select id="froast"><option value="">Any roast</option></select>
+    <select id="fstrength"><option value="">Any strength</option><option value="light">Light & Bright</option><option value="mid">Smooth & Balanced</option><option value="bold">Bold & Rich</option></select>
+    <select id="fproc"><option value="">Any process</option></select>
+    <label class="check"><input type="checkbox" id="fdecaf"> Decaf only</label>
+    <select id="fsort"><option value="new">Newest</option><option value="lo">Price per cup: low to high</option><option value="hi">Price per cup: high to low</option></select>
+  </div>
+  <div class="grid" id="beanGrid"></div><div style="text-align:center;margin-top:20px"><button class="btn" id="bmore" hidden>Show more coffees</button></div>
+</div></section></div>
+
+<!-- BEAN DETAIL -->
+<div class="view" id="v-bean"><section><div class="wrap" id="beanDetail"></div></section></div>
+
+<!-- PODS -->
+<div class="view" id="v-pods"><section><div class="wrap">
+  <div class="sec-head"><div><h2>Pods &amp; Capsules</h2><p id="podCount"></p></div></div>
+  <p class="notice" style="margin:-4px 0 16px">Pods recorded in the data so far. Where a listing doesn't name the machine, it shows as "Machine not stated", so check the roaster's page before buying.</p>
+  <p style="color:var(--muted)">Which machine do you have?</p>
+  <div class="machines" id="podMachines"></div>
+  <div class="filters">
+    <select id="ptaste"><option value="">All tastes</option></select>
+    <select id="pmat"><option value="">Any material</option></select>
+    <label class="check"><input type="checkbox" id="pdecaf"> Decaf only</label>
+    <select id="psort"><option value="new">Newest</option><option value="lo">Price per pod: low to high</option><option value="int-lo">Intensity: mild first</option><option value="int-hi">Intensity: strong first</option></select>
+  </div>
+  <div class="grid" id="podGrid"></div>
+</div></section></div>
+
+<!-- POD DETAIL -->
+<div class="view" id="v-pod"><section><div class="wrap" id="podDetail"></div></section></div>
+
+<!-- ROASTERS -->
+<div class="view" id="v-map"><section><div class="wrap">
+  <div class="sec-head"><div><h2>Roaster map</h2><p>Every roaster placed on the map by town. <span class="why" style="display:inline">Positions are approximate for now and sharpen as exact coordinates are added.</span></p></div></div>
+  <div class="map-tools"><button class="btn primary" id="nearBtn">📍 Find roasters near me</button><span class="why" id="nearMsg" style="margin:0"></span></div>
+  <div class="map-wrap"><div id="mapCanvas"></div><div class="map-pop" id="mapPop" hidden></div></div>
+  <div id="nearList"></div>
+</div></section></div>
+
+<div class="view" id="v-roasters"><section><div class="wrap">
+  <div class="sec-head"><div><h2>Roasters</h2><p>Independent roasters across the UK.</p></div></div>
+  <div class="filters">
+    <input id="rq" placeholder="Search by roaster or city…">
+    <div class="filt-pills">
+      <button type="button" class="pill-btn dark" id="pillRegion"><svg viewBox="0 0 24 24" class="pi" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z"/></svg><span id="regionLbl">Region</span></button>
+      <button type="button" class="pill-btn accent" id="pillFilt"><svg viewBox="0 0 24 24" class="pi" aria-hidden="true"><path d="M4 6h10M18 6h2M4 12h2M10 12h10M4 18h8M16 18h4" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/><circle cx="16" cy="6" r="2.4" fill="currentColor"/><circle cx="8" cy="12" r="2.4" fill="currentColor"/><circle cx="14" cy="18" r="2.4" fill="currentColor"/></svg>Filters <span class="dd-n" id="filtN" hidden></span></button>
+    </div>
+  </div>
+  <p class="why" id="roasterCount"></p><div class="grid" id="roasterGrid"></div><div style="text-align:center;margin-top:20px"><button class="btn" id="rmore" hidden>Show more roasters</button></div>
+</div></section></div>
+
+<!-- FILTER SHEETS -->
+<div class="sheet-bg" id="sheetBg" hidden></div>
+<div class="sheet" id="regionSheet" hidden role="dialog" aria-label="Filter by region"><button class="sheet-grab" id="regionGrab" aria-label="Close"></button><div class="sheet-head"><h3>Filter by region</h3></div><div class="sheet-body" id="regionBody"></div></div>
+<div class="sheet" id="filtSheet" hidden role="dialog" aria-label="Filters"><button class="sheet-grab" id="filtGrab" aria-label="Close"></button><div class="sheet-head"><h3>Filters</h3></div><div class="sheet-body" id="filtBody"></div><div class="sheet-foot"><button class="btn primary block" id="sheetDone">Show roasters</button></div></div>
+<div class="sheet" id="brewSheet" hidden role="dialog" aria-label="Brew recipe"><button class="sheet-grab" id="brewGrab" aria-label="Close"></button><div class="sheet-body" id="brewBody"></div></div>
+
+<!-- ROASTER DETAIL -->
+<div class="view" id="v-roaster"><section><div class="wrap" id="roasterDetail"></div></section></div>
+
+<!-- FOR YOU -->
+<div class="view" id="v-for-you"><section><div class="wrap">
+  <div class="sec-head"><div><h2>For you</h2><p>Tap ♡ on any bean or pod you've enjoyed. We'll suggest others with a similar flavour, roast and process.</p></div><a class="btn primary" href="#account">Get weekly picks by email</a></div>
+  <h3>Coffees you liked</h3>
+  <div class="grid" id="likedGrid" style="margin-bottom:36px"></div>
+  <h3>You might also like</h3>
+  <div class="grid" id="fyGrid"></div>
+  <h3 style="margin-top:36px">Pods you might like</h3>
+  <div class="grid" id="fyPods"></div>
+</div></section></div>
+
+<!-- BREW -->
+<div class="view" id="v-brew"><section><div class="wrap">
+  <div class="sec-head"><div><h2>Brew</h2><p>Choose the equipment you own. Every bean and pod page will then show how to brew it with your kit.</p></div></div>
+  <div class="brewbox" style="margin-top:0">
+    <h3>My equipment</h3>
+    <div id="kitPicker"></div>
+    <p id="kitSaved" class="why" style="margin:6px 0 0"></p>
+    <div class="kit-suggest"><label for="kitSuggest" class="why" style="margin:0">Equipment not listed? Tell us and we'll add it.</label>
+      <div class="ksrow"><input id="kitSuggest" placeholder="e.g. Kalita Wave, Flair 58" maxlength="60"><button type="button" class="btn small" id="kitSuggestBtn">Send</button></div>
+      <p class="why" id="kitSuggestMsg" style="margin:4px 0 0"></p></div>
+  </div>
+  <section style="padding-bottom:0" id="grindSec">
+    <div class="sec-head"><div><h2>Grind settings for your grinder</h2><p>Choose your grinder and we'll tell you where to set it for each of your brewers.</p></div></div>
+    <div class="brewbox" style="margin-top:0">
+      <div class="filters" style="margin:0 0 6px"><label for="myGrinder" style="font-weight:700">My grinder</label><select id="myGrinder" style="flex:1 1 220px;min-width:0;width:100%;max-width:360px"></select></div>
+      <div id="grindTable"></div>
+    </div>
+  </section>
+  <section style="padding-bottom:0" id="machineSec" hidden>
+    <div class="sec-head"><div><h2>Your espresso machine</h2><p>Tell us your machine and we'll tailor the espresso setup to it — with full machine guides to follow.</p></div></div>
+    <div class="brewbox" style="margin-top:0">
+      <div class="filters" style="margin:0 0 6px"><label for="myMachine" style="font-weight:700">My machine</label><select id="myMachine" style="flex:1 1 220px;min-width:0;width:100%;max-width:360px"></select></div>
+      <div id="machineGuide"></div>
+    </div>
+  </section>
+  <section style="padding-bottom:0"><div class="sec-head"><div><h2 id="guideHead">Brewing guides</h2></div><a id="guideToggle" href="javascript:void(0)" hidden></a></div><div class="grid" id="guideGrid"></div></section>
+  <section style="padding-bottom:0" id="kitCoffeesSec" hidden>
+    <div class="sec-head"><div><h2 id="kitCoffeesHead">Coffees for your kit</h2><p>Tap one for the recipe on your equipment.</p></div></div>
+    <div class="grid" id="kitCoffeesGrid"></div>
+    <div style="text-align:center;margin-top:16px"><button class="btn" id="kitCoffeesMore" hidden></button></div>
+  </section>
+</div></section></div>
+
+<!-- ROASTER TERRITORY SETUP (demo) -->
+<div class="view" id="v-territory"><section><div class="wrap">
+  <div class="sec-head"><div><h2>Territory setup <span class="chip">roaster demo</span></h2><p>Choose how close you'll let a new wholesale lead be to a café you already supply. This runs on your device — Crema only receives blocked <em>areas</em>, never your customers' addresses.</p></div></div>
+  <div class="brewbox">
+    <h3 style="margin:0 0 6px">1. How much space do you protect?</h3>
+    <select id="terrRadius" style="max-width:360px;width:100%">
+      <option value="0">No restriction — I'll supply anyone</option>
+      <option value="0.2" selected>Immediate neighbours only (~0.2 mi)</option>
+      <option value="0.5">Same neighbourhood (~0.5 mi)</option>
+      <option value="2">Same town (~2 mi)</option>
+      <option value="5">Wider area (~5 mi)</option>
+    </select>
+    <h3 style="margin:16px 0 6px">2. Where do you already supply?</h3>
+    <p class="why" style="margin:0 0 6px">Postcodes or towns, one per line. These stay on your device.</p>
+    <textarea id="terrStockists" rows="4" style="width:100%;font:inherit;padding:10px;border:1.5px solid var(--line);border-radius:8px" placeholder="EH3 9QL&#10;Stockbridge, Edinburgh"></textarea>
+    <div style="margin-top:12px"><button class="btn primary" id="terrGen">Generate my blocked areas</button></div>
+    <div id="terrOut" style="margin-top:14px"></div>
+    <div id="terrTestWrap" hidden style="margin-top:18px;border-top:1px solid var(--line);padding-top:14px">
+      <h3 style="margin:0 0 6px">3. Try a prospective café</h3>
+      <div class="filters" style="margin:0"><input id="terrTest" placeholder="Café postcode or town" style="max-width:300px"><span id="terrTestOut" class="why" style="margin:0;align-self:center"></span></div>
+    </div>
+  </div>
+</div></section></div>
+
+<!-- COFFEES FOR YOUR KIT -->
+<div class="view" id="v-kitcoffees"><section><div class="wrap">
+  <a class="back" href="#brew">← Back to Brew</a>
+  <div class="sec-head" style="margin-top:12px"><div><h2 id="kcHead">Coffees for your kit</h2><p id="kcSub">Tap one for the recipe on your equipment.</p></div></div>
+  <div class="grid" id="kcGrid"></div>
+  <div style="text-align:center;margin-top:16px"><button class="btn" id="kcMore" hidden></button></div>
+</div></section></div>
+
+<!-- ROASTER PORTAL (demo) -->
+<div class="view" id="v-portal"><section><div class="wrap">
+  <div id="portalLogin">
+    <div class="sec-head"><div><h2>Roaster portal <span class="chip">demo</span></h2><p>See how your roastery performs on Crema — saves, page visits and click-throughs to your website.</p></div></div>
+    <div class="brewbox" style="max-width:440px">
+      <label class="why" style="margin:0">Your roastery</label>
+      <select id="portalPick" style="width:100%;margin:6px 0 12px"></select>
+      <label class="why" style="margin:0">Email</label>
+      <input id="portalEmail" type="email" placeholder="you@roastery.co.uk" style="width:100%;margin:6px 0 12px" autocomplete="email">
+      <button class="btn primary" id="portalLoginBtn">Log in</button>
+      <p class="why" id="portalMsg" style="margin:8px 0 0">Demo login — choose your roastery. The live portal will use a secure email sign-in.</p>
+    </div>
+  </div>
+  <div id="portalDash" hidden></div>
+</div></section></div>
+
+<!-- SHOP -->
+<div class="view" id="v-shop"><section><div class="wrap">
+  <div class="sec-head"><div><h2>Shop the kit</h2><p id="grinderLede"></p></div></div>
+  <h3 style="margin:8px 0 14px">Electric grinders</h3>
+  <div class="grid grinders" id="grinderGrid"></div>
+  <p class="disclaim">Typical UK prices checked November 2026; they change often. Links go to independent UK shops. Crema isn't paid for these links.</p>
+</div></section></div>
+
+
+<!-- ACCOUNT / PROFILE -->
+<div class="view" id="v-account"><section><div class="wrap">
+  <div class="roleseg" id="roleSeg"><button type="button" data-role="lover" class="on">I'm a coffee lover</button><button type="button" data-role="roaster">I'm a roaster</button></div>
+  <div id="acctRoaster" hidden>
+    <div class="sec-head"><div><h2>Roaster login</h2><p>Sign in to your Crema portal to see how many people saved your coffees, visits to your page and click-throughs to your website.</p></div></div>
+    <div class="brewbox" style="max-width:460px">
+      <label class="why" style="margin:0">Your roastery</label>
+      <select id="acctRoastPick" style="width:100%;margin:6px 0 12px"></select>
+      <label class="why" style="margin:0">Email</label>
+      <input id="acctRoastEmail" type="email" placeholder="you@roastery.co.uk" style="width:100%;margin:6px 0 12px" autocomplete="email">
+      <button class="btn primary" id="acctRoastBtn">Log in to portal</button>
+      <p class="why" id="acctRoastMsg" style="margin:8px 0 0">Demo login — choose your roastery. The live portal will use a secure email sign-in.</p>
+      <p class="why" style="margin:10px 0 0">Not on Crema yet? We're onboarding roasters now — get in touch to add yours.</p>
+    </div>
+  </div>
+  <div id="acctLover">
+  <div class="sec-head"><div><h2 id="acctTitle">Your coffee profile</h2><p>Tell us what you like and we'll email you a short list of newly added coffees that match, once a week. Your likes, equipment and grinder are saved with it.</p></div></div>
+  <div class="acct-status" id="acctStatus"></div>
+  <div class="acct-grid">
+    <form class="pf" id="pfForm" autocomplete="on">
+      <div class="row2">
+        <div class="field"><label for="pf-name">First name</label><input id="pf-name" autocomplete="given-name" maxlength="60"></div>
+        <div class="field"><label for="pf-email">Email</label><input id="pf-email" type="email" autocomplete="email" maxlength="120"></div>
+      </div>
+      <h3>Flavours you enjoy</h3>
+      <div class="opts" id="pf-tastes"></div>
+      <h3>Roast levels</h3>
+      <div class="opts" id="pf-roasts"></div>
+      <h3>What you buy</h3>
+      <div class="opts" id="pf-formats"></div>
+      <div class="row2" style="margin-top:14px">
+        <div class="field"><label for="pf-budget">Most you'd pay per cup</label><select id="pf-budget"><option value="">No limit</option><option value="0.5">Up to 50p</option><option value="0.75">Up to 75p</option><option value="1">Up to £1</option><option value="1.5">Up to £1.50</option></select></div>
+        <div class="field"><label for="pf-grind">Do you grind at home?</label><select id="pf-grind"><option value="">Either is fine</option><option value="whole">Yes, send whole beans</option><option value="ground">No, I need it ground</option></select></div>
+      </div>
+      <h3>Your kit and likes</h3>
+      <p class="why" id="pf-kit" style="margin:0"></p>
+      <label class="consent"><input type="checkbox" id="pf-consent"> <span><b>Email me my weekly coffee picks.</b> One email a week, matched to this profile. Every email has a one-click unsubscribe, and we never pass your email to roasters or anyone else.</span></label>
+      <div class="acts"><button class="btn primary" type="submit" id="pf-save">Save my profile</button><span class="why" id="pf-msg" style="margin:0"></span></div>
+      <div class="acts" id="pf-danger" hidden><button class="btn ghost-red" type="button" id="pf-delete">Delete my profile</button></div>
+    </form>
+    <aside>
+      <div class="email-prev" id="emailPrev"></div>
+    </aside>
+  </div>
+  </div>
+</div></section></div>
+
+<!-- ABOUT / METHODOLOGY -->
+<div class="view" id="v-about"><section><div class="wrap about">
+  <span class="eyebrow">How Crema works</span>
+  <h1 style="font-size:2.4rem">Our methodology and standards</h1>
+  <p class="lede" style="color:var(--muted)">Crema helps you find coffee from independent UK roasters. Here is where our information comes from, how we make recommendations, and how to tell us when something is wrong.</p>
+  <div class="promise" style="background:#fff3e9;border-color:#ffd8bf"><b>This is a private preview.</b> Crema is still in development and shared for feedback only. Roaster names, logos and bag images belong to the roasters and are shown here to identify them while we build; they haven't yet given permission for a public launch.</div>
+  <div class="promise"><b>Our promise:</b> recommendations and rankings are never for sale. If we ever show a paid placement, it will be labelled "Sponsored" and kept out of the matching that decides what we suggest to you.</div>
+
+  <h2>Where our information comes from</h2>
+  <ul>
+    <li><b>Roasters.</b> We keep a list of <span data-count="roasters"></span> UK roasters and work through them one by one. Each has a status: fully listed, in progress, or not started yet.</li>
+    <li><b>Coffees.</b> Origin, process, roast, tasting notes and price come from the roaster's own product page, recorded as listed, with the date we checked. If a roaster doesn't say something, such as the roast level, we show "Not stated" rather than guess.</li>
+    <li><b>What roasters offer.</b> Subscriptions, wholesale, cafés, B Corp and the rest are only marked "yes" when the roaster's own website or certifying body shows it, and we record the date checked. Decaf, single origins, light roasts and pods are worked out from the coffees we list, and the roaster's page says so.</li>
+    <li><b>Supermarket coffees.</b> Taken from supermarket listings and each brand's own pack description, including its strength rating. Prices are typical shelf prices on the day we checked.</li>
+    <li><b>Grinder settings.</b> From each manufacturer's own grind chart. Where a manufacturer publishes none, we use independent grind-size measurements and say so.</li>
+  </ul>
+
+  <h2>How we recommend coffees</h2>
+  <p>"You might also like" compares coffees on:</p>
+  <ul>
+    <li>shared tasting notes, and notes from the same flavour family (chocolate, citrus, berries and so on)</li>
+    <li>overall taste group and how close the roast levels are</li>
+    <li>the same process or origin</li>
+    <li>for pods, the same machine</li>
+    <li>price per cup, so suggestions stay in a similar price range</li>
+  </ul>
+  <p>We show no more than two coffees from any one roaster, so you discover new ones. Coffees without tasting notes aren't recommended, because we can't match them fairly. Your likes, equipment and grinder are saved only in your own browser.</p>
+
+  <h2>Prices</h2>
+  <p>We show the price the roaster lists. "From" means it's the smallest of several bag sizes. Price per cup assumes 15g of coffee per cup, or one pod, so a 1kg bag and a 150g bag can be compared fairly. Where the bag size isn't confirmed, the coffee's page says so.</p>
+
+  <h2>Links, logos and names</h2>
+  <p>Shop links currently earn us nothing. If that changes, every paid link will be clearly marked. Roaster names and logos belong to the roasters and are shown only to identify them; any roaster can ask us to change or remove them.</p>
+
+  <h2>Corrections</h2>
+  <p>Coffee changes fast and we will sometimes get things wrong. If you spot a mistake, or you're a roaster and something about you is out of date, tell us and we'll fix it and note the date it was updated. Contact details will be added before launch.</p>
+  <p class="why">This version of the site was built on <span id="builtOn"></span>.</p>
+</div></section></div>
+
+<!-- GUIDE -->
+<div class="view" id="v-guide"><section><div class="wrap" id="guideDetail"></div></section></div>
+
+<!-- WHOLESALE -->
+<div class="view" id="v-wholesale">
+  <section class="hero" style="padding-bottom:20px"><div class="wrap">
+    <span class="eyebrow" style="color:var(--green)">Wholesale</span>
+    <h1>Great coffee for your business</h1>
+    <p class="lede">Compare roasters that supply cafés, restaurants, offices and shops, including pods for office machines. One enquiry, sent to the roasters you choose.</p>
+  </div></section>
+  <section style="padding-top:10px"><div class="wrap">
+    <div class="steps">
+      <div><h3>Find</h3>Enter your postcode and we find the roasters closest to you.</div>
+      <div><h3>Choose up to 5</h3>From your nearest 20, pick the five you think fit. Nobody misses out for being a little further away.</div>
+      <div><h3>Introduce</h3>Send your details once; we email them to your five, who reach out to you.</div>
+    </div>
+  </div></section>
+  <section style="padding-top:10px"><div class="wrap">
+    <div class="sec-head"><div><h2>Wholesale roasters</h2><p id="wsCount"></p></div></div>
+    <p class="notice" style="margin-bottom:16px">Wholesale terms aren't in the data yet. The <b>Example</b> card shows how a listing will look once roasters send their terms.</p>
+    <div class="filters">
+      <input id="wpc" placeholder="Postcode or town, e.g. BS1 or Bristol" maxlength="30" autocomplete="off">
+      <select id="wsupply"><option value="">Bean or pod supply</option><option value="beans">Whole bean supply</option><option value="pods">Pod supply</option></select>
+      <select id="wqty"></select>
+      <select id="wsvc"><option value="">Any support</option></select>
+    </div>
+    <label class="check" style="margin:0 0 12px"><input type="checkbox" id="wMachine"> I need a machine too (lease, rent or included)</label>
+    <div id="wMachinePanel" hidden style="margin:0 0 16px">
+      <div class="callout" style="margin:0 0 12px"><b>Can't buy a machine outright?</b> You don't have to. Below, roasters who <b>lease or include a machine</b> show first — and we'll connect you to dedicated equipment partners who cover your area on lease, rent or buy, so you can spread the cost.</div>
+      <div class="ws-card"><div class="ws-head"><div><h3 style="margin:0">Equipment partner <span class="badge" style="background:#fff4d6;color:#7a5a00">Example</span></h3><span class="rname">Covers your area · lease from ~£12/week</span></div></div><div class="chips"><span class="chip">Machine leasing</span><span class="chip">Rent</span><span class="chip">Install &amp; training</span><span class="chip">Servicing</span></div><p class="why" style="margin:8px 0 0">Dedicated equipment suppliers will be matched here by postcode, the same way as roasters.</p></div>
+    </div>
+    <div class="grid" id="wsGrid"></div>
+    <div style="text-align:center;margin-top:16px"><button class="btn" id="wsAll" hidden>Show all wholesale roasters</button></div>
+  </div></section>
+  <section><div class="wrap">
+    <h2>Send a wholesale enquiry</h2>
+    <form class="form" id="wsForm">
+      <div class="field"><label for="wf-biz">Business name</label><input id="wf-biz" required></div>
+      <div class="field"><label for="wf-type">Business type</label><select id="wf-type"><option>Café</option><option>Restaurant</option><option>Office</option><option>Hotel</option><option>Retail / deli</option><option>Other</option></select></div>
+      <div class="field"><label for="wf-email">Email</label><input id="wf-email" type="email" required></div>
+      <div class="field"><label for="wf-cups">Estimated coffees per day</label><input id="wf-cups" type="number" min="1" step="1" value="50">
+        <p class="why" id="wf-kg" style="margin:6px 0 0"></p></div>
+      <div class="field full"><label for="wf-msg">What are you looking for?</label><textarea id="wf-msg" rows="3" placeholder="e.g. A chocolatey house espresso for milk drinks plus a guest filter"></textarea></div>
+      <div class="full" id="wf-short" style="font-size:.92rem;color:var(--muted)"></div>
+      <div class="full"><button class="btn green">Send enquiry</button></div>
+      <div class="full" id="wf-out"></div>
+    </form>
+  </div></section>
+  <section style="padding-top:0"><div class="wrap"><div class="band" style="background:var(--paper);border:1px solid var(--line)">
+    <div><h2 style="color:var(--ink)">Are you a roaster?</h2><p style="margin:0;color:var(--muted)">List your wholesale offer so cafés can find you.</p></div>
+    <a class="btn" href="#wholesale">Add your roastery</a>
+  </div></div></section>
+</div>
+</main>
+
+<footer><div class="wrap cols">
+  <div><b style="display:flex;align-items:center;gap:8px;font:800 1.3rem 'Bricolage Grotesque',sans-serif;letter-spacing:-.04em"><svg viewBox="0 0 44 40" width="29" height="26" aria-hidden="true"><defs><radialGradient id="fgc" cx="42%" cy="40%" r="64%"><stop offset="0" stop-color="#f4cf8e"/><stop offset=".45" stop-color="#dfa35a"/><stop offset=".78" stop-color="#b56a2c"/><stop offset="1" stop-color="#7c3a12"/></radialGradient></defs><rect x="30.5" y="16.6" width="11.4" height="6.8" rx="3.4" fill="#fff" stroke="#fff" stroke-width="1.5"/><circle cx="18" cy="20" r="16" fill="#fff" stroke="#fff" stroke-width="1.5"/><circle cx="18" cy="20" r="12.4" fill="#3b1a08"/><circle cx="17.6" cy="19.6" r="11.3" fill="url(#fgc)"/><g fill="#fbe2b4" opacity=".55"><ellipse cx="12.6" cy="15.4" rx="2.2" ry=".9" transform="rotate(-30 12.6 15.4)"/><ellipse cx="15.8" cy="25.6" rx="1.7" ry=".7" transform="rotate(20 15.8 25.6)"/></g><path d="M24.4 11.6a10.2 10.2 0 0 1 4 6" fill="none" stroke="#fff6e6" stroke-width="1.2" stroke-linecap="round" opacity=".9"/><g fill="#4a200a"><circle cx="24" cy="26.2" r=".95"/><circle cx="26" cy="24" r=".6"/><circle cx="22.1" cy="27.9" r=".55"/><circle cx="25.4" cy="26.9" r=".45"/><circle cx="26.9" cy="22" r=".4"/></g></svg>crema</b>A directory of UK speciality coffee roasters and beans, with wholesale sourcing for businesses.</div>
+  <div><b>Explore</b><a href="#swap">Supermarket swap</a><a href="#beans">Beans</a><a href="#pods">Pods &amp; Capsules</a><a href="#roasters">Roasters</a><a href="#for-you">For you</a><a href="#account">Weekly picks email</a><a href="#brew">Brewing guides</a><a href="#shop">Shop the kit</a></div>
+  <div><b>Business</b><a href="#wholesale">Wholesale</a><a href="#wholesale">Add your roastery</a><a href="#territory">Territory setup (demo)</a><a href="#portal">Roaster login</a></div>
+  <div><b>About</b><a href="#about">How it works</a><a href="#about">Our promise</a><a href="#about">Corrections</a><span>Privacy</span><br><span>Terms</span></div>
+</div><div class="wrap" style="margin-top:20px">© 2026 Crema</div></footer>
+
+<script>
+const DATA = /*DATA*/null;
+const R = Object.fromEntries(DATA.roasters.map(r=>[r.id,r]));
+const B = DATA.beans;
+const P = DATA.pods||[];
+const ALL = B.concat(P);
+const isPod = x=>x.id.startsWith("pod-");
+const SYSTEMS = ["Nespresso Original","Nespresso Vertuo","Dolce Gusto","Tassimo"];
+const perPod = p=>perCup(p);
+const rk = b=>b.brewRoast||b.roast;
+const money = x=>x==null?"See shop":`£${(+x).toFixed(2)}`;
+const hasLogo = r=>!!(r&&r.logo&&r.logo.src);
+const logoImg = r=>`<img src="${esc(r.logo.src)}" alt="${esc(r.name)} logo" loading="lazy">`;
+/* Logo tile wherever a roaster is shown; falls back to initials. White/negative logos sit on an ink tile. */
+const mark = (r,cls="mono",style="")=>hasLogo(r)?`<div class="${cls} logo-tile${r.logo.dark?" dark":""}">${logoImg(r)}</div>`:`<div class="${cls}"${style?` style="${style}"`:""}>${esc(initials(r.name))}</div>`;
+const sizeTxt = g=>g>=1000?`${g/1000}kg`:`${g}g`;
+/* Price as the roaster lists it: "from" when it's the lowest of several sizes, per pod/sachet for single-serve, bag size when it isn't the usual 200–250g. */
+const priceTag = x=>{ if(x.price==null) return "See shop";
+  if(x.perUnit) return `£${x.price.toFixed(2)} <small style="font-weight:600;color:var(--muted)">per ${x.unit}</small>`;
+  const odd = x.size && (x.size<200||x.size>250);
+  return `${x.priceFrom?'<small style="font-weight:600;color:var(--muted)">from</small> ':""}£${x.price.toFixed(2)}${odd?` <small style="font-weight:600;color:var(--muted)">/ ${sizeTxt(x.size)}</small>`:""}`; };
+const priceSpec = x=>{ if(x.price==null) return "See shop";
+  const line = x.perUnit ? `per ${x.unit}${x.size?` (${x.size}g)`:""}` : `${x.priceFrom?"from, ":""}${x.size?sizeTxt(x.size)+" bag":""}${x.sizeConfirmed?"":", size not confirmed"}`;
+  return `£${x.price.toFixed(2)}<br><span class="why">${esc(line)}</span>`; };
+const REAL = DATA.roasters.filter(r=>!r.sample);
+const exBadge = r=>r&&r.sample?`<span class="badge" style="background:#fff4d6;color:#7a5a00">Example</span>`:"";
+const GUIDES = DATA.guides||[];
+const SM = DATA.supermarket||[];
+const FAM = {chocolate:/chocolate|cocoa|cacao/,caramel:/caramel|toffee|brown sugar|molasses|honey|syrup|fudge|strudel|vanilla/,nutty:/almond|hazelnut|macadamia|nut|praline|walnut/,
+  "dark fruit":/berry|currant|cherry|raisin|dried fruit|plum|rum/,citrus:/lemon|lime|orange|mandarin|tangerine|grapefruit|citrus|bergamot|zest/,
+  "tropical/stone fruit":/peach|apricot|mango|lychee|tropical|tamarind|pear/,floral:/jasmine|floral|rose|hibiscus/,tea:/\btea\b/,"spice & smoke":/spice|pepper|liquorice|clove|cinnamon|oak|cedar|smok/};
+const fams = notes=>new Set(Object.entries(FAM).filter(([k,re])=>notes.some(n=>re.test(n.toLowerCase()))).map(([k])=>k));
+const perCup = x=> x.price==null?null:x.perUnit?(x.unit==="sachet"&&x.size?x.price/x.size*12:x.price):(x.count?x.price/x.count:(x.size?x.price/x.size*15:null));
+const TEMP = {"Light":96,"Light-Medium":94,"Medium":93,"Medium-Dark":91,"Dark":89};
+let kit = new Set();
+try{ kit = new Set(JSON.parse(localStorage.getItem("kit")||"[]")) }catch(e){}
+function saveKit(){ try{ localStorage.setItem("kit",JSON.stringify([...kit])) }catch(e){} }
+const ownedGuides = ()=>GUIDES.filter(g=>kit.has(g.id));
+const ownedSystems = ()=>SYSTEMS.filter(s=>kit.has(s));
+const myPods = ()=>ownedSystems().length?P.filter(p=>kit.has(p.system)):P;
+/* rank brew methods for a bean: roast suits the method + taste bonus */
+function methodScore(g,b){ return (g.affinity[rk(b)]||0) + (g.tasteBonus[b.taste]||0); }
+function brewPlan(b){
+  const all=[...GUIDES].sort((x,y)=>methodScore(y,b)-methodScore(x,b));
+  const mine=all.filter(g=>kit.has(g.id));
+  return {best:(mine[0]||all[0]), mine, all, usingKit:mine.length>0};
+}
+function recipeFor(g,b){
+  const R0=rk(b);
+  const temp = g.id==="guide-moka" ? "Just boiled" : `${g.kind==="espresso"?Math.min(TEMP[R0]||93,94):TEMP[R0]||93}°C`;
+  const ratio = g.kind==="espresso" ? (/^Light/.test(R0)?"1:2.5":"1:2") : `1:${Math.round(g.water/g.dose)}`;
+  const water = g.kind==="espresso" ? (/^Light/.test(R0)?g.dose*2.5:g.water) : g.water;
+  return {dose:g.dose, water, ratio, temp, grind:g.grind + (/^Light/.test(R0)&&g.kind!=="immersion"?" (a touch finer for this lighter roast)":"")};
+}
+const STRENGTH_BANDS=[{min:1,max:3,label:"Light & Bright",cls:"s-light",plain:"Delicate and easy-drinking, often fruity or floral."},{min:4,max:6,label:"Smooth & Balanced",cls:"s-mid",plain:"Rounded and everyday — sweet, nutty or chocolatey."},{min:7,max:9,label:"Bold & Rich",cls:"s-bold",plain:"Deep and intense, for strong, full-bodied cups."}];
+function strength(x){
+  const roastN={"Light":2,"Light-Medium":3,"Medium":5,"Medium-Dark":7,"Dark":8};
+  const tasteN={"Florals & Tea":2,"Bright & Fruity":3,"Chocolate Comfort":6};
+  const known=x.roast&&x.roast!=="Not stated"&&roastN[x.roast]!=null;
+  let n;
+  if(known){ n=roastN[x.roast]; if(x.taste==="Chocolate Comfort")n+=1; else if(x.taste==="Florals & Tea")n-=1; }
+  else n=tasteN[x.taste]!=null?tasteN[x.taste]:5;
+  return {n:Math.max(1,Math.min(9,n)), est:!known};
+}
+function strengthBand(n){ return STRENGTH_BANDS.find(b=>n>=b.min&&n<=b.max); }
+function strengthMeter(x,big){ const {n}=strength(x), band=strengthBand(n);
+  return `<span class="smeter ${band.cls}${big?" big":""}" title="Strength ${n} of 9: ${esc(band.label)}" aria-label="Strength ${n} of 9, ${esc(band.label)}">${Array.from({length:9},(_,i)=>`<i${i<n?' class="on"':''}></i>`).join("")}</span>`; }
+const TASTES = {"Bright & Fruity":{cls:"t-fruity",slug:"fruity",blurb:"Berries, citrus and stone fruit"},"Chocolate Comfort":{cls:"t-choc",slug:"chocolate",blurb:"Cocoa, caramel and nuts"},"Florals & Tea":{cls:"t-floral",slug:"floral",blurb:"Jasmine, bergamot and black tea"}};
+const ROASTS = ["Light","Light-Medium","Medium","Medium-Dark","Dark"];
+const $ = s=>document.querySelector(s);
+const $all = s=>document.querySelectorAll(s);
+const shuffle = a=>{a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;};
+const esc = s=>String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const initials = n=>n.split(/\s+/).filter(w=>/^[A-Za-z]/.test(w)).slice(0,2).map(w=>w[0]).join("").toUpperCase();
+const countries = o=>(o||"").split(/[\/,]/).map(s=>s.trim()).filter(Boolean);
+
+/* ---------- likes (kept in this browser only) ---------- */
+let liked = new Set();
+try{ liked = new Set(JSON.parse(localStorage.getItem("liked")||"[]")) }catch(e){}
+function saveLikes(){ try{ localStorage.setItem("liked",JSON.stringify([...liked])) }catch(e){} }
+function toggleLike(id){ liked.has(id)?liked.delete(id):liked.add(id); saveLikes(); route(); }
+
+/* ---------- recommendations ----------
+   Score each bean against a liked bean: same taste family, shared tasting
+   notes, closeness of roast level, same process, shared origin, similar price. */
+function similarity(a,b){
+  const shared = a.notes.filter(n=>b.notes.includes(n));
+  const fa=fams(a.notes), fb=fams(b.notes), sharedF=[...fa].filter(f=>fb.has(f));
+  let s = 0;
+  s += sharedF.length*1.5;
+  if(a.taste===b.taste) s+=3;
+  s += shared.length*2.5;
+  const rd = Math.abs(ROASTS.indexOf(rk(a))-ROASTS.indexOf(rk(b)));
+  s += (1 - rd/4)*2;
+  if(a.process&&a.process===b.process&&a.process!=="Not stated") s+=1;
+  if(countries(a.origin).some(c=>countries(b.origin).includes(c))) s+=1;
+  if(a.system&&b.system) s += a.system===b.system?4:-6;  // pods must fit your machine
+  {const ca=perCup(a),cb=perCup(b); if(ca!=null&&cb!=null) s -= Math.min(Math.abs(ca-cb)/0.6,1);}
+  return {score:s, shared, fams:sharedF};
+}
+function recommend(seeds, n=6, pool=B){
+  const seedSet = new Set(seeds.map(b=>b.id));
+  const scored = pool.filter(b=>!seedSet.has(b.id)&&b.notes[0]!=="Not stated")  // nothing to match on without notes
+   .map(b=>{
+    let best={score:-1e9,shared:[]};
+    seeds.forEach(sd=>{const r=similarity(sd,b); if(r.score>best.score) best={...r,seed:sd}});
+    return {bean:b,...best};
+  }).sort((x,y)=>y.score-x.score);
+  // keep variety: at most 2 picks from any one roaster
+  const per={}, out=[];
+  for(const r of scored){ per[r.bean.roaster]=(per[r.bean.roaster]||0)+1; if(per[r.bean.roaster]<=2) out.push(r); if(out.length>=n) break; }
+  // not enough variety yet? top up with the next best, whoever roasts them
+  for(const r of scored){ if(out.length>=n) break; if(!out.includes(r)) out.push(r); }
+  return out;
+}
+
+/* ---------- rendering ---------- */
+function bag(b,big){
+  const r=R[b.roaster];
+  const heart=big?"":`<button class="heart ${liked.has(b.id)?"on":""}" data-like="${b.id}" aria-label="Like ${esc(b.name)}">${liked.has(b.id)?"♥":"♡"}</button>`;
+  if(b.bagImg) return `<div class="bag photo ${TASTES[b.taste].cls}"><img loading="lazy" data-bean="${b.id}" src="${esc(b.bagImg)}" alt="${esc(b.name)} by ${esc(r.name)}" onerror="bagImgFail(this)">${heart}</div>`;
+  return `<div class="bag ${TASTES[b.taste].cls}">${bagPouchHTML(b)}${heart}</div>`;
+}
+function bagPouchHTML(b){const r=R[b.roaster];return `<div class="pouch${hasLogo(r)?" has-logo"+(r.logo.dark?" dark":""):""}">${hasLogo(r)?logoImg(r):esc(initials(r.name))}<small>${esc(b.roastKnown===false?(b.decaf?"decaf":""):b.roast)}</small></div>`;}
+function bagImgFail(img){const b=ALL.find(x=>x.id===img.dataset.bean);const w=img.closest(".bag");if(!w)return;w.classList.remove("photo");const d=document.createElement("div");d.innerHTML=b?bagPouchHTML(b):"";if(d.firstChild)img.replaceWith(d.firstChild);else img.remove();}
+function beanCard(b,why){
+  const r=R[b.roaster];
+  const match = why? new Set(why.shared):new Set();
+  return `<article class="card bean" data-go="#${b.id}">${bag(b)}
+    <div class="body"><span class="rname">${esc(r.name)}</span><h3>${esc(b.name)}</h3>
+    <div class="chips">${b.notes.filter(n=>n!=="Not stated").map(n=>`<span class="chip ${match.has(n)?"match":""}">${esc(n)}</span>`).join("")}</div>
+    ${(()=>{const m=ownedGuides().filter(g=>methodScore(g,b)>=3)[0];return m?`<div class="chips"><span class="chip kitfit">✓ Great in your ${esc(m.method)}</span></div>`:""})()}
+    ${why?`<div class="why">${whyText(why)}</div>`:""}
+    <div class="meta"><span class="smwrap">${strengthMeter(b)} <span class="why" style="margin:0">${esc(strengthBand(strength(b).n).label)}</span></span><b>${priceTag(b)}</b></div></div></article>`;
+}
+function capsule(p,big){
+  const r=R[p.roaster];
+  return `<div class="bag ${TASTES[p.taste].cls}"><div class="capsule">${esc(initials(r.name))}<small>${p.intensity?p.intensity+"/13":"pods"}</small></div><span class="sys">${p.system==="Not stated"?"Machine not stated":esc(p.system)}</span>${big?"":`<button class="heart ${liked.has(p.id)?"on":""}" data-like="${p.id}" aria-label="Like ${esc(p.name)}">${liked.has(p.id)?"♥":"♡"}</button>`}</div>`;
+}
+const intensity = n=>`<span class="int" title="Intensity ${n} of 13">${Array.from({length:13},(_,i)=>`<i class="${i<n?"on":""}"></i>`).join("")}</span>`;
+function podCard(p,why){
+  const r=R[p.roaster], match=why?new Set(why.shared):new Set();
+  return `<article class="card bean" data-go="#${p.id}">${capsule(p)}
+    <div class="body"><span class="rname">${esc(r.name)} ${exBadge(r)}</span><h3>${esc(p.name)}</h3>
+    <div class="chips">${p.notes.filter(n=>n!=="Not stated").map(n=>`<span class="chip ${match.has(n)?"match":""}">${esc(n)}</span>`).join("")}</div>
+    ${why?`<div class="why">${whyText(why)}</div>`:""}
+    ${kit.has(p.system)?`<div class="chips"><span class="chip kitfit">✓ Fits your machine</span></div>`:""}
+    ${p.intensity?intensity(p.intensity):""}
+    <div class="meta"><span>${p.count?p.count+" pods · ":""}${p.material==="Not stated"?"Capsule material not stated":esc(p.material.split(" (")[0])}</span><b>${priceTag(p)}</b></div></div></article>`;
+}
+const anyCard=(x,why)=>isPod(x)?podCard(x,why):beanCard(x,why);
+function whyText(w){
+  if(w.seed.custom) return `${esc(w.bean.taste)} · ${esc(w.bean.roastNote||w.bean.roast)}`;
+  const nm=esc(w.seed.name);
+  if(w.shared.length) return `Shares ${w.shared.map(esc).join(", ")} with ${nm}`;
+  if(w.fams&&w.fams.length) return `${w.fams.map(f=>f[0].toUpperCase()+f.slice(1)).join(" & ")} notes, like ${nm}`;
+  return `Similar roast to ${nm}`;
+}
+/* What each roaster offers. Filled from the Roaster Tracker's Yes/No columns; a few are worked out from the coffees we list. */
+const OFFERS=[["subscription","Subscriptions"],["oneoff","Buy without subscribing"],["decaf","Decaf"],["singleOrigin","Single origins"],["lightRoast","Light roasts"],["pods","Pods & capsules"],
+ ["wholesale","Wholesale"],["cafe","Café to visit"],["visits","Roastery visits"],["training","Training & courses"],["equipment","Sells equipment"],["directTrade","Direct trade"],
+ ["organic","Organic or certified"],["bcorp","B Corp"],["awards","Award-winning"],["femaleFounded","Female-founded"]];
+const offers=r=>r.offers||{};
+const offerLabel=k=>(OFFERS.find(o=>o[0]===k)||[k,k])[1];
+let rFilt=new Set();
+let rRegion="";
+// curated roaster filters: [key, title, description, icon-svg-path]
+const FILT_UI=[
+  ["cof","Coffees listed","We've catalogued their coffees",'<path d="M4 6h16M4 12h16M4 18h10"/>'],
+  ["shop","Has a webshop","Buy online directly",'<circle cx="9" cy="20" r="1.4"/><circle cx="18" cy="20" r="1.4"/><path d="M3 4h2l2.4 12.5a1 1 0 0 0 1 .8h8.7a1 1 0 0 0 1-.8L21 8H6"/>'],
+  ["subscription","Subscriptions","Recurring coffee deliveries",'<path d="M4 10a8 8 0 0 1 13-5l2 2M20 14a8 8 0 0 1-13 5l-2-2"/><path d="M19 3v4h-4M5 21v-4h4"/>'],
+  ["decaf","Decaf","Offers decaf options",'<path d="M4 8h13a3 3 0 0 1 0 6h-1M4 8v6a4 4 0 0 0 4 4h5a4 4 0 0 0 4-4M7 4v1M11 4v1"/>'],
+  ["singleOrigin","Single origins","Traceable single-origin coffees",'<path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7Z"/><circle cx="12" cy="9" r="2.3"/>'],
+  ["wholesale","Wholesale","Supplies cafés and businesses",'<path d="M3 8l9-5 9 5-9 5-9-5Z"/><path d="M3 8v8l9 5 9-5V8"/><path d="M12 13v8"/>'],
+  ["pods","Pods & capsules","Makes pods or capsules",'<rect x="8" y="3" width="8" height="7" rx="2"/><path d="M7 10h10l-1.2 9.2a2 2 0 0 1-2 1.8h-3.6a2 2 0 0 1-2-1.8Z"/>']
+];
+const filtPred=(r,k)=> k==="cof"?B.some(b=>b.roaster===r.id) : k==="shop"?!!r.shop : offers(r)[k]===true;
+const filtCount=k=>REAL.filter(r=>filtPred(r,k)).length;
+const filtLabel=k=>(FILT_UI.find(f=>f[0]===k)||[k,k])[1];
+function roasterCard(r){
+  const n=B.filter(b=>b.roaster===r.id).length;
+  const head = hasLogo(r)
+    ? `<div class="logo-banner${r.logo.dark?" dark":""}">${logoImg(r)}</div><div class="top named"><div><h3 style="margin:0">${esc(r.name)}</h3><span class="rname">${esc(r.city)}</span></div></div>`
+    : `<div class="top">${mark(r)}<div><h3 style="margin:0">${esc(r.name)}</h3><span class="rname">${esc(r.city)}</span></div></div>`;
+  return `<article class="card roaster bean${hasLogo(r)?" with-logo":""}" data-go="#roaster-${r.id}">${head}
+  <div class="body"><div class="chips" style="margin-top:4px">${r.shop?`<span class="chip">Webshop</span>`:`<span class="chip">No webshop yet</span>`}${OFFERS.filter(([k])=>offers(r)[k]===true&&!["pods","wholesale"].includes(k)).slice(0,3).map(([k,l])=>`<span class="chip${rFilt.has(k)?" kitfit":""}">${esc(l)}</span>`).join("")}${offers(r).pods?`<span class="chip">Pods</span>`:""}${n?`<span class="chip match">${n} coffees listed</span>`:""}</div>
+  <div class="meta"><span>${esc(r.region)}</span>${r.wholesale.offers||offers(r).wholesale?`<span class="badge">Wholesale</span>`:""}</div></div></article>`;
+}
+function fill(sel,vals){ const el=$(sel); vals.forEach(v=>el.insertAdjacentHTML("beforeend",`<option>${esc(v)}</option>`)); }
+const uniq = a=>[...new Set(a)].sort();
+
+function renderHome(){
+  $("#st-r").textContent=REAL.length; $("#st-b").textContent=B.length; $("#st-w").textContent=new Set(B.map(b=>b.roaster)).size;
+  const withCoffee=REAL.filter(r=>B.some(b=>b.roaster===r.id)); const featPool=withCoffee.filter(hasLogo); const f=shuffle(featPool.length?featPool:withCoffee)[0]||REAL[0], fb=B.filter(b=>b.roaster===f.id);  // random featured roaster each visit
+  $("#featured").innerHTML=`${mark(f,"art")}<div class="txt"><span class="eyebrow">Featured roaster</span><h2>${esc(f.name)}</h2><p>${esc(f.city)} · ${esc(f.region)}</p><div class="chips" style="margin-bottom:16px">${[...new Set(fb.flatMap(b=>b.notes))].slice(0,6).map(n=>`<span class="chip">${esc(n)}</span>`).join("")}</div><p style="color:var(--muted)">${fb.length} coffees listed${f.wholesale.offers?" · supplies wholesale":""}</p><div class="btns"><a class="btn primary small" href="#roaster-${f.id}">View profile</a><a class="btn small" href="#beans" data-roaster="${f.id}">Explore their coffee</a></div></div>`;
+  const wall=shuffle(REAL.filter(hasLogo));  // random selection each visit
+  $("#logoWall").innerHTML=wall.slice(0,18).map(r=>`<a class="wall-tile${r.logo.dark?" dark":""}" href="#roaster-${r.id}" title="${esc(r.name)}">${logoImg(r)}</a>`).join("");
+  $("#logoWallSec").hidden=!wall.length;
+  $("#tastes").innerHTML=Object.entries(TASTES).map(([k,t])=>`<a class="taste ${t.cls}" href="#beans" data-taste="${esc(k)}"><b>${esc(k)}</b><span>${t.blurb} · ${B.filter(b=>b.taste===k).length} beans</span></a>`).join("");
+  $("#fresh").innerHTML=B.filter(b=>b.notes[0]!=="Not stated").sort((a,b)=>a.addedDays-b.addedDays).slice(0,4).map(b=>beanCard(b)).join("");
+    $("#homeMachines").innerHTML=[...SYSTEMS,"Not stated"].filter(s=>P.some(p=>p.system===s)).map(s=>`<a class="pill" href="#pods" data-system="${esc(s)}">${s==="Not stated"?"Machine not stated":esc(s)} · ${P.filter(p=>p.system===s).length}</a>`).join("");
+  $("#homePods").innerHTML=P.filter(p=>p.notes[0]!=="Not stated").sort((a,b)=>a.addedDays-b.addedDays).slice(0,4).map(p=>podCard(p)).join("");
+  const seeds=ALL.filter(b=>liked.has(b.id));
+  $("#homeForYou").hidden=!seeds.length;
+  if(seeds.length){ $("#fyLede").textContent=`Based on the ${seeds.length} coffee${seeds.length>1?"s":""} you liked.`; $("#homeRecs").innerHTML=recommend(seeds,4).map(r=>beanCard(r.bean,r)).join(""); }
+}
+let beanFilter={q:"",taste:"",roast:"",proc:"",strength:"",sort:"new",roaster:"",decaf:false}; let bLimit=48;
+function renderBeans(){
+  ["q","taste","roast","proc","strength","sort"].forEach(k=>$("#f"+k).value=beanFilter[k]);
+  const q=beanFilter.q.toLowerCase();
+  let list=B.filter(b=>(!beanFilter.decaf||b.decaf)&&(!beanFilter.taste||b.taste===beanFilter.taste)&&(!beanFilter.roast||b.roast===beanFilter.roast)&&(!beanFilter.proc||b.process===beanFilter.proc)&&(!beanFilter.roaster||b.roaster===beanFilter.roaster)&&(!beanFilter.strength||strengthBand(strength(b).n).cls==="s-"+beanFilter.strength)
+    &&(!q||[b.name,b.origin,b.process,b.producer||"",b.listedNotes||"",b.desc||"",R[b.roaster].name,...b.notes].join(" ").toLowerCase().includes(q)));
+  const pv=(x,d)=>{const c=perCup(x);return c==null?d:c}; list.sort(beanFilter.sort==="lo"?(a,b)=>pv(a,1e9)-pv(b,1e9):beanFilter.sort==="hi"?(a,b)=>pv(b,-1)-pv(a,-1):(a,b)=>a.addedDays-b.addedDays);
+  $("#beanCount").textContent=`${list.length} of ${B.length} coffees`+(beanFilter.roaster?` from ${R[beanFilter.roaster].name}`:"");
+  $("#beanGrid").innerHTML=list.length?list.slice(0,bLimit).map(b=>beanCard(b)).join(""):`<div class="empty">No coffees match those filters.</div>`;
+  $("#bmore").hidden=list.length<=bLimit;
+}
+function brewBox(b){
+  const {best,mine,all,usingKit}=brewPlan(b), r=recipeFor(best,b);
+  const others=(usingKit?mine:all).filter(g=>g!==best).slice(0,3);
+  const noGrinder = usingKit && !kit.has("Grinder");
+  return `<div class="brewbox"><span class="eyebrow">${usingKit?"Best with your equipment":"Best way to brew it"}</span>
+    <h2 style="margin-top:4px">${esc(best.method)}</h2><p style="margin:0;color:var(--muted)">${esc(best.why)}</p>
+    <div class="recipe"><div><small>Coffee</small><b>${r.dose} g</b></div><div><small>${best.kind==="espresso"?"Yield":"Water"}</small><b>${r.water} g</b></div><div><small>Ratio</small><b>${r.ratio}</b></div><div><small>Water temp</small><b>${r.temp}</b></div><div><small>Time</small><b>${esc(best.time)}</b></div></div>
+    <p style="margin:0 0 12px"><b>Grind:</b> ${esc(r.grind)}${(()=>{const v=grindFor(best.id); return v?` · <b>${esc(myGrinder)}: start at ${esc(v[0])}</b>`:v===null?` · <span class="why">your ${esc(myGrinder)} can't grind for this</span>`:""})()}</p>
+    ${noGrinder?`<p class="notice" style="margin:0 0 12px">No grinder? Ask ${esc(R[b.roaster].name)} to grind it for ${esc(best.method)}.</p>`:""}
+    <div class="btns"><a class="btn primary small" href="#${best.id}">Step-by-step guide</a>${usingKit?"":`<a class="btn small" href="#brew">Choose my equipment</a>`}</div>
+    ${others.length?`<div class="alt"><span class="why" style="align-self:center">${usingKit?"Also works in your":"Also good in a"}</span>${others.map(g=>`<a class="chip" href="#${g.id}">${esc(g.method)}</a>`).join("")}</div>`:""}
+    ${b.roastKnown===false?`<p class="why" style="margin-top:10px">The roaster doesn't state a roast level, so this recipe assumes a medium roast.</p>`:""}
+    ${usingKit&&methodScore(best,b)<2?`<p class="why" style="margin-top:10px">This roast isn't an ideal match for your equipment. The recipe above is tuned to help.</p>`:""}
+  </div>`;
+}
+let detailOrigin="#beans";
+let portalRoaster=null; try{portalRoaster=localStorage.getItem("portalR")||null}catch(e){}
+function detailBack(fallback){
+  const o=detailOrigin||fallback||"#beans";
+  if(o.startsWith("#roaster-")){const r=R[o.slice(9)]; if(r) return `<a class="back" href="${esc(o)}">← Back to ${esc(r.name)}</a>`;}
+  const map={"#for-you":"← For you","#kitcoffees":"← Coffees for your kit","#pods":"← All pods","#beans":"← All beans","#map":"← Map","#home":"← Home","#swap":"← Supermarket swap"};
+  return `<a class="back" href="${esc(o)}">${map[o]||"← Back"}</a>`;
+}
+function renderBean(id){
+  const b=B.find(x=>x.id===id); if(!b) return go("#beans");
+  const r=R[b.roaster], recs=recommend([b],6);
+  $("#beanDetail").innerHTML=`${detailBack("#beans")}<div class="detail" style="margin-top:16px">${bag(b,true)}
+   <div><a href="#roaster-${r.id}" class="rname" style="font-weight:600">${esc(r.name)}</a><h1 style="font-size:2.4rem">${esc(b.name)}</h1>
+   ${(()=>{const {n,est}=strength(b),band=strengthBand(n);return `<div class="strength-box"><div class="sb-main">${strengthMeter(b,true)}<div><b>${esc(band.label)}</b> <span class="why">${n}/9${est?" · estimated":""}</span></div></div><div class="sb-plain">${esc(band.plain)}</div></div>`;})()}
+   <div class="chips">${b.notes.filter(n=>n!=="Not stated").map(n=>`<span class="chip">${esc(n)}</span>`).join("")}</div>
+   ${b.desc?`<p class="desc">${esc(b.desc)}</p>`:""}
+   ${b.listedNotes?`<p class="why" style="margin:8px 0 0">Tasting notes as listed: ${esc(b.listedNotes)}</p>`:""}
+   <div class="spec"><div><small>Origin</small>${esc(b.origin)}${b.producer&&!/^not /i.test(b.producer)?`<br><span class="why">${esc(b.producer)}</span>`:""}</div>${b.type?`<div><small>Type</small>${esc(b.type)}</div>`:""}<div><small>Process</small>${esc(b.processFull||b.process)}</div><div><small>Roast</small>${esc(b.roastKnown===false?"Not stated":(b.roastNote||b.roast))}</div><div><small>Taste</small>${esc(b.taste)}</div><div><small>Price</small>${priceSpec(b)}</div></div>
+   <div class="btns"><button class="btn ${liked.has(b.id)?"primary":""}" data-like="${b.id}">${liked.has(b.id)?"♥ Liked":"♡ I liked this"}</button>${(()=>{const l=coffeeLink(b);return l?`<a class="btn primary" href="${esc(l.href)}" target="_blank" rel="noopener">${l.label}</a>`:"";})()}<a class="btn" href="#roaster-${r.id}">More from ${esc(r.name)}</a>${r.wholesale.offers?`<a class="btn green" href="#wholesale">Buy wholesale</a>`:""}</div></div></div>
+   ${brewBox(b)}
+   <section style="padding-bottom:0"><div class="sec-head"><div><h2>If you like this, try…</h2><p>Matched on flavour notes, roast level, process and origin.</p></div></div>
+   <div class="grid">${recs.map(x=>beanCard(x.bean,x)).join("")}</div></section>
+   <section style="padding-bottom:0"><div class="sec-head"><div><h2>Prefer pods?</h2><p>Capsules with a similar flavour profile.</p></div><a href="#pods">All pods</a></div>
+   <div class="grid">${recommend([b],4,myPods()).map(x=>podCard(x.bean,x)).join("")}</div></section>`;
+}
+let podFilter={system:(()=>{const s=SYSTEMS.filter(x=>kit.has(x));return s.length===1?s[0]:""})(),taste:"",mat:"",decaf:false,sort:"new"};
+function renderPods(){
+  $("#podMachines").innerHTML=[["","All machines"],...SYSTEMS.filter(s=>P.some(p=>p.system===s)).map(s=>[s,s]),...(P.some(p=>p.system==="Not stated")?[["Not stated","Machine not stated"]]:[])].map(([v,l])=>`<button class="pill ${podFilter.system===v?"on":""}" data-system="${esc(v)}">${esc(l)}</button>`).join("");
+  $("#ptaste").value=podFilter.taste; $("#pmat").value=podFilter.mat; $("#pdecaf").checked=podFilter.decaf; $("#psort").value=podFilter.sort;
+  let list=P.filter(p=>(!podFilter.system||p.system===podFilter.system)&&(!podFilter.taste||p.taste===podFilter.taste)&&(!podFilter.mat||p.material===podFilter.mat)&&(!podFilter.decaf||/decaf/i.test(p.process+p.name)));
+  const so={lo:(a,b)=>(perPod(a)||1e9)-(perPod(b)||1e9),"int-lo":(a,b)=>(a.intensity||99)-(b.intensity||99),"int-hi":(a,b)=>(b.intensity||0)-(a.intensity||0)}[podFilter.sort]||((a,b)=>a.addedDays-b.addedDays);
+  list.sort(so);
+  $("#podCount").textContent=`${list.length} of ${P.length} pods and capsules`+(podFilter.system?` for ${podFilter.system}`:"");
+  $("#podGrid").innerHTML=list.length?list.map(p=>podCard(p)).join(""):`<div class="empty">No pods match those filters yet.</div>`;
+}
+function renderPod(id){
+  const p=P.find(x=>x.id===id); if(!p) return go("#pods");
+  const r=R[p.roaster];
+  const same=recommend([p],4,P.filter(x=>x.system===p.system));
+  const beans=recommend([p],4,B);
+  $("#podDetail").innerHTML=`${detailBack("#pods")}<div class="detail" style="margin-top:16px">${capsule(p,true)}
+   <div><a href="#roaster-${r.id}" class="rname" style="font-weight:600">${esc(r.name)}</a><h1 style="font-size:2.4rem">${esc(p.name)}</h1>
+   <div class="chips">${p.notes.filter(n=>n!=="Not stated").map(n=>`<span class="chip">${esc(n)}</span>`).join("")}</div>
+   <div class="spec"><div><small>Fits</small>${esc(p.system)}</div>${p.intensity?`<div><small>Intensity</small>${p.intensity} / 13</div>`:""}<div><small>Capsule</small>${esc(p.material)}</div><div><small>Origin</small>${esc(p.origin)}</div><div><small>Roast</small>${esc(p.roast)}</div><div><small>Price</small>${priceSpec(p)}</div></div>${p.desc?`<p class="desc">${esc(p.desc)}</p>`:""}${p.listedNotes?`<p class="why">Tasting notes as listed: ${esc(p.listedNotes)}</p>`:""}
+   <div class="btns"><button class="btn ${liked.has(p.id)?"primary":""}" data-like="${p.id}">${liked.has(p.id)?"♥ Liked":"♡ I liked this"}</button>${p.url?`<a class="btn primary" href="${esc(p.url)}" target="_blank" rel="noopener">View on ${esc(r.name)} ↗</a>`:""}<a class="btn" href="#roaster-${r.id}">More from ${esc(r.name)}</a></div></div></div>
+   <div class="brewbox"><span class="eyebrow">Brewing tip</span>
+     ${kit.size&&ownedSystems().length?(kit.has(p.system)?`<p><span class="chip kitfit">✓ Fits your ${esc(p.system)}</span></p>`:`<p class="notice">This capsule won't fit your ${ownedSystems().map(esc).join(" or ")}. It needs a ${esc(p.system)} machine.</p>`):""}
+     <p style="margin:6px 0 0">${esc((DATA.podTips||{})[p.system]||"The listing doesn't name the machine these pods fit. Check the roaster's page before buying.")}</p></div>
+   <section style="padding-bottom:0"><div class="sec-head"><div><h2>More for your ${esc(p.system)}</h2><p>Similar capsules that fit the same machine.</p></div></div>
+   <div class="grid">${same.length?same.map(x=>podCard(x.bean,x)).join(""):`<div class="empty">No other ${esc(p.system)} pods yet.</div>`}</div></section>
+   <section style="padding-bottom:0"><div class="sec-head"><div><h2>Like this? Try it as beans</h2><p>Whole-bean coffees with a similar profile.</p></div></div>
+   <div class="grid">${beans.map(x=>beanCard(x.bean,x)).join("")}</div></section>`;
+}
+const MACHINES=["Sage Barista Express","Sage Barista Pro","Sage Barista Touch","Sage Bambino / Bambino Plus","Sage the Oracle / Oracle Touch","Ninja Luxe Café","De'Longhi La Specialista","De'Longhi Magnifica (bean-to-cup)","Gaggia Classic Evo","Gaggia bean-to-cup (Magenta / Cadorna)","Jura (bean-to-cup)","Smeg espresso","Lelit (Anna / MaraX)","Rancilio Silvia","Other / not listed"];
+const isBeanToCup=m=>/bean-to-cup|jura|magnifica|magenta|cadorna/i.test(m);
+function machineGuideHTML(m){
+  if(!m) return `<p class="why" style="margin:0">Choose your machine to see its espresso setup.</p>`;
+  const b2c=isBeanToCup(m);
+  const target=`<div class="recipe"><div><small>Dose in</small><b>${b2c?"set by machine":"18 g"}</b></div><div><small>Shot out</small><b>${b2c?"~40 g":"36 g"}</b></div><div><small>Time</small><b>25–30 s</b></div><div><small>Water temp</small><b>90–94°C</b></div></div>`;
+  const body = b2c
+    ? `<p style="margin:10px 0 0"><b>Grind:</b> use the machine's own grind dial. If the shot pours too fast and tastes thin, turn it finer a notch at a time; too slow or bitter, coarser. Change one notch, then taste.</p><p class="why" style="margin:8px 0 0">Bean-to-cup machines grind and tamp for you, so aim for a strong, even pour and adjust the dial and cup size to taste.</p>`
+    : `<p style="margin:10px 0 0"><b>Grind:</b> fine, like caster sugar. Dose 18 g into the basket, tamp level, aim for about 36 g out in 25–30 seconds. Grind finer to slow a fast, sour shot; coarser to speed a slow, bitter one.</p><p class="why" style="margin:8px 0 0">${/sage|lelit|gaggia|rancilio|smeg/i.test(m)?"A separate or built-in grinder with fine steps helps dial this in.":""}</p>`;
+  return `<div class="mach-head" style="margin-bottom:8px"><b>${esc(m)}</b> <span class="chip">${b2c?"Bean-to-cup":"Espresso machine"}</span></div>${target}${body}<p class="why" style="margin:10px 0 0">A full step-by-step guide for the ${esc(m)} is coming. ${isBeanToCup(m)?"":"These are solid starting numbers for most home espresso."}</p>`;
+}
+function pSeed(str){let h=2166136261>>>0;for(let i=0;i<str.length;i++){h=(h^str.charCodeAt(i))>>>0;h=Math.imul(h,16777619)>>>0;}return h;}
+function pRand(seed){let s=seed>>>0;return()=>{s=(Math.imul(s,1664525)+1013904223)>>>0;return s/4294967296;};}
+function portalMetrics(r){
+  const coffees=B.filter(b=>b.roaster===r.id), rnd=pRand(pSeed(r.id));
+  const pop=(hasLogo(r)?1.6:1)*(1+coffees.length/20);
+  const saves=Math.round((40+rnd()*160)*pop), visits=Math.round(saves*(3+rnd()*3)), siteClicks=Math.round(visits*(0.25+rnd()*0.3));
+  const trend=Array.from({length:8},()=>Math.round(visits/8*(0.5+rnd()))), deltaV=Math.round(rnd()*38-8);
+  const cs=coffees.map(c=>({c,w:rnd()})), tot=cs.reduce((a,b)=>a+b.w,0)||1;
+  const top=cs.map(x=>({name:x.c.name,saves:Math.max(1,Math.round(saves*x.w/tot)),clicks:Math.max(0,Math.round(siteClicks*x.w/tot))})).sort((a,b)=>b.saves-a.saves).slice(0,6);
+  const wsRadius=[10,15,25,40][Math.floor(rnd()*4)];
+  let nearR=0; if(r.lat!=null){ nearR=REAL.filter(o=>o.lat!=null&&o.id!==r.id&&haversine(r.lat,r.lng,o.lat,o.lng)<=wsRadius).length; }
+  const demand=Math.round((3+rnd()*7)*(1+nearR/10));
+  const shortlisted=Math.round(demand*(0.3+rnd()*0.3));
+  const chosen=Math.min(shortlisted,Math.round(shortlisted*(0.2+rnd()*0.4)));
+  return {saves,visits,siteClicks,trend,deltaV,top,coffeeCount:coffees.length,nearby:{demand,shortlisted,chosen,radius:wsRadius}};
+}
+function renderPortal(){
+  if(!$("#portalPick").options.length){
+    const opts=REAL.filter(r=>B.some(b=>b.roaster===r.id)).sort((a,b)=>a.name.localeCompare(b.name));
+    $("#portalPick").innerHTML='<option value="">Choose your roastery…</option>'+opts.map(r=>`<option value="${esc(r.id)}">${esc(r.name)}</option>`).join("");
+  }
+  const ok=portalRoaster&&R[portalRoaster];
+  $("#portalLogin").hidden=!!ok; $("#portalDash").hidden=!ok;
+  if(ok){ $("#portalPick").value=portalRoaster; renderPortalDash(); }
+}
+function renderPortalDash(){
+  const r=R[portalRoaster]; if(!r){portalRoaster=null;renderPortal();return;}
+  const m=portalMetrics(r), mx=Math.max(...m.trend,1);
+  $("#portalDash").innerHTML=`
+   <div class="sec-head"><div style="display:flex;align-items:center;gap:12px">${hasLogo(r)?`<span style="width:48px;height:48px;flex:none;border-radius:9px;overflow:hidden;display:grid;place-items:center;background:#fff;border:1.5px solid var(--line)">${logoImg(r)}</span>`:""}<div><h2 style="margin:0">${esc(r.name)}</h2><span class="why" style="margin:0">${esc(r.city||"")} · ${m.coffeeCount} coffees on Crema</span></div></div><button class="btn small" id="portalOut">Log out</button></div>
+   <div class="callout" style="margin:0 0 16px"><b>Sample figures.</b> These show the metrics your live portal will display. Real numbers begin when analytics are switched on at launch.</div>
+   <div class="pm-grid">
+     <div class="pm"><b>${m.saves.toLocaleString()}</b><span>Coffees saved <span class="delta" style="color:${m.deltaV<0?'#c9475a':''}">${m.deltaV<0?'▼':'▲'} ${Math.abs(m.deltaV)}%</span></span></div>
+     <div class="pm"><b>${m.visits.toLocaleString()}</b><span>Visits to your page</span></div>
+     <div class="pm"><b>${m.siteClicks.toLocaleString()}</b><span>Click-throughs to your website</span></div>
+   </div>
+   <div class="wpanel">
+     <h3 style="margin:0 0 2px">Wholesale demand in your delivery area — this month</h3>
+     <p class="why" style="margin:0 0 12px">Café wholesale enquiries placed within your ${m.nearby.radius}-mile delivery area this month. We can show you up to the introduction — what happens after is between you and the café.</p>
+     <div class="pm-grid">
+       <div class="pm"><b>${m.nearby.demand}</b><span>Enquiries in your area</span></div>
+       <div class="pm"><b>${m.nearby.shortlisted}</b><span>You appeared in their results</span></div>
+       <div class="pm"><b>${m.nearby.chosen}</b><span>Introductions made</span></div>
+     </div>
+   </div>
+   <h3 style="margin:0 0 4px">Page visits — last 8 weeks</h3>
+   <div class="pbar">${m.trend.map(v=>`<i style="height:${Math.round(v/mx*100)}%" title="${v}"></i>`).join("")}</div>
+   <h3 style="margin:22px 0 4px">Your most-saved coffees</h3>
+   <table class="ptable"><thead><tr><th>Coffee</th><th class="n">Saved</th><th class="n">Site clicks</th></tr></thead><tbody>${m.top.map(t=>`<tr><td>${esc(t.name)}</td><td class="n">${t.saves}</td><td class="n">${t.clicks}</td></tr>`).join("")||`<tr><td colspan="3" class="why">No coffees recorded yet.</td></tr>`}</tbody></table>
+   <p class="why" style="margin-top:16px">At launch this will also show new-subscriber matches, wholesale enquiries, and where your visitors come from.</p>`;
+  $("#portalOut").addEventListener("click",()=>{portalRoaster=null;try{localStorage.removeItem("portalR")}catch(e){}updateAcctLink();renderPortal();});
+}
+function kitScored(){
+  const owned=ownedGuides(); if(!owned.length) return [];
+  return B.map(b=>{let best=owned[0],bs=-1;owned.forEach(g=>{const sc=methodScore(g,b);if(sc>bs){bs=sc;best=g;}});return {b,g:best,sc:bs};})
+    .filter(x=>x.sc>=3&&x.b.notes[0]!=="Not stated").sort((a,b)=>b.sc-a.sc||a.b.addedDays-b.b.addedDays);
+}
+function coffeeLink(b){
+  const r=R[b.roaster], lt=b.linkType;
+  if(b.url&&lt==="product") return {href:b.url,label:"Buy this coffee ↗"};
+  if(b.url&&lt==="listing") return {href:b.url,label:`Find it at ${esc(r.name)} ↗`};
+  if(b.url) return {href:b.url,label:`View on ${esc(r.name)} ↗`};
+  if(r&&r.shop) return {href:r.shop,label:`Visit ${esc(r.name)} ↗`};
+  return null;
+}
+function brewPickCard(b,g){
+  const r=R[b.roaster], v=grindFor(g.id);
+  return `<article class="card bean" data-brew="${b.id}~${g.id}">${bag(b)}
+    <div class="body"><span class="rname">${esc(r.name)}</span><h3>${esc(b.name)}</h3>
+    <div class="chips">${b.notes.filter(n=>n!=="Not stated").slice(0,3).map(n=>`<span class="chip">${esc(n)}</span>`).join("")}</div>
+    <div class="meta"><span>${esc(b.roast||"")}</span><b class="why" style="color:var(--blue)">Tap for recipe →</b></div></div></article>`;
+}
+function brewTemp(g,b){
+  if(g.id==="guide-moka") return "Just boiled";
+  const ro=(b.roast||"").toLowerCase();
+  if(ro.includes("light")) return "94–96°C";
+  if(ro.includes("dark")) return "88–91°C";
+  if(ro.includes("medium")) return "90–94°C";
+  return "89–96°C";
+}
+function openBrewSheet(beanId,guideId){
+  const b=ALL.find(x=>x.id===beanId), g=GUIDES.find(x=>x.id===guideId); if(!b||!g) return;
+  const r=R[b.roaster], v=grindFor(g.id), ratio=Math.round(g.water/g.dose);
+  const grindLine = myGrinder&&myGrinder!=="other"
+     ? (v?`<b>${esc(myGrinder)}:</b> start around <b>${esc(v[0])}</b>${v[1]?` <span class="why">(range ${esc(v[1])})</span>`:""}${v[2]?` — ${esc(v[2])}`:""}`
+          : v===null?`Your ${esc(myGrinder)} can't grind for ${esc(g.method)}.`:`${esc(g.grind)}`)
+     : `${esc(g.grind)} <span class="why">— set your grinder on the Brew page to see its exact setting</span>`;
+  $("#brewBody").innerHTML=`<div class="brew-head"><span class="eyebrow">${esc(g.method)} recipe</span><h3 style="margin:2px 0 0">${esc(b.name)}</h3><span class="why">${esc(r.name)}${b.roast&&b.roast!=="Not stated"?` · ${esc(b.roast)} roast`:""}</span></div>
+   <div class="recipe"><div><small>Coffee</small><b>${g.dose} g</b></div><div><small>${g.kind==="espresso"?"Yield":"Water"}</small><b>${g.water} g</b></div><div><small>Ratio</small><b>1:${ratio}</b></div><div><small>Water temp</small><b>${brewTemp(g,b)}</b></div></div>
+   <p style="margin:12px 0"><b>Grind:</b> ${grindLine}</p>
+   <h4 style="margin:14px 0 6px">Method</h4><ol class="steps-list">${g.steps.map(s=>`<li><span>${esc(s)}</span></li>`).join("")}</ol>
+   ${b.brew&&b.brew!=="Not stated"?`<p class="why" style="margin-top:10px"><b>${esc(r.name)}'s own recipe:</b> ${esc(b.brew)}</p>`:""}
+   <div class="btns" style="margin-top:14px">${(()=>{const l=coffeeLink(b);return l?`<a class="btn primary" href="${esc(l.href)}" target="_blank" rel="noopener">${l.label}</a>`:"";})()}<a class="btn" href="#${b.id}">Full coffee details</a></div>`;
+  showSheet("brewSheet");
+}
+function renderBrew(){
+  const groups=[["Brewers",GUIDES.map(g=>[g.id,g.method])],["Pod machines",SYSTEMS.map(s=>[s,s])],["Extras",[["espresso-machine","Bean-to-cup / espresso machine"],["Grinder","Coffee grinder"]]]];
+  $("#kitPicker").innerHTML=groups.map(([t,opts])=>`<div class="kit-group"><small>${t}</small><div class="kit">${opts.map(([v,l])=>`<label><input type="checkbox" data-kit="${esc(v)}" ${kit.has(v)?"checked":""}> ${esc(l)}</label>`).join("")}</div></div>`).join("");
+  $("#kitSaved").textContent=kit.size?`Saved in this browser. Coffee pages now show recipes for your ${kit.size} item${kit.size>1?"s":""}.`:"Nothing chosen yet.";
+  renderGrindTable();
+  const hasMachine=kit.has("espresso-machine");
+  $("#machineSec").hidden=!hasMachine;
+  if(hasMachine){ if(!$("#myMachine").options.length){ $("#myMachine").innerHTML=`<option value="">Choose your machine…</option>`+MACHINES.map(m=>`<option${m===myMachine?" selected":""}>${esc(m)}</option>`).join(""); } $("#myMachine").value=myMachine; $("#machineGuide").innerHTML=machineGuideHTML(myMachine); }
+  const owned=ownedGuides(), showG=(owned.length&&!showAllGuides)?owned:GUIDES;
+  $("#guideHead").textContent=(owned.length&&!showAllGuides)?(owned.length>1?"Guides for your equipment":`Brewing with your ${owned[0].method}`):"Brewing guides";
+  const tog=$("#guideToggle"); tog.hidden=!owned.length; tog.textContent=showAllGuides?"Show only mine":"Show all methods";
+  $("#guideGrid").innerHTML=showG.map(g=>`<article class="card bean" data-go="#${g.id}"><div class="body"><span class="rname">${esc(g.difficulty)} · ${esc(g.time)}</span><h3>${esc(g.method)}</h3><p style="margin:0">${esc(g.why)}</p>
+    <div class="meta"><span>${g.dose} g : ${g.water} g</span>${kit.has(g.id)?`<span class="chip kitfit">You have this</span>`:""}</div></div></article>`).join("");
+  const kc=$("#kitCoffeesSec");
+  if(owned.length){
+    kc.hidden=false;
+    const scored=kitScored();
+    const seen=new Set(), preview=[]; for(const x of scored){ if(seen.has(x.b.roaster))continue; seen.add(x.b.roaster); preview.push(x); if(preview.length>=6)break; }  // one per roaster in the preview
+    $("#kitCoffeesHead").textContent=owned.length>1?"Coffees for your kit":`Great coffees for your ${owned[0].method}`;
+    $("#kitCoffeesGrid").innerHTML=preview.length?preview.map(x=>brewPickCard(x.b,x.g)).join(""):`<div class="empty">No strong matches yet — try adding more equipment.</div>`;
+    const tb=$("#kitCoffeesMore"); tb.hidden=scored.length<=6; tb.textContent=`Show all ${scored.length} coffees for your kit →`;
+  } else kc.hidden=true;
+}
+let terrCells=[]; let terrSecret="";
+function newSecret(){ let h=""; for(let i=0;i<8;i++) h+=(Math.floor(Math.random()*65536)).toString(16).padStart(4,"0"); return h; }
+function renderTerritory(){ $("#terrOut").innerHTML=""; $("#terrTestWrap").hidden=true; $("#terrTest").value=""; $("#terrTestOut").textContent=""; terrCells=[]; terrSecret=""; }
+function terrGenerate(){
+  const miles=+$("#terrRadius").value;
+  const lines=$("#terrStockists").value.split("\n").map(x=>x.trim()).filter(Boolean);
+  const pts=[], unknown=[];
+  lines.forEach(l=>{ const g=resolveLoc(l); if(g) pts.push(g); else unknown.push(l); });
+  const cells=new Set(); pts.forEach(([la,ln])=>cellsWithin(la,ln,miles).forEach(c=>cells.add(c)));
+  terrCells=[...cells];
+  if(!terrSecret) terrSecret=newSecret();
+  const hashes=terrCells.map(c=>cellHash(c,terrSecret));
+  const out=$("#terrOut");
+  if(!pts.length){ out.innerHTML=`<div class="empty">No postcodes or towns recognised yet.${unknown.length?" Couldn't place: "+unknown.map(esc).join(", "):""}</div>`; $("#terrTestWrap").hidden=true; return; }
+  out.innerHTML=`<div class="notice"><b>${pts.length} location${pts.length>1?"s":""} recognised${unknown.length?`, ${unknown.length} not found`:""}.</b> ${miles>0?`Blocking <b>${terrCells.length}</b> area${terrCells.length>1?"s":""} within ~${miles} mi.`:"No areas blocked — you'll receive every nearby lead."}</div>
+    <p class="why" style="margin:12px 0 4px"><b>Your secret key</b> — generated on your device, kept in your dashboard, <b>never sent to Crema</b>:</p>
+    <pre class="terrpre terrkey">${terrSecret}</pre>
+    <p class="why" style="margin:12px 0 4px"><b>All Crema stores</b> — keyed fingerprints. Without your key they can't be reversed into areas or matched against any address list, even by us:</p>
+    <pre class="terrpre">${JSON.stringify(hashes,null,0)}</pre>
+    <p class="why" style="margin:8px 0 0">The plain areas (${terrCells.length}) stay on your device for the test below. In the live product the match runs so Crema never sees your key — see the note under the roadmap.</p>`;
+  $("#terrTestWrap").hidden=false;
+}
+function terrTest(){
+  const g=resolveLoc($("#terrTest").value), o=$("#terrTestOut");
+  if(!$("#terrTest").value.trim()){ o.textContent=""; return; }
+  if(!g){ o.textContent="Couldn't place that one."; o.style.color=""; return; }
+  const hashes=terrCells.map(c=>cellHash(c,terrSecret));
+  const blocked=hashes.includes(cellHash(geoCell(g[0],g[1]),terrSecret));
+  o.textContent=blocked?"✕ Blocked — too close to one you supply, so you wouldn't get this lead.":"✓ Available — you'd be offered to this café.";
+  o.style.color=blocked?"#c9475a":"var(--green)";
+}
+function renderKitCoffees(){
+  const owned=ownedGuides(), scored=kitScored();
+  $("#kcHead").textContent=!owned.length?"Coffees for your kit":owned.length>1?`Coffees for your kit (${scored.length})`:`Great coffees for your ${owned[0].method} (${scored.length})`;
+  if(!owned.length){ $("#kcGrid").innerHTML=`<div class="empty">Choose your equipment on the <a href="#brew">Brew page</a> first.</div>`; $("#kcMore").hidden=true; return; }
+  $("#kcGrid").innerHTML=scored.slice(0,kcLim).map(x=>brewPickCard(x.b,x.g)).join("")||`<div class="empty">No strong matches yet.</div>`;
+  const tb=$("#kcMore"); tb.hidden=scored.length<=kcLim; tb.textContent=`Show more (${scored.length-kcLim} more)`;
+}
+/* Electric grinders: which brewers (guide ids) each one grinds well for. Prices are typical UK retail, Nov 2026. */
+const GRINDERS=[
+ {name:"Baratza Encore ESP",price:"about £155",burr:"40mm conical steel burrs",settings:"40 settings: 1–20 for espresso, 21–40 for filter",methods:["guide-espresso","guide-moka","guide-aeropress","guide-v60","guide-chemex","guide-french-press"],
+  best:"The easiest all-rounder to start with. Split dial makes switching between espresso and AeroPress or cafetière quick.",url:"https://www.redber.co.uk/products/baratza-encore-esp-coffee-burr-grinder-black",shop:"Redber"},
+ {name:"Fellow Opus",price:"about £180–£210",burr:"40mm conical burrs",settings:"41 settings plus fine adjustment",methods:["guide-espresso","guide-moka","guide-aeropress","guide-v60","guide-chemex","guide-french-press"],
+  best:"Compact and quiet, from espresso to cold brew. Comes with a dosing lid that fits espresso portafilters.",url:"https://bellabarista.co.uk/products/fellow-opus-conical-burr-grinder",shop:"Bella Barista"},
+ {name:"Sage Smart Grinder Pro",price:"about £180–£205",burr:"Stainless conical burrs",settings:"60 settings, with timed doses by cups or shots",methods:["guide-espresso","guide-moka","guide-aeropress","guide-v60","guide-chemex","guide-french-press"],
+  best:"Grinds straight into a portafilter or an airtight tub. A good match if you have a Sage espresso machine.",url:"https://johnlewis.com/sage-the-smart-grinder-pro-coffee-grinder/p1591194",shop:"John Lewis"},
+ {name:"Wilfa Svart Uniform",price:"about £230–£295",burr:"58mm flat steel burrs",settings:"41 settings, espresso to steep",methods:["guide-espresso","guide-moka","guide-aeropress","guide-v60","guide-chemex","guide-french-press"],
+  best:"Flat burrs give a very even grind that shines on V60 and Chemex, and it still reaches espresso. 5-year warranty from UK dealers.",url:"https://www.jurang.co.uk/shop/coffee-grinders/793-wilfa-svart-uniform-coffee-grinder.html",shop:"Jurang"},
+ {name:"Fellow Ode Gen 2",price:"about £280",burr:"64mm flat burrs",settings:"31 settings",methods:["guide-aeropress","guide-v60","guide-chemex","guide-french-press"],
+  best:"A filter specialist: superb for pour-over, AeroPress and cafetière. It does not grind fine enough for espresso.",url:"https://bellabarista.co.uk/products/fellow-ode-brew-grinder-gen-2",shop:"Bella Barista"},
+ {name:"Eureka Mignon Specialita",price:"about £370",burr:"55mm flat steel burrs",settings:"Stepless adjustment, timed dosing",methods:["guide-espresso","guide-moka","guide-aeropress"],
+  best:"Built for espresso: very quiet, precise and quick. Can go coarser for AeroPress, but it's not the pick for cafetière or pour-over.",url:"https://www.redber.co.uk/products/eureka-mignon-specialita-coffee-grinder-black",shop:"Redber"},
+ {name:"Niche Zero",price:"about £560",burr:"63mm conical burrs",settings:"Stepless dial, single-dose",methods:["guide-espresso","guide-moka","guide-aeropress","guide-v60","guide-chemex","guide-french-press"],
+  best:"Made in the UK. Leaves almost no coffee behind, so you can switch beans and methods between cups. A long-term upgrade.",url:"https://www.nichecoffee.co.uk/collections/vendors/products/niche-zero",shop:"Niche Coffee"}
+];
+/* Where to set each grinder for each brewer. [start, range, note]. From each maker's grind guide;
+   gaps filled from independent grind-size measurements (honestcoffeeguide.com). null = not suited. */
+const GRIND={
+ "Baratza Encore ESP":{dial:"dial 1–40",src:"Baratza's guide, plus independent measurements",
+   "guide-espresso":["15","1–20","Baratza's espresso range"],"guide-moka":["18","12–24"],"guide-aeropress":["22","8–30","finer for short steeps"],
+   "guide-v60":["22","18–25"],"guide-chemex":["26","22–30"],"guide-french-press":["32","25–38"]},
+ "Fellow Opus":{dial:"outer ring 1–11",src:"Fellow's grind guide, plus independent measurements",
+   "guide-espresso":["1.5","1–2.5","use the inner ring to fine-tune"],"guide-moka":["3","2.5–5.5"],"guide-aeropress":["3.5","2–5"],
+   "guide-v60":["5","3–7"],"guide-chemex":["7","5–9"],"guide-french-press":["9","8–10"]},
+ "Fellow Ode Gen 2":{dial:"dial 1–11",src:"Fellow's grind guide",
+   "guide-espresso":null,"guide-moka":null,"guide-aeropress":["4.5","3–6"],"guide-v60":["5","4–6"],"guide-chemex":["7","6–8"],"guide-french-press":["8","8–10"]},
+ "Sage Smart Grinder Pro":{dial:"settings 1–60",src:"Sage's coffee chart",
+   "guide-espresso":["12","1–30","start at 30 with dual-wall baskets"],"guide-moka":["25","20–30","coarse end of Sage's espresso band"],"guide-aeropress":["34","31–40"],
+   "guide-v60":["40","31–48"],"guide-chemex":["44","40–48"],"guide-french-press":["58","55–60"]},
+ "Wilfa Svart Uniform":{dial:"settings 1–41",src:"Wilfa's grind guide",
+   "guide-espresso":["5","3–7"],"guide-moka":["10","8–13","Wilfa gives no moka setting; between espresso and AeroPress"],"guide-aeropress":["18","14–26"],
+   "guide-v60":["20","14–28"],"guide-chemex":["24","20–28"],"guide-french-press":["34","30–38"]},
+ "Eureka Mignon Specialita":{dial:"stepless dial, counted in turns from the finest point",src:"Independent measurements (Eureka publishes none)",
+   "guide-espresso":["2","0–3.5 on the first turn"],"guide-moka":["1 turn","3.5 to 1 turn + 3"],"guide-aeropress":["1 turn + 2","2.5 to 2 turns + 3"],
+   "guide-v60":["1 turn + 1","4.5 to 1 turn + 4"],"guide-chemex":["1 turn + 4","1 turn + 2 to 2 turns + 2"],"guide-french-press":["2 turns + 4","1 turn + 4 to 3 turns + 4"]},
+ "Niche Zero":{dial:"dial 0–50+",src:"Niche's grind guide, plus independent measurements",
+   "guide-espresso":["15","5–20"],"guide-moka":["30","25–35"],"guide-aeropress":["26","20–35"],"guide-v60":["38","35–45"],"guide-chemex":["42","38–45"],"guide-french-press":["50","45+"]}
+};
+let myGrinder=""; try{ myGrinder=localStorage.getItem("grinder")||"" }catch(e){}
+let showAllGuides=false;
+let kcLim=48;
+let myMachine=""; try{ myMachine=localStorage.getItem("machine")||"" }catch(e){}
+const grindFor=(guideId)=>{ const d=GRIND[myGrinder]; return d&&guideId in d?d[guideId]:undefined; };
+function renderAbout(){
+  document.querySelectorAll('[data-count="roasters"]').forEach(e=>e.textContent=REAL.length.toLocaleString("en-GB"));
+  $("#builtOn").textContent=DATA.built||"(unknown)";
+}
+function renderGrindTable(){
+  const sel=$("#myGrinder");
+  sel.innerHTML=`<option value="">Choose your grinder…</option>`+Object.keys(GRIND).map(n=>`<option ${n===myGrinder?"selected":""}>${esc(n)}</option>`).join("")+`<option value="other" ${myGrinder==="other"?"selected":""}>Another grinder (describe the grind instead)</option>`;
+  const mine=GUIDES.filter(g=>kit.has(g.id)), rows=mine.length?mine:GUIDES, d=GRIND[myGrinder];
+  if(!myGrinder){ $("#grindTable").innerHTML=`<p class="why" style="margin:6px 0 0">Pick your grinder to see the setting for ${mine.length?"each of your brewers":"every brewer"}.</p>`; return; }
+  $("#grindTable").innerHTML=`<div class="grind-rows">${rows.map(g=>{
+      if(!d) return `<div class="grind-row"><div><b>${esc(g.method)}</b><span class="why">${esc(g.grind)}</span></div><div class="grind-set"><small>Aim for</small><span style="font-size:1rem">${esc(g.grind.split(",")[0])}</span></div></div>`;
+      const v=d[g.id];
+      if(!v) return `<div class="grind-row off"><div><b>${esc(g.method)}</b><span class="why">The ${esc(myGrinder)} can't grind fine enough for this.</span></div><div class="grind-set"><small>Setting</small><span>—</span></div></div>`;
+      return `<div class="grind-row"><div><b>${esc(g.method)}</b><span class="why">Range ${esc(v[1])}${v[2]?` · ${esc(v[2])}`:""}</span></div><div class="grind-set"><small>Start at</small><span>${esc(v[0])}</span></div></div>`;
+    }).join("")}</div>
+    ${d?`<p class="why" style="margin:12px 0 0">${esc(myGrinder)}: ${esc(d.dial)}. Settings from ${esc(d.src)}. Every grinder is calibrated a little differently, so treat these as a starting point.</p>`:""}
+    <p style="margin:12px 0 0"><b>Then adjust by taste:</b> sour, weak or running fast → go finer. Bitter, harsh or slow → go coarser. For darker roasts, start a little coarser.</p>`;
+}
+function renderGrinders(){
+  const mine=GUIDES.filter(g=>kit.has(g.id)).map(g=>g.id);
+  const label=id=>(GUIDES.find(g=>g.id===id)||{}).method||id;
+  const list=GRINDERS.map((g,i)=>({g,i,hit:mine.filter(m=>g.methods.includes(m))})).sort((a,b)=>(b.hit.length-a.hit.length)||(a.i-b.i));
+  $("#grinderLede").innerHTML=mine.length
+    ?`Matched to your ${mine.length} brewer${mine.length>1?"s":""}: ${mine.map(label).join(", ")}. Grinders that cover all of them come first.`
+    :`Grinding just before you brew makes the biggest difference to flavour. Tick your brewers on the <a href="#brew">Brew page</a> and we'll show which grinders cover them.`;
+  $("#grinderGrid").innerHTML=list.map(({g,hit})=>{
+    const missing=mine.filter(m=>!g.methods.includes(m));
+    const fit=!mine.length?"":missing.length?`<span class="badge" style="background:var(--yellow-tint);color:#7a5a00">Covers ${hit.length} of ${mine.length} · not ${missing.map(label).join(", ")}</span>`:`<span class="badge">Covers all your brewers</span>`;
+    return `<article class="card grinder"><div class="body">${fit}<h3 style="margin:2px 0 0">${esc(g.name)}</h3><span class="rname">${esc(g.price)} · ${esc(g.burr)}</span>
+      <p style="margin:4px 0">${esc(g.best)}</p>
+      <div class="chips">${GUIDES.map(m=>{const ok=g.methods.includes(m.id);return `<span class="chip ${ok&&kit.has(m.id)?"kitfit":""}" style="${ok?"":"text-decoration:line-through;opacity:.45"}">${esc(m.method)}</span>`}).join("")}</div>
+      <div class="meta"><span>${esc(g.settings)}</span></div>
+      <a class="btn small" href="${esc(g.url)}" target="_blank" rel="noopener" style="align-self:flex-start;margin-top:6px">See it at ${esc(g.shop)} ↗</a></div></article>`}).join("");
+}
+function renderGuide(id){
+  const g=GUIDES.find(x=>x.id===id); if(!g) return go("#brew");
+  const picks=[...B].sort((x,y)=>methodScore(g,y)-methodScore(g,x)||x.addedDays-y.addedDays).slice(0,4);
+  $("#guideDetail").innerHTML=`<a class="back" href="#brew">← All guides</a>
+   <div style="max-width:760px;margin-top:16px"><span class="eyebrow">${esc(g.difficulty)} · ${esc(g.time)}</span><h1 style="font-size:2.4rem">${esc(g.method)}</h1><p class="lede" style="color:var(--muted)">${esc(g.why)}</p>
+   <div class="recipe"><div><small>Coffee</small><b>${g.dose} g</b></div><div><small>${g.kind==="espresso"?"Yield":"Water"}</small><b>${g.water} g</b></div><div><small>Ratio</small><b>1:${Math.round(g.water/g.dose)}</b></div><div><small>Water temp</small><b>${g.id==="guide-moka"?"Just boiled":"89–96°C"}</b></div></div>
+   <p><b>Grind:</b> ${esc(g.grind)}<br><b>You'll need:</b> ${g.kit.map(esc).join(", ")}</p>
+   <p class="why">Water temperature depends on the roast: hotter for light roasts, cooler for dark. Each coffee's page gives its exact recipe.</p>
+   <h2 style="margin-top:28px">Method</h2><ol class="steps-list">${g.steps.map(s=>`<li><span>${esc(s)}</span></li>`).join("")}</ol>
+   <button class="btn ${kit.has(g.id)?"primary":""}" data-kittoggle="${g.id}">${kit.has(g.id)?"✓ In my equipment":"+ I have this"}</button></div>
+   <section style="padding-bottom:0"><div class="sec-head"><div><h2>Great coffees for ${esc(g.method)}</h2><p>Tap one for the recipe on your kit.</p></div></div>
+   <div class="grid">${picks.map(b=>brewPickCard(b,g)).join("")}</div></section>`;
+}
+let rLimit=48;
+let smFilter="";
+function smCard(x){
+  return `<article class="card smk" data-go="#swap-${x.id.slice(3)}"><div class="body"><span class="brand">${esc(x.brand)}</span><h3 style="margin:0">${esc(x.name)}</h3>
+   <div class="chips"><span class="chip">${esc(x.format)}</span><span class="chip">${esc(x.roast)} roast</span>${x.brandScale&&x.brandScale.toLowerCase()!==(x.roast+" roast").toLowerCase()?`<span class="chip">${esc(x.brandScale)}</span>`:""}${x.system?`<span class="chip">${esc(x.system)}</span>`:""}</div>
+   <div class="chips">${x.notes.map(n=>`<span class="chip match">${esc(n)}</span>`).join("")}</div>
+   <div class="meta"><span></span><div class="swap-go">${x.roasterId&&R[x.roasterId]?`<span class="badge">Buy direct</span>`:""}<b style="font-size:.9rem">Find my swap</b></div></div></div></article>`;
+}
+function renderSwap(){
+  $("#smTabs").innerHTML=[["","All"],["bag","Bags & ground"],["pod","Pods"]].map(([v,l])=>`<button class="pill ${smFilter===v?"on":""}" data-smk="${v}">${l}</button>`).join("");
+  if(!$("#smSys").options[1]) fill("#smSys",uniq(SM.map(x=>x.system).filter(Boolean)));
+  const q=$("#smQ").value.trim().toLowerCase(), sys=$("#smSys").value;
+  const list=SM.filter(x=>(!smFilter||x.kind===smFilter)&&(!sys||x.system===sys)&&(!q||[x.brand,x.name,x.format,x.system||"",...x.notes].join(" ").toLowerCase().includes(q)))
+    .sort((a,b)=>a.brand.localeCompare(b.brand)||a.name.localeCompare(b.name));
+  $("#smCount").textContent=`${list.length} of ${SM.length} supermarket coffees`;
+  $("#smGrid").innerHTML=list.length?list.map(smCard).join(""):`<div class="empty">No match. Try another brand, or use "Tell us what you like" below.</div>`;
+  if(!$("#smTaste").options.length) fill("#smTaste",Object.keys(TASTES));
+}
+function renderSwapDetail(id){
+  const x=SM.find(y=>y.id==="sm-"+id); if(!x) return go("#swap");
+  const pc=perCup(x);
+  const pool = x.kind==="pod" ? P.filter(p=>p.system===x.system) : B;
+  let recs = recommend([x],6,pool).filter(r=>r.score>=3);  // close matches only
+  if(recs.length<2) recs = recommend([x],3,pool);
+  const beanRecs = x.kind==="pod" ? recommend([x],4,B) : [];
+  const recPc = recs.filter(r=>!(R[r.bean.roaster]||{}).sample).map(r=>perCup(r.bean)).filter(v=>v!=null);  // never compare against example listings
+  const avg = recPc.length? recPc.reduce((a,b)=>a+b,0)/recPc.length : null;
+  $("#swapDetail").innerHTML=`<a class="back" href="#swap">← All supermarket coffees</a>
+   <div class="smbox" style="margin-top:16px">
+    <div><span class="eyebrow">You usually buy</span><h1 style="font-size:2.2rem;margin-top:6px">${esc(x.brand)} ${esc(x.name)}</h1>
+     <div class="spec"><div><small>Format</small>${esc(x.format)}</div><div><small>Roast</small>${esc(x.roast)}</div><div><small>Brand's rating</small>${esc(x.brandScale)}</div>${x.blend?`<div><small>Beans</small>${esc(x.blend)}</div>`:""}${pc!=null?`<div><small>About</small>${Math.round(pc*100)}p per cup${x.count?"":" <span class='why'>(15g)</span>"}</div>`:""}</div>
+     <div class="chips">${x.notes.map(n=>`<span class="chip">${esc(n)}</span>`).join("")}</div>
+     <p class="why" style="margin-top:12px">Profile from the brand's own description${x.priceNote?` · Typical price: ${esc(x.priceNote)}`:""}${x.source?` · <a href="${esc(x.source)}" target="_blank" rel="noopener">source ↗</a>`:""}</p></div>
+    <div><h3>Why try an independent swap?</h3><ul class="why-list">
+     <li><b>Roast date on the bag.</b> Independent roasters print when it was roasted, usually days before it reaches you.</li>
+     <li><b>You know where it's from.</b> Farm or region, process and roaster are all named.</li>
+     <li><b>Same style you like.</b> These picks match your coffee's roast and flavours.</li>
+     ${pc!=null&&avg!=null?`<li><b>Price per cup:</b> about ${Math.round(pc*100)}p now vs about ${Math.round(avg*100)}p for these picks.</li>`:`<li><b>Price:</b> speciality coffee often costs a little more per cup. Each roaster's page shows its prices.</li>`}
+    </ul></div>
+   </div>
+   ${directPanel(x)}
+   <section style="padding-bottom:0"><div class="sec-head"><div><h2>${x.kind==="pod"?`Independent pods for your ${esc(x.system)}`:"Independent coffees you might like"}</h2><p>Matched on roast level and flavour notes.</p></div></div>
+   <div class="grid">${recs.length?recs.map(r=>anyCard(r.bean,r)).join(""):`<div class="empty">${x.system&&x.system!=="Nespresso Original"?`Independent roasters rarely make ${esc(x.system)} pods. Try the fresh coffees below in a cafetière, or a refillable pod for your machine.`:"No matching pods listed yet."}</div>`}</div></section>
+   ${beanRecs.length?`<section style="padding-bottom:0"><div class="sec-head"><div><h2>Or try fresh beans</h2><p>Whole-bean coffees with a similar taste.</p></div></div><div class="grid">${beanRecs.map(r=>beanCard(r.bean,r)).join("")}</div></section>`:""}
+   <p class="disclaim">Crema isn't linked to ${esc(x.brand)}. Brand and product names belong to their owners.</p>`;
+}
+/* Supermarket brands that are also roasters in the directory: send people to buy from the roaster itself. */
+function directPanel(x){
+  const r=x.roasterId&&R[x.roasterId]; if(!r) return "";
+  const theirs=B.filter(b=>b.roaster===r.id);
+  return `<section style="padding-bottom:0"><div class="direct">
+    ${hasLogo(r)?`<div class="direct-logo${r.logo.dark?" dark":""}">${logoImg(r)}</div>`:""}
+    <div class="direct-txt"><span class="eyebrow">Fresher from the source</span>
+      <h2>Buy it direct from ${esc(r.name)}</h2>
+      <p>${esc(r.name)} sells its coffee on its own website. Ordering there means your bag is sent from the roastery, usually within days of roasting, instead of sitting in a warehouse and on a shelf first. It also means more of what you pay goes to the roaster.</p>
+      <div class="btns">${r.shop?`<a class="btn primary" href="${esc(r.shop)}" target="_blank" rel="noopener">Shop at ${esc(r.name)} ↗</a>`:""}<a class="btn" href="#roaster-${r.id}">${esc(r.name)} on Crema</a></div>
+    </div></div>
+    ${theirs.length?`<div class="sec-head" style="margin-top:28px"><div><h3>More from ${esc(r.name)}</h3><p>Coffees they sell direct that you won't always find in the supermarket.</p></div></div><div class="grid">${theirs.slice(0,4).map(b=>beanCard(b)).join("")}</div>`:""}
+  </section>`;
+}
+function renderSwapCustom(){
+  const roast=$("#smRoast").value, taste=$("#smTaste").value;
+  const seed={id:"custom",custom:true,name:"your taste",roast,taste,notes:[]};
+  $("#smCustom").innerHTML=recommend([seed],4,B).map(r=>beanCard(r.bean,r)).join("");
+}
+function renderRoasters(){
+  const q=$("#rq").value.toLowerCase(), reg=rRegion;
+  const list=REAL.filter(r=>(!q||(r.name+" "+r.city).toLowerCase().includes(q))&&(!reg||r.region===reg)&&[...rFilt].every(k=>filtPred(r,k)));
+  list.sort((a,b)=>hasLogo(b)-hasLogo(a));
+  $("#regionLbl").textContent=reg||"Region";
+  $("#pillRegion").classList.toggle("sel",!!reg);
+  const badge=$("#filtN");badge.hidden=!rFilt.size;badge.textContent=rFilt.size;
+  const cntTxt=rFilt.size?` · ${[...rFilt].map(filtLabel).join(", ")}`:"";
+  $("#roasterCount").textContent=`${list.length} roasters`+(reg?` in ${reg}`:"")+cntTxt;
+  $("#roasterGrid").innerHTML=list.length?list.slice(0,rLimit).map(roasterCard).join(""):`<div class="empty">No roasters match. <button class="linkbtn" id="rclear">Clear filters</button></div>`;
+  $("#rmore").hidden=list.length<=rLimit;
+}
+/* ---- filter sheets ---- */
+function openSheet(which){
+  if(which==="region"){
+    const regs=uniq(REAL.map(r=>r.region));
+    $("#regionBody").innerHTML=[["","All regions"],...regs.map(r=>[r,r])].map(([v,l])=>`<button type="button" class="rrow${v===rRegion?" on":""}" data-reg="${esc(v)}">${esc(l)}<span class="tick">✓</span></button>`).join("");
+    showSheet("regionSheet");
+  }else{
+    $("#filtBody").innerHTML=FILT_UI.map(([k,t,d,icon])=>{const c=filtCount(k);return `<label class="frow"><span class="ftile"><svg viewBox="0 0 24 24" aria-hidden="true">${icon}</svg></span><span class="ftxt"><b>${esc(t)}</b><small>${esc(d)} · ${c}</small></span><input type="checkbox" data-filt="${k}" ${rFilt.has(k)?"checked":""} hidden><span class="sw"></span></label>`}).join("");
+    showSheet("filtSheet");
+  }
+}
+function showSheet(id){$("#sheetBg").hidden=false;$("#"+id).hidden=false;document.body.classList.add("sheet-open");}
+function closeSheet(){$("#sheetBg").hidden=true;$("#regionSheet").hidden=true;$("#filtSheet").hidden=true;$("#brewSheet").hidden=true;document.body.classList.remove("sheet-open");}
+function renderRoaster(id){
+  const r=R[id]; if(!r) return go("#roasters");
+  const w=r.wholesale, list=B.filter(b=>b.roaster===id), pods=P.filter(p=>p.roaster===id);
+  $("#roasterDetail").innerHTML=`<a class="back" href="#roasters">← All roasters</a>
+   <div class="feature" style="margin-top:16px">${mark(r,"art")}<div class="txt"><span class="eyebrow">${esc(r.city)} · ${esc(r.region)}</span><h1 style="font-size:2.4rem">${esc(r.name)} ${exBadge(r)}</h1>
+   <div class="btns" style="margin:10px 0 14px">${r.shop?`<a class="btn primary small" href="${esc(r.shop)}" target="_blank" rel="noopener">Visit their shop ↗</a>`:""}${w.page?`<a class="btn small" href="${esc(w.page)}" target="_blank" rel="noopener">Wholesale page ↗</a>`:""}</div>
+   ${r.note?`<p class="why">Note: ${esc(r.note)}</p>`:""}
+   ${(w.offers&&w.smallOrderPerKg)?`<div class="spec"><div><small>Beans from (small orders)</small>£${w.smallOrderPerKg}/kg</div>${w.minKg?`<div><small>Minimum order</small>${w.minKg} kg</div>`:""}${w.delivery?`<div><small>Delivery</small>${esc(w.delivery)}</div>`:""}</div><div class="chips" style="margin-bottom:14px">${w.services.map(s=>`<span class="chip">${esc(s)}</span>`).join("")}</div>`:""}
+   ${w.offers?`<a class="btn green small" href="#wholesale" data-shortlist="${r.id}">Enquire about wholesale</a>`:`<p class="why">Wholesale terms not listed yet.</p>`}</div></div>
+   ${(()=>{const o=offers(r), yes=OFFERS.filter(([k])=>o[k]===true), no=OFFERS.filter(([k])=>o[k]===false), m=r.offersMeta||{};
+     return `<section style="padding-bottom:0"><h2>What they offer</h2>${yes.length?`<div class="offer-list">${yes.map(([k,l])=>`<span class="offer yes">✓ ${esc(l)}</span>`).join("")}${no.map(([k,l])=>`<span class="offer no">✕ ${esc(l)}</span>`).join("")}</div>`:`<p class="why">Not checked yet.</p>`}
+       <p class="why" style="margin-top:10px">${m.checked?`Checked ${esc(m.checked)}. `:""}${(m.derived||[]).length?`${m.derived.map(offerLabel).join(", ")} based on the coffees we list. `:""}Anything not shown hasn't been checked yet. <a href="#about">How we check</a></p></section>`})()}
+   <section style="padding-bottom:0"><h2>Their coffee</h2>${list.length?`<div class="grid">${list.map(b=>beanCard(b)).join("")}</div>`:`<div class="empty">Coffees for ${esc(r.name)} haven't been added yet.${r.shop?` <a href="${esc(r.shop)}" target="_blank" rel="noopener">Browse their shop ↗</a>`:""}</div>`}</section>
+   ${pods.length?`<section style="padding-bottom:0"><h2>Their pods &amp; capsules</h2><div class="grid">${pods.map(p=>podCard(p)).join("")}</div></section>`:""}`;
+}
+function renderForYou(){
+  const seeds=ALL.filter(b=>liked.has(b.id));
+  $("#likedGrid").innerHTML=seeds.length?seeds.map(b=>anyCard(b)).join(""):`<div class="empty">Nothing liked yet. <a href="#beans">Browse beans</a> and tap ♡ on ones you've enjoyed.</div>`;
+  $("#fyGrid").innerHTML=seeds.length?recommend(seeds,9).map(x=>beanCard(x.bean,x)).join(""):`<div class="empty">Your suggestions will appear here.</div>`;
+  $("#fyPods").innerHTML=seeds.length?recommend(seeds,6,myPods()).map(x=>podCard(x.bean,x)).join(""):`<div class="empty">Pod suggestions will appear here.</div>`;
+}
+let shortlist=new Set();
+const POSTAREA={AB:[57.14,-2.1],AL:[51.75,-0.33],B:[52.48,-1.9],BA:[51.32,-2.4],BB:[53.74,-2.48],BD:[53.8,-1.75],BH:[50.74,-1.87],BL:[53.58,-2.43],BN:[50.84,-0.14],BR:[51.4,0.02],BS:[51.45,-2.59],BT:[54.6,-5.93],CA:[54.89,-2.93],CB:[52.2,0.12],CF:[51.48,-3.18],CH:[53.19,-2.89],CM:[51.73,0.47],CO:[51.89,0.9],CR:[51.37,-0.1],CT:[51.28,1.08],CV:[52.41,-1.51],CW:[53.1,-2.44],DA:[51.44,0.22],DD:[56.46,-2.97],DE:[52.92,-1.48],DG:[55.07,-3.6],DH:[54.78,-1.57],DL:[54.52,-1.56],DN:[53.52,-1.13],DT:[50.71,-2.44],DY:[52.51,-2.09],E:[51.53,0.0],EC:[51.52,-0.09],EH:[55.95,-3.19],EN:[51.65,-0.08],EX:[50.72,-3.53],FK:[56.0,-3.78],FY:[53.82,-3.05],G:[55.86,-4.25],GL:[51.86,-2.24],GU:[51.24,-0.57],GY:[49.46,-2.58],HA:[51.58,-0.34],HD:[53.65,-1.78],HG:[53.99,-1.54],HP:[51.75,-0.47],HR:[52.06,-2.72],HS:[57.9,-6.8],HU:[53.74,-0.34],HX:[53.72,-1.86],IG:[51.56,0.07],IM:[54.24,-4.5],IP:[52.06,1.16],IV:[57.48,-4.22],JE:[49.21,-2.13],KA:[55.61,-4.5],KT:[51.4,-0.3],KW:[58.98,-2.96],KY:[56.11,-3.16],L:[53.41,-2.99],LA:[54.05,-2.8],LD:[52.24,-3.38],LE:[52.64,-1.13],LL:[53.25,-3.8],LN:[53.23,-0.54],LS:[53.8,-1.55],LU:[51.88,-0.42],M:[53.48,-2.24],ME:[51.38,0.52],MK:[52.04,-0.76],ML:[55.79,-3.99],N:[51.56,-0.11],NE:[54.98,-1.61],NG:[52.95,-1.15],NN:[52.24,-0.9],NP:[51.59,-2.99],NR:[52.63,1.3],NW:[51.54,-0.2],OL:[53.54,-2.12],OX:[51.75,-1.26],PA:[55.85,-4.42],PE:[52.57,-0.24],PH:[56.4,-3.43],PL:[50.38,-4.14],PO:[50.8,-1.09],PR:[53.76,-2.7],RG:[51.45,-0.97],RH:[51.24,-0.17],RM:[51.58,0.18],S:[53.38,-1.47],SA:[51.62,-3.94],SE:[51.46,-0.05],SG:[51.9,-0.2],SK:[53.41,-2.16],SL:[51.51,-0.59],SM:[51.36,-0.19],SN:[51.56,-1.78],SO:[50.9,-1.4],SP:[51.07,-1.79],SR:[54.9,-1.38],SS:[51.54,0.71],ST:[53.0,-2.18],SW:[51.46,-0.17],SY:[52.71,-2.75],TA:[51.02,-3.1],TD:[55.6,-2.8],TF:[52.68,-2.45],TN:[51.19,0.27],TQ:[50.46,-3.53],TR:[50.26,-5.05],TS:[54.57,-1.23],TW:[51.45,-0.33],UB:[51.55,-0.45],W:[51.51,-0.2],WA:[53.39,-2.6],WC:[51.52,-0.12],WD:[51.66,-0.4],WF:[53.68,-1.5],WN:[53.55,-2.63],WR:[52.19,-2.22],WS:[52.59,-1.98],WV:[52.59,-2.13],YO:[53.96,-1.08],ZE:[60.15,-1.15]};
+function pcToLatLng(pc){const m=String(pc).toUpperCase().replace(/[^A-Z0-9]/g,"").match(/^([A-Z]{1,2})/);if(!m)return null;return POSTAREA[m[1]]||null;}
+const TOWNIDX=(()=>{const m={};DATA.roasters.forEach(r=>{if(r.lat==null)return;(r.city||"").split(",").forEach(p=>{const k=p.trim().toLowerCase();if(k&&!(k in m))m[k]=[r.lat,r.lng];});});return m;})();
+const CELL_LAT=0.01, CELL_LNG=0.015;  // ~0.6-mile grid cells
+function geoCell(lat,lng){ return Math.round(lat/CELL_LAT)+":"+Math.round(lng/CELL_LNG); }  // an area, not an address
+function cellsWithin(lat,lng,miles){
+  const out=new Set([geoCell(lat,lng)]);
+  if(miles>0){ const dLat=miles/69, dLng=miles/(69*Math.cos(lat*Math.PI/180));
+    for(let i=Math.round((lat-dLat)/CELL_LAT);i<=Math.round((lat+dLat)/CELL_LAT);i++)
+      for(let j=Math.round((lng-dLng)/CELL_LNG);j<=Math.round((lng+dLng)/CELL_LNG);j++)
+        if(haversine(lat,lng,i*CELL_LAT,j*CELL_LNG)<=miles) out.add(i+":"+j); }
+  return [...out];
+}
+function cellHash(c,key){ const s=(key?key+"|":"")+c+(key?"|"+key:""); let h=2166136261>>>0; for(let i=0;i<s.length;i++){ h=(h^s.charCodeAt(i))>>>0; h=Math.imul(h,16777619)>>>0; } let h2=5381>>>0; for(let i=s.length-1;i>=0;i--){ h2=(Math.imul(h2,33)^s.charCodeAt(i))>>>0; } return (h.toString(36)+h2.toString(36)).padStart(13,"0"); }  // keyed: without the roaster secret these can't be reversed or enumerated
+function resolveLoc(q){
+  q=(q||"").trim(); if(!q) return null;
+  const compact=q.toUpperCase().replace(/[^A-Z0-9]/g,"");
+  const pm=compact.match(/^([A-Z]{1,2})[0-9]/);              // looks like a postcode (letters then a digit)
+  if(pm&&POSTAREA[pm[1]]) return POSTAREA[pm[1]];
+  const t=q.trim().toLowerCase();
+  if(TOWNIDX[t]) return TOWNIDX[t];
+  if(t.length>=3){ const hit=Object.keys(TOWNIDX).find(k=>k.startsWith(t))||Object.keys(TOWNIDX).find(k=>k.includes(t)); if(hit) return TOWNIDX[hit]; }
+  if(POSTAREA[compact]) return POSTAREA[compact];            // bare postcode area, e.g. "EH"
+  return null;
+}
+let wsShowAll=false;
+function renderWholesale(){
+  const supply=$("#wsupply").value, qty=+$("#wqty").value||Infinity, svc=(supply==="pods")?"":$("#wsvc").value, home=resolveLoc($("#wpc").value);
+  const isBean=r=>offers(r).wholesale===true||r.wholesale.offers, isPod=r=>offers(r).pods===true;
+  let list=DATA.roasters.filter(r=>{
+    if(supply==="pods"){ if(!isPod(r))return false; }
+    else if(supply==="beans"){ if(!isBean(r))return false; }
+    else { if(!isBean(r)&&!isPod(r))return false; }
+    if(svc&&!(r.wholesale.services||[]).includes(svc))return false;
+    if(qty!==Infinity){ const m=supply==="pods"?(r.wholesale.minPods||0):(r.wholesale.minKg||0); if(m>qty)return false; }
+    return true;
+  });
+  list.forEach(r=>{r._mi=(home&&r.lat!=null)?haversine(home[0],home[1],r.lat,r.lng):null;});
+  if(home){
+    const w=r=>r.wholesale||{};
+    // only roasters who deliver to the customer's area
+    list=list.filter(r=>w(r).deliversNational||w(r).deliveryMiles==null||r._mi==null||r._mi<=w(r).deliveryMiles);
+    // drop roasters who have blocked the customer's area (they already supply someone there) — privacy-preserving: Crema holds blocked grid-cells/hashes, never a roaster's customer addresses. Inert until roasters supply their cells.
+    const cell=geoCell(home[0],home[1]), chash=cellHash(cell);
+    list=list.filter(r=>{ const ww=w(r);
+      if(Array.isArray(ww.blockedCells)&&ww.blockedCells.includes(cell)) return false;            // level 1: blocked areas
+      if(Array.isArray(ww.blockedCellHashes)&&ww.blockedCellHashes.includes(chash)) return false; // level 2: hashed (hidden) areas
+      return true; });
+  }
+  if(home) list.sort((a,b)=>(a._mi==null?9e9:a._mi)-(b._mi==null?9e9:b._mi));
+  else list.sort((a,b)=>(b.wholesale.minKg?1:0)-(a.wholesale.minKg?1:0));
+  const needM=$("#wMachine").checked; const mp=$("#wMachinePanel"); mp.hidden=!needM; mp.style.display=needM?"block":"none";
+  const hasMachine=r=>(r.wholesale.services||[]).some(x=>/machine/i.test(x));
+  if(needM) list.sort((a,b)=>hasMachine(b)-hasMachine(a));  // roasters who lease/include a machine first
+  const total=list.length, limited=home&&!wsShowAll; if(limited) list=list.slice(0,20);
+  $("#wsAll").hidden=!(home&&total>20); $("#wsAll").textContent=wsShowAll?"Show nearest 20 only":`Show all ${total} wholesale roasters`;
+  $("#wsCount").textContent=home?(wsShowAll?`${total} wholesale roasters, nearest first`:`Your ${Math.min(20,total)} nearest wholesale roasters — choose up to 5 to contact`):`${total} wholesale listings`;
+  $("#wsGrid").innerHTML=list.length?list.map(r=>{const w=r.wholesale;return `<article class="card ws-card"><div class="roaster"><div class="top">${mark(r,"mono","background:var(--green)")}<div><h3 style="margin:0">${esc(r.name)} ${exBadge(r)}</h3><span class="rname">${esc(r.city)}${r._mi!=null?` · <b style="color:var(--green)">${r._mi<10?r._mi.toFixed(1):Math.round(r._mi)} mi away</b>`:""}</span></div></div></div>
+    <div class="body">${w.minKg?`<div class="ws-row"><span>Small orders</span><b>£${w.smallOrderPerKg}/kg</b></div><div class="ws-row"><span>Minimum</span><b>${w.minKg} kg</b></div><div class="ws-row"><span>Delivery</span><b style="text-align:right">${esc(w.delivery)}</b></div>
+    <div class="chips">${w.services.map(s=>`<span class="chip">${esc(s)}</span>`).join("")}</div><p class="why" style="margin:6px 0 0">Price shown is for small orders; larger volumes cost less per kg.</p>`:`<div class="ws-row"><span>Terms</span><b>Not listed yet</b></div>${w.page?`<a class="why" href="${esc(w.page)}" target="_blank" rel="noopener">See their wholesale page ↗</a>`:""}`}
+    <label class="check"><input type="checkbox" data-sl="${r.id}" ${shortlist.has(r.id)?"checked":""} ${(!shortlist.has(r.id)&&shortlist.size>=5)?"disabled":""}> ${shortlist.has(r.id)?"Chosen ✓":"Add to my enquiry"}</label></div></article>`}).join(""):`<div class="empty">No wholesale roasters match.</div>`;
+  renderShortlist();
+}
+function renderShortlist(){
+  $("#wf-short").innerHTML=shortlist.size?`<b>${shortlist.size} of 5 chosen:</b> ${[...shortlist].map(id=>esc(R[id].name)).join(", ")}. ${shortlist.size<5?"Add more if you'd like, up to 5.":"That's your five."}`:"Pick up to <b>5 roasters</b> above who you think fit, and we'll email your details to just those five.";
+}
+
+
+/* ---------- profile & weekly picks ----------
+   Saved to the artifact's private per-person store (data/users/<id>/profile) when the
+   viewer is signed in; otherwise kept in this browser. The live site will swap this for
+   a real sign-up service and an email platform. */
+const PF_FORMATS=[["beans","Whole beans or ground"],["pods","Pods & capsules"]];
+let profile={name:"",email:"",tastes:[],roasts:[],formats:["beans"],budget:"",grind:"",consent:false};
+try{ Object.assign(profile, JSON.parse(localStorage.getItem("profile")||"{}")) }catch(e){}
+const store={db:null,uid:null,ready:false,ref:null,busy:Promise.resolve(),timer:null};
+const hasProfile=()=>!!(profile.savedAt);
+function profileDoc(){ return {...profile,liked:[...liked],kit:[...kit],grinder:myGrinder||"",updated:new Date().toISOString()}; }
+function writeProfile(){
+  try{ localStorage.setItem("profile",JSON.stringify(profile)) }catch(e){}
+  if(!store.ref) return Promise.resolve(true);
+  const body=profileDoc();
+  store.busy=store.busy.then(()=>store.ref.set(body)).then(()=>true,e=>{console.warn("profile save",e&&e.code);return false});
+  return store.busy;
+}
+/* likes / kit / grinder changes ride along once the person has a profile, one write per pause */
+function queueSync(){ if(!hasProfile()||!store.ref) return; clearTimeout(store.timer); store.timer=setTimeout(writeProfile,1500); }
+const _saveLikes=saveLikes; saveLikes=function(){ _saveLikes(); queueSync(); };
+const _saveKit=saveKit; saveKit=function(){ _saveKit(); queueSync(); };
+(async()=>{
+  try{
+    if(!window.claude||!claude.use) throw 0;
+    const [db,user]=await Promise.all([claude.use("db"),claude.use("user")]);
+    const uid=user?await user.id():null;
+    if(!db||!uid) throw 0;
+    store.db=db; store.uid=uid; store.ref=db.doc("data/users/"+uid+"/profile");
+    const snap=await Promise.race([store.ref.get(),new Promise((_,r)=>setTimeout(()=>r("timeout"),10000))]);
+    if(snap.exists){
+      const d=snap.data()||{};
+      ["name","email","tastes","roasts","formats","budget","grind","consent","savedAt"].forEach(k=>{if(d[k]!==undefined) profile[k]=Array.isArray(d[k])?[...d[k]]:d[k]});
+      (d.liked||[]).forEach(id=>liked.add(id)); (d.kit||[]).forEach(v=>kit.add(v)); if(d.grinder&&!myGrinder) myGrinder=d.grinder;
+      _saveLikes(); _saveKit(); try{localStorage.setItem("grinder",myGrinder);localStorage.setItem("profile",JSON.stringify(profile))}catch(e){}
+    }
+  }catch(e){ store.ref=null; }
+  store.ready=true; updateAcctLink(); setTimeout(()=>{ if(location.hash==="#account") renderAccount(); else route(); },0);
+})();
+function updateAcctLink(){ const a=$("#acctLink"); if(!a) return; const isR=portalRoaster&&R[portalRoaster]; a.textContent=isR?"Roaster portal":hasProfile()?(profile.name?`Hi, ${profile.name}`:"Your profile"):"Log in"; a.setAttribute("href",isR?"#portal":"#account"); }
+
+function profileMatches(x){
+  if(isPod(x)){ if(!profile.formats.includes("pods")) return false; if(ownedSystems().length&&!kit.has(x.system)) return false; }
+  else{ if(profile.formats.length&&!profile.formats.includes("beans")) return false;
+        if(profile.roasts.length&&x.roastKnown!==false&&!profile.roasts.includes(x.roast)) return false; }
+  if(profile.tastes.length&&!profile.tastes.includes(x.taste)) return false;
+  if(profile.budget){ const c=perCup(x); if(c!=null&&c>+profile.budget) return false; }
+  return x.notes[0]!=="Not stated";
+}
+/* this week's picks: from the newest additions, matched to likes first, then to the profile */
+function weeklyPicks(n=5){
+  const fresh=ALL.filter(x=>!liked.has(x.id)).sort((a,b)=>a.addedDays-b.addedDays).slice(0,150);
+  let pool=fresh.filter(profileMatches); if(pool.length<n) pool=fresh.filter(x=>x.notes[0]!=="Not stated");
+  const seeds=ALL.filter(x=>liked.has(x.id));
+  if(seeds.length) return recommend(seeds,n,pool).map(r=>({x:r.bean,why:whyText(r)}));
+  const per={},out=[];
+  for(const x of pool){ per[x.roaster]=(per[x.roaster]||0)+1; if(per[x.roaster]<=1) out.push({x,why:`${esc(x.taste)}${profile.tastes.includes(x.taste)?", a flavour you chose":""}`}); if(out.length>=n) break; }
+  return out;
+}
+function renderEmailPreview(){
+  const picks=weeklyPicks(5), nm=profile.name||"there";
+  $("#emailPrev").innerHTML=`<div class="eh"><small>Preview of your weekly email${profile.consent?"":" (not switched on yet)"}</small><b>Hi ${esc(nm)}, ${picks.length} new coffees picked for you</b></div>
+   <ol>${picks.map(({x,why})=>{const r=R[x.roaster];return `<li><div class="dot">${hasLogo(r)?logoImg(r):esc(initials(r.name))}</div><div><a href="#${x.id}">${esc(x.name)}</a><div class="sub">${esc(r.name)} · ${esc(x.taste)}${isPod(x)?" · "+esc(x.system):x.roastKnown===false||x.roast==="Not stated"?"":" · "+esc(x.roast)} · ${priceTag(x)}</div><div class="why2">${why}</div></div></li>`}).join("")||`<li class="sub">No matches yet. Try ticking more flavours or roasts.</li>`}</ol>
+   <div class="ef">${liked.size?`Matched to the ${liked.size} coffee${liked.size>1?"s":""} you've liked and your profile.`:`Tap ♡ on coffees you've enjoyed and these picks get much sharper.`} Unsubscribe in one click from any email.</div>`;
+}
+let _acctWired=false;
+function acctShowRole(role){
+  $("#acctLover").hidden = role!=="lover";
+  $("#acctRoaster").hidden = role!=="roaster";
+  document.querySelectorAll("#roleSeg button").forEach(b=>b.classList.toggle("on",b.dataset.role===role));
+}
+function setupAcctRoles(){
+  const pick=$("#acctRoastPick");
+  if(pick && !pick.options.length){
+    const opts=REAL.filter(r=>B.some(b=>b.roaster===r.id)).sort((a,b)=>a.name.localeCompare(b.name));
+    pick.innerHTML='<option value="">Choose your roastery…</option>'+opts.map(r=>`<option value="${esc(r.id)}">${esc(r.name)}</option>`).join("");
+    if(portalRoaster) pick.value=portalRoaster;
+  }
+  if(!_acctWired){
+    _acctWired=true;
+    document.querySelectorAll("#roleSeg button").forEach(b=>b.addEventListener("click",()=>acctShowRole(b.dataset.role)));
+    $("#acctRoastBtn").addEventListener("click",()=>{
+      const v=$("#acctRoastPick").value;
+      if(!v){ $("#acctRoastMsg").textContent="Pick your roastery to continue."; return; }
+      portalRoaster=v; try{localStorage.setItem("portalR",v)}catch(e){}
+      updateAcctLink(); location.hash="#portal";
+    });
+  }
+  acctShowRole("lover");
+}
+function renderAccount(){
+  setupAcctRoles();
+  const st=$("#acctStatus");
+  st.className="acct-status"+(store.ref?" ok":"");
+  st.innerHTML=!store.ready?"Checking whether you're signed in…":store.ref?`<span>✓ <b>Signed in.</b> Your profile is saved to your account, so it follows you to other devices.</span>`:`<span><b>Saved in this browser only.</b> This preview can't create accounts yet; when Crema launches you'll sign up with your email and a one-time link.</span>`;
+  const box=(id,list,sel,name)=>$(id).innerHTML=list.map(([v,l])=>`<label><input type="checkbox" name="${name}" value="${esc(v)}" ${sel.includes(v)?"checked":""}> ${esc(l)}</label>`).join("");
+  box("#pf-tastes",Object.keys(TASTES).map(t=>[t,`${t}`]),profile.tastes,"taste");
+  box("#pf-roasts",ROASTS.map(r=>[r,r]),profile.roasts,"roast");
+  box("#pf-formats",PF_FORMATS,profile.formats,"format");
+  $("#pf-name").value=profile.name||""; $("#pf-email").value=profile.email||"";
+  $("#pf-budget").value=profile.budget||""; $("#pf-grind").value=profile.grind||""; $("#pf-consent").checked=!!profile.consent;
+  const kitN=ownedGuides().map(g=>g.method).concat(ownedSystems());
+  $("#pf-kit").innerHTML=`${liked.size?`<b>${liked.size}</b> liked coffee${liked.size>1?"s":""} (<a href="#for-you">see them</a>)`:`No liked coffees yet (<a href="#beans">browse beans</a>)`} · ${kitN.length?`Equipment: ${kitN.map(esc).join(", ")}`:`No equipment chosen`} · ${myGrinder&&myGrinder!=="other"?`Grinder: ${esc(myGrinder)}`:"No grinder chosen"} · <a href="#brew">change kit</a>`;
+  $("#pf-save").textContent=hasProfile()?"Update my profile":"Save my profile";
+  $("#pf-danger").hidden=!hasProfile();
+  $("#acctTitle").textContent=hasProfile()&&profile.name?`${profile.name}'s coffee profile`:"Your coffee profile";
+  renderEmailPreview();
+}
+function readForm(){
+  const vals=n=>[...document.querySelectorAll(`#pfForm input[name=${n}]:checked`)].map(i=>i.value);
+  return {name:$("#pf-name").value.trim().slice(0,60),email:$("#pf-email").value.trim().slice(0,120),tastes:vals("taste"),roasts:vals("roast"),formats:vals("format"),budget:$("#pf-budget").value,grind:$("#pf-grind").value,consent:$("#pf-consent").checked};
+}
+$("#pfForm").addEventListener("input",()=>{ Object.assign(profile,readForm()); renderEmailPreview(); });
+$("#pfForm").addEventListener("submit",async e=>{
+  e.preventDefault(); const f=readForm(), msg=$("#pf-msg");
+  if(f.consent&&!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(f.email)){ msg.textContent="Add a valid email so we can send your picks."; $("#pf-email").focus(); return; }
+  Object.assign(profile,f,{savedAt:profile.savedAt||new Date().toISOString()});
+  msg.textContent="Saving…"; const ok=await writeProfile();
+  msg.textContent=ok?(store.ref?"Saved to your account.":"Saved in this browser."):"Couldn't save to your account just now. It's kept in this browser.";
+  updateAcctLink(); renderAccount(); $("#pf-msg").textContent=msg.textContent;
+});
+$("#pf-delete").addEventListener("click",async()=>{
+  if(store.ref){ clearTimeout(store.timer); await store.busy; try{ await store.ref.delete() }catch(e){} }
+  profile={name:"",email:"",tastes:[],roasts:[],formats:["beans"],budget:"",grind:"",consent:false};
+  try{ localStorage.removeItem("profile") }catch(e){}
+  updateAcctLink(); renderAccount(); $("#pf-msg").textContent="Profile deleted. Your likes and kit stay in this browser.";
+});
+updateAcctLink();
+
+
+/* ---------- map ---------- */
+const MAP={w:520,h:812,pad:16,latMin:49.9,latMax:58.9,lngMin:-8.3,lngMax:1.9};
+MAP.kx=Math.cos(54*Math.PI/180);
+function proj(lat,lng){
+  const xr=(MAP.lngMax-MAP.lngMin)*MAP.kx, nx=((lng-MAP.lngMin)*MAP.kx)/xr, ny=(MAP.latMax-lat)/(MAP.latMax-MAP.latMin);
+  return [MAP.pad+nx*(MAP.w-2*MAP.pad), MAP.pad+ny*(MAP.h-2*MAP.pad)];
+}
+const GB=[[50.07,-5.72],[51.6,-5.3],[52.1,-4.7],[52.9,-4.8],[53.3,-4.6],[53.4,-3.3],[54.1,-3.6],[54.9,-5.0],[55.9,-5.8],[56.8,-6.1],[57.4,-6.3],[58.3,-5.3],[58.6,-3.9],[58.65,-3.1],[57.7,-2.0],[56.7,-2.4],[56.0,-2.5],[55.6,-1.8],[54.6,-1.0],[54.1,-0.2],[53.6,0.1],[52.9,0.35],[52.1,1.75],[51.5,1.4],[51.0,1.4],[50.8,0.3],[50.73,-1.9],[50.6,-2.5],[50.2,-3.6],[50.07,-5.72]];
+const NI=[[55.25,-6.5],[55.3,-7.4],[54.1,-7.6],[54.0,-5.4],[54.65,-5.5],[55.25,-6.5]];
+function polyPath(pts){return "M"+pts.map(([la,ln])=>proj(la,ln).map(v=>v.toFixed(1)).join(",")).join("L")+"Z";}
+const MAPPTS=()=>REAL.filter(r=>r.lat!=null);
+let nearFrom=null;
+function haversine(a,b,c,d){const R=3958.8,t=x=>x*Math.PI/180,dla=t(c-a),dlo=t(d-b);const h=Math.sin(dla/2)**2+Math.cos(t(a))*Math.cos(t(c))*Math.sin(dlo/2)**2;return 2*R*Math.asin(Math.sqrt(h));}
+function renderMap(){
+  const pts=MAPPTS();
+  const dots=pts.map(r=>{const [x,y]=proj(r.lat,r.lng);const cafe=offers(r).cafe===true;return `<circle class="dot${cafe?" cafe":""}" cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="3.4" data-id="${r.id}"><title>${esc(r.name)} — ${esc(r.city||"")}</title></circle>`}).join("");
+  $("#mapCanvas").innerHTML=`<svg viewBox="0 0 ${MAP.w} ${MAP.h}" role="img" aria-label="Map of UK coffee roasters"><path class="uk-outline" d="${polyPath(GB)}"/><path class="uk-outline" d="${polyPath(NI)}"/>${dots}</svg>
+    <div class="map-legend"><span><i style="background:var(--blue)"></i>Roaster</span><span><i style="background:var(--accent)"></i>Has a café</span></div>`;
+  $("#mapPop").hidden=true;
+  if(nearFrom) paintNear();
+}
+function paintNear(){
+  const pts=MAPPTS().map(r=>({r,mi:haversine(nearFrom.lat,nearFrom.lng,r.lat,r.lng)})).sort((a,b)=>a.mi-b.mi);
+  const near=pts.slice(0,15), ids=new Set(near.map(x=>x.r.id));
+  $all("#mapCanvas .dot").forEach(d=>d.classList.toggle("hi",ids.has(d.dataset.id)));
+  $("#nearList").innerHTML=`<h3 style="margin:20px 0 4px">Closest to you</h3>`+near.map(({r,mi})=>`<div class="near-row" data-id="${r.id}"><span class="nlogo">${hasLogo(r)?logoImg(r):esc(initials(r.name))}</span><div><b>${esc(r.name)}</b><div class="why" style="margin:0">${esc(r.city||"")}</div></div><span class="nd">${mi<10?mi.toFixed(1):Math.round(mi)} mi</span></div>`).join("");
+}
+$("#mapCanvas").addEventListener("click",e=>{
+  const dot=e.target.closest(".dot"); if(!dot)return;
+  const r=R[dot.dataset.id]; const pop=$("#mapPop"); const sv=$("#mapCanvas").getBoundingClientRect(), db=dot.getBoundingClientRect();
+  pop.innerHTML=`<b>${esc(r.name)}</b><span class="why" style="margin:0">${esc(r.city||"")}</span><br><a href="#roaster-${r.id}">View roaster →</a>`;
+  pop.style.left=(db.left-sv.left+db.width/2)+"px"; pop.style.top=(db.top-sv.top)+"px"; pop.hidden=false;
+});
+$("#nearList").addEventListener("click",e=>{const row=e.target.closest("[data-id]");if(row)location.hash="#roaster-"+row.dataset.id;});
+$("#nearBtn").addEventListener("click",()=>{
+  const msg=$("#nearMsg");
+  if(!navigator.geolocation){msg.textContent="Your browser can't share location.";return;}
+  msg.textContent="Finding you…";
+  navigator.geolocation.getCurrentPosition(pos=>{
+    nearFrom={lat:pos.coords.latitude,lng:pos.coords.longitude}; msg.textContent="Showing roasters nearest you.";
+    paintNear(); $("#nearList").scrollIntoView({behavior:"smooth",block:"nearest"});
+  },err=>{msg.textContent=err.code===1?"Location permission denied.":"Couldn't get your location.";},{timeout:8000});
+});
+
+/* ---------- routing (#home, #beans, #bean-001, #roaster-id …) ---------- */
+function go(h){ if(location.hash===h) route(); else location.hash=h; }
+function route(){
+  const h=(location.hash||"#home").slice(1);
+  let v=h, arg=null;
+  if(/^bean-\d+$/.test(h)){v="bean";arg=h} else if(/^pod-\d+$/.test(h)){v="pod";arg=h} else if(h.startsWith("guide-")){v="guide";arg=h} else if(h.startsWith("swap-")){v="swapd";arg=h.slice(5)} else if(h.startsWith("roaster-")){v="roaster";arg=h.slice(8)}
+  if(!document.getElementById("v-"+v)) v="home";
+  document.querySelectorAll(".view").forEach(el=>el.classList.toggle("on",el.id==="v-"+v));
+  const navKey={bean:"beans",pod:"pods",roaster:"roasters",guide:"brew",swapd:"swap",kitcoffees:"brew"}[v]||v;
+  document.querySelectorAll(".links a").forEach(a=>a.classList.toggle("on",a.dataset.v===navKey));
+  ({home:renderHome,beans:renderBeans,bean:()=>renderBean(arg),pods:renderPods,swap:renderSwap,swapd:()=>renderSwapDetail(arg),brew:renderBrew,shop:renderGrinders,about:renderAbout,guide:()=>renderGuide(arg),pod:()=>renderPod(arg),map:renderMap,roasters:renderRoasters,roaster:()=>renderRoaster(arg),"for-you":renderForYou,wholesale:renderWholesale,account:renderAccount,kitcoffees:renderKitCoffees,territory:renderTerritory,portal:renderPortal})[v]();
+  if(v!=="bean"&&v!=="pod") detailOrigin=location.hash||"#home";  // remember where a coffee is opened from
+}
+const lastHash={v:null};
+window.addEventListener("hashchange",()=>{route();window.scrollTo(0,0)});
+
+/* ---------- events ---------- */
+document.addEventListener("click",e=>{
+  const like=e.target.closest("[data-like]"); if(like){e.preventDefault();e.stopPropagation();toggleLike(like.dataset.like);return}
+  const t=e.target.closest("[data-taste]"); if(t){beanFilter={...beanFilter,taste:t.dataset.taste,roaster:"",q:""}}
+  const rr=e.target.closest("[data-roaster]"); if(rr){beanFilter={...beanFilter,roaster:rr.dataset.roaster,taste:"",q:""}}
+  const kt=e.target.closest("[data-kittoggle]"); if(kt){const v=kt.dataset.kittoggle; kit.has(v)?kit.delete(v):kit.add(v); saveKit(); route(); return}
+  const cl=e.target.closest("#rclear"); if(cl){rFilt.clear();rRegion="";rLimit=48;renderRoasters();return}
+  const rb=e.target.closest("[data-reg]"); if(rb){rRegion=rb.dataset.reg;rLimit=48;closeSheet();renderRoasters();return}
+  const ff=e.target.closest("[data-filt]"); if(ff){const k=ff.dataset.filt; setTimeout(()=>{ff.checked?rFilt.add(k):rFilt.delete(k);rLimit=48;renderRoasters();},0); return}
+  const sk=e.target.closest("[data-smk]"); if(sk){smFilter=sk.dataset.smk;renderSwap();return}
+  const sy=e.target.closest("[data-system]"); if(sy){podFilter.system=sy.dataset.system; if(location.hash==="#pods"){e.preventDefault();renderPods()}}
+  const bp=e.target.closest("[data-brew]"); if(bp){const [bid,gid]=bp.dataset.brew.split("~"); openBrewSheet(bid,gid); return}
+  const sl=e.target.closest("[data-shortlist]"); if(sl){shortlist.add(sl.dataset.shortlist)}
+  const g=e.target.closest("[data-go]"); if(g&&!e.target.closest("a")) go(g.dataset.go);
+});
+document.addEventListener("change",e=>{ if(e.target.dataset.kit!==undefined){ const v=e.target.dataset.kit; e.target.checked?kit.add(v):kit.delete(v); saveKit(); kcLim=48; const s=ownedSystems(); if(s.length===1) podFilter.system=s[0]; renderBrew(); return; }
+  if(e.target.dataset.sl){
+    const id=e.target.dataset.sl;
+    if(e.target.checked){ if(shortlist.size>=5){ e.target.checked=false; $("#wf-short").innerHTML=`<b>You can choose up to 5 roasters.</b> Untick one to add another.`; return; } shortlist.add(id); }
+    else shortlist.delete(id);
+    renderWholesale();
+  } });
+["q","taste","roast","proc","strength","sort"].forEach(k=>$("#f"+k).addEventListener("input",e=>{beanFilter[k]=e.target.value;beanFilter.roaster="";bLimit=48;renderBeans()}));
+$("#fdecaf").addEventListener("change",e=>{beanFilter.decaf=e.target.checked;bLimit=48;renderBeans()});
+$("#bmore").addEventListener("click",()=>{bLimit+=48;renderBeans()});
+$("#smGo").addEventListener("click",renderSwapCustom);
+$("#myGrinder").addEventListener("change",e=>{myGrinder=e.target.value; try{localStorage.setItem("grinder",myGrinder)}catch(_){} renderGrindTable(); queueSync();});
+$("#guideToggle").addEventListener("click",()=>{showAllGuides=!showAllGuides;renderBrew();});
+$("#kitCoffeesMore").addEventListener("click",()=>{kcLim=48;location.hash="#kitcoffees";});
+$("#terrGen").addEventListener("click",terrGenerate);
+$("#portalLoginBtn").addEventListener("click",()=>{const v=$("#portalPick").value;if(!v){$("#portalMsg").textContent="Pick your roastery to continue.";return;}portalRoaster=v;try{localStorage.setItem("portalR",v)}catch(e){}updateAcctLink();renderPortal();});
+$("#terrTest").addEventListener("input",terrTest);
+$("#kcMore").addEventListener("click",()=>{kcLim+=48;renderKitCoffees();});
+$("#myMachine").addEventListener("change",e=>{myMachine=e.target.value;try{localStorage.setItem("machine",myMachine)}catch(_){}$("#machineGuide").innerHTML=machineGuideHTML(myMachine);queueSync();});
+$("#kitSuggestBtn").addEventListener("click",()=>{const v=$("#kitSuggest").value.trim();const m=$("#kitSuggestMsg");if(!v){m.textContent="Type the equipment first.";return;}m.textContent=`Thanks — we'll look at adding "${v}". (This prototype doesn't send yet.)`;$("#kitSuggest").value="";});
+$("#smQ").addEventListener("input",renderSwap); $("#smSys").addEventListener("change",renderSwap);
+// coffees per day -> kg per week: cups x 7 days x 20g per coffee
+const KG_PER_CUP_WEEK = 7*20/1000;
+function updateKg(){
+  const cups=Math.max(0,+$("#wf-cups").value||0), kg=cups*KG_PER_CUP_WEEK;
+  $("#wf-kg").innerHTML = cups ? `Estimated <b>${kg.toLocaleString("en-GB",{maximumFractionDigits:1})} kg per week</b> (${cups} coffees × 7 days × 20g)` : "Enter how many coffees you serve a day.";
+}
+$("#wf-cups").addEventListener("input",updateKg); updateKg();
+$("#homeSearch").addEventListener("submit",e=>{e.preventDefault();beanFilter={q:$("#homeQ").value,taste:"",roast:"",proc:"",strength:"",sort:"new",roaster:""};go("#beans")});
+[["#ptaste","taste"],["#pmat","mat"],["#psort","sort"]].forEach(([s,k])=>$(s).addEventListener("change",e=>{podFilter[k]=e.target.value;renderPods()}));
+$("#pdecaf").addEventListener("change",e=>{podFilter.decaf=e.target.checked;renderPods()});
+$("#pillRegion").addEventListener("click",()=>openSheet("region"));
+$("#pillFilt").addEventListener("click",()=>openSheet("filters"));
+["#sheetBg","#sheetDone","#regionGrab","#filtGrab","#brewGrab"].forEach(x=>$(x).addEventListener("click",closeSheet));
+document.addEventListener("keydown",e=>{if(e.key==="Escape"&&!$("#sheetBg").hidden)closeSheet();});
+$("#rq").addEventListener("input",()=>{rLimit=48;renderRoasters()});
+$("#rmore").addEventListener("click",()=>{rLimit+=48;renderRoasters()});
+
+const WQTY={beans:[["","Any order size"],["3","Up to 3 kg/week"],["5","Up to 5 kg/week"],["10","Up to 10 kg/week"]],pods:[["","Any order size"],["100","Up to 100 pods/week"],["250","Up to 250 pods/week"],["500","Up to 500 pods/week"]]};
+function setSupplyUI(){
+  const pods=$("#wsupply").value==="pods";
+  $("#wqty").innerHTML=(pods?WQTY.pods:WQTY.beans).map(([v,l])=>`<option value="${v}">${l}</option>`).join("");
+  $("#wsvc").style.display=pods?"none":"";  // pod machines don't need barista support
+}
+setSupplyUI();
+$("#wpc").addEventListener("input",()=>{wsShowAll=false;renderWholesale()});
+$("#wsupply").addEventListener("change",()=>{setSupplyUI();wsShowAll=false;renderWholesale()});
+["#wqty","#wsvc"].forEach(x=>$(x).addEventListener("change",()=>{wsShowAll=false;renderWholesale()}));
+$("#wsAll").addEventListener("click",()=>{wsShowAll=!wsShowAll;renderWholesale()});
+$("#wMachine").addEventListener("change",()=>{wsShowAll=false;renderWholesale()});
+$("#wsForm").addEventListener("submit",e=>{
+  e.preventDefault();
+  if(!shortlist.size){$("#wf-out").innerHTML=`<div class="notice">Choose at least one roaster above first.</div>`;return}
+  $("#wf-out").innerHTML=`<div class="notice"><b>Introduction ready for your ${shortlist.size} chosen roaster${shortlist.size>1?"s":""}.</b> They would be emailed your details to get in touch. This prototype doesn't send anything yet; when the site goes live, this connects to an email service.</div>`;
+});
+
+fill("#ftaste",Object.keys(TASTES)); fill("#froast",[...ROASTS,"Not stated"].filter(r=>B.some(b=>b.roast===r))); fill("#fproc",uniq(B.map(b=>b.process)));
+fill("#ptaste",Object.keys(TASTES)); fill("#pmat",uniq(P.map(p=>p.material)));
+$("#wsvc").innerHTML='<option value="">Any support</option>'+["Machine leasing","Machine included","Training & support","Servicing"].map(x=>`<option>${x}</option>`).join("");
+route();
+</script>
+</body>
+</html>

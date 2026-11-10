@@ -1,0 +1,429 @@
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="announcement"><div class="wrap"><span>Independent coffee. Endless discovery.</span><a href="#preview-note">A little taste of what’s brewing <span class="preview-pill">Private preview</span></a></div></div>
+<header class="site-header"><div class="wrap nav">
+  <a class="logo" href="#home" aria-label="Crema home"><span>crema</span><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 0l3.2 9.4 9.4-4.7-4.7 9.4L32 16l-8.1 3.2 4.7 9.4-9.4-4.7L16 32l-3.2-8.1-9.4 4.7 4.7-9.4L0 16l8.1-1.9-4.7-9.4 9.4 4.7Z" fill="currentColor"/></svg></a>
+  <button class="menu-toggle" id="menuToggle" type="button" aria-controls="mainNav" aria-expanded="false"><span>Menu</span><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M4 8h16M4 16h16" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></button>
+  <nav class="links" id="mainNav" aria-label="Main navigation">
+    <a href="#home" data-v="home">Discover</a>
+    <a href="#roasters" data-v="roasters">Roasters</a>
+    <a href="#beans" data-v="beans">Coffee beans</a>
+    <a href="#pods" data-v="pods">Pods</a>
+    <a href="#brew" data-v="brew">Brew guides</a>
+    <details class="nav-more" id="navMore"><summary>More <span aria-hidden="true">⌄</span></summary><div class="nav-dropdown">
+      <a href="#map" data-v="map">Roaster map <span aria-hidden="true">↗</span></a>
+      <a href="#swap" data-v="swap">Supermarket swap <span aria-hidden="true">↗</span></a>
+      <a href="#for-you" data-v="for-you">Saved &amp; for you <span aria-hidden="true">♡</span></a>
+      <a href="#shop" data-v="shop">Shop the kit <span aria-hidden="true">↗</span></a>
+      <a href="#wholesale" data-v="wholesale" class="ws">Wholesale <span aria-hidden="true">↗</span></a>
+    </div></details>
+    <a href="#account" data-v="account" class="acct" id="acctLink">Log in</a>
+  </nav>
+</div></header>
+
+<main id="main" tabindex="-1">
+<!-- HOME -->
+<div class="view on" id="v-home">
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <span class="eyebrow"><span class="little-star" aria-hidden="true">✳</span> The independent coffee field guide</span>
+        <h1>Find your next<br><em>morning ritual.</em></h1>
+        <p class="lede">Small roasteries. Remarkable beans. A whole world of coffee, just waiting to become your favourite.</p>
+        <div class="btns"><a class="btn primary" href="#beans">Find your coffee <span aria-hidden="true">↗</span></a><a class="text-link" href="#roasters">Meet the roasters <span aria-hidden="true">→</span></a></div>
+        <form class="search" id="homeSearch" role="search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4.5 4.5"/></svg><input id="homeQ" placeholder="A roaster, a tasting note, a place…" aria-label="Search coffees by roaster, taste or origin"><button type="submit" aria-label="Search coffees">→</button></form>
+        <p class="search-hint">Follow your curiosity. Find your kind of coffee.</p>
+      </div>
+      <div class="hero-visual">
+        <figure class="hero-photo"><img src="/images/coffee-craft.jpg" alt="Hot water poured slowly over freshly ground coffee in a glass Chemex" width="1000" height="667" fetchpriority="high"><figcaption><span>The art of a good morning.</span><span aria-hidden="true">01 — THE DAILY RITUAL</span></figcaption></figure>
+        <div class="coffee-stamp" aria-hidden="true"><span>GOOD COFFEE</span><b>✳</b><span>GOOD DAYS</span></div>
+        <div class="photo-note"><span class="note-dot"></span> Made for the coffee curious.</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="directory-strip"><div class="wrap stats"><div><b id="st-r">—</b><span>independent roasters</span></div><span class="stat-star" aria-hidden="true">✳</span><div><b id="st-b">—</b><span>coffees to discover</span></div><span class="stat-star" aria-hidden="true">✳</span><div><b id="st-w">—</b><span>roasters with beans to explore</span></div><a href="#about">A little more about us <span aria-hidden="true">↗</span></a></div></div>
+
+  <section id="logoWallSec" class="roaster-wall-section"><div class="wrap">
+    <div class="sec-head compact"><div><span class="eyebrow">You’re in good company</span><p>Independent minds. Exceptional coffee.</p></div><a href="#roasters">Meet all the roasters <span aria-hidden="true">↗</span></a></div>
+    <div class="logo-wall" id="logoWall"></div>
+  </div></section>
+
+  <section class="taste-section"><div class="wrap">
+    <div class="sec-head"><div><span class="eyebrow">Let your taste lead the way</span><h2>What’s your <em>cup of coffee?</em></h2><p>No right answers. Just flavours you love.</p></div><span class="section-index" aria-hidden="true">01 / FIND YOUR FLAVOUR</span></div>
+    <div class="tastes" id="tastes"></div>
+  </div></section>
+
+  <section class="fresh-section"><div class="wrap">
+    <div class="sec-head"><div><span class="eyebrow">Fresh discoveries</span><h2>Your next favourite <em>is out there.</em></h2><p>The latest coffees to land in the directory.</p></div><a href="#beans">Explore all beans <span aria-hidden="true">↗</span></a></div>
+    <div class="grid" id="fresh"></div>
+  </div></section>
+
+  <section class="spotlight-section"><div class="wrap"><div class="feature" id="featured"></div></div></section>
+
+  <section class="pods-section"><div class="wrap">
+    <div class="sec-head"><div><span class="eyebrow">Small capsule. Big character.</span><h2>Good coffee, <em>at a touch.</em></h2><p>Independent coffee for your pod machine. Find your fit.</p></div><a href="#pods">Explore all pods <span aria-hidden="true">↗</span></a></div>
+    <div class="machines" id="homeMachines"></div>
+    <div class="grid" id="homePods"></div>
+  </div></section>
+
+  <section class="swap-section"><div class="wrap"><div class="band swap">
+    <div class="swap-symbol" aria-hidden="true">↔</div><div><span class="eyebrow">Same taste. New discovery.</span><h2>A small swap.<br><em>A whole new world.</em></h2><p>Love your supermarket coffee? Meet its independent match, freshly roasted and full of character.</p></div>
+    <a class="btn primary" href="#swap">Find my coffee swap <span aria-hidden="true">↗</span></a>
+  </div></div></section>
+
+  <section id="homeForYou" hidden><div class="wrap">
+    <div class="sec-head"><div><span class="eyebrow">A little more you</span><h2>Picked for <em>your palate.</em></h2><p id="fyLede"></p></div><a href="#for-you">Your coffee collection <span aria-hidden="true">↗</span></a></div>
+    <div class="grid" id="homeRecs"></div>
+  </div></section>
+
+  <section class="ritual-section"><div class="wrap"><div class="ritual-story">
+    <div class="ritual-image"><img src="/images/coffee-ritual.jpg" alt="Friends sharing three freshly made coffees around a café table" width="1400" height="933" loading="lazy"></div>
+    <div class="ritual-copy"><span class="eyebrow">Make a little time for good coffee</span><h2>Better mornings<br>start with <em>a brew.</em></h2><p>From your first pour-over to a perfectly pulled espresso. Get to know your kit and bring out the best in every bag.</p><a class="btn" href="#brew">Find your brewing ritual <span aria-hidden="true">↗</span></a><span class="ritual-footnote">SLOW DOWN. SIP SOMETHING GOOD.</span></div>
+  </div></div></section>
+
+  <section class="wholesale-section"><div class="wrap"><div class="band wholesale-band">
+    <div><span class="eyebrow">For the people who pour for others</span><h2>Great coffee. <em>Great company.</em></h2><p>Find a roaster who gets your café, restaurant or office.</p></div>
+    <a class="btn green" href="#wholesale">Let’s talk wholesale <span aria-hidden="true">↗</span></a>
+  </div></div></section>
+</div>
+
+<!-- SWAP -->
+<div class="view" id="v-swap"><section><div class="wrap">
+  <span class="eyebrow">Supermarket swap</span>
+  <h1 style="font-size:clamp(1.8rem,4vw,2.6rem)">What do you usually buy?</h1>
+  <p class="lede" style="color:var(--muted);max-width:640px">Pick the coffee you get at the supermarket. We'll suggest independent coffees with a similar taste, freshly roasted by UK roasters.</p>
+  <div class="filters" style="margin-top:18px"><input id="smQ" placeholder="Search brand or coffee, e.g. Lavazza, Rich Italian, Tassimo" aria-label="Search supermarket coffees"><select id="smSys" aria-label="Pod machine"><option value="">Any machine</option></select></div>
+  <div class="machines" id="smTabs"></div>
+  <p class="why" id="smCount"></p>
+  <div class="grid" id="smGrid"></div>
+  <div class="brewbox">
+    <h3>Not listed? Tell us what you like</h3>
+    <div class="filters" style="margin:10px 0 0">
+      <select id="smRoast"><option value="Light-Medium">Light, fruity, bright</option><option value="Medium" selected>Medium, balanced</option><option value="Dark">Dark, strong, bold</option></select>
+      <select id="smTaste"></select>
+      <button class="btn primary small" id="smGo">Show me coffees</button>
+    </div>
+    <div class="grid" id="smCustom" style="margin-top:16px"></div>
+  </div>
+  <p class="disclaim">Crema isn't linked to these brands; names belong to their owners. Profiles come from each brand's own descriptions. Prices are typical shelf prices, checked November 2026, and may change.</p>
+</div></section></div>
+
+<!-- SWAP DETAIL -->
+<div class="view" id="v-swapd"><section><div class="wrap" id="swapDetail"></div></section></div>
+
+<!-- BEANS -->
+<div class="view" id="v-beans"><section><div class="wrap">
+  <div class="sec-head"><div><h2>Beans</h2><p id="beanCount"></p></div></div>
+  <div class="filters">
+    <input id="fq" placeholder="Search name, note, origin…">
+    <select id="ftaste"><option value="">All tastes</option></select>
+    <select id="froast"><option value="">Any roast</option></select>
+    <select id="fstrength"><option value="">Any strength</option><option value="light">Light & Bright</option><option value="mid">Smooth & Balanced</option><option value="bold">Bold & Rich</option></select>
+    <select id="fproc"><option value="">Any process</option></select>
+    <label class="check"><input type="checkbox" id="fdecaf"> Decaf only</label>
+    <select id="fsort"><option value="new">Newest</option><option value="lo">Price per cup: low to high</option><option value="hi">Price per cup: high to low</option></select>
+  </div>
+  <div class="grid" id="beanGrid"></div><div style="text-align:center;margin-top:20px"><button class="btn" id="bmore" hidden>Show more coffees</button></div>
+</div></section></div>
+
+<!-- BEAN DETAIL -->
+<div class="view" id="v-bean"><section><div class="wrap" id="beanDetail"></div></section></div>
+
+<!-- PODS -->
+<div class="view" id="v-pods"><section><div class="wrap">
+  <div class="sec-head"><div><h2>Pods &amp; Capsules</h2><p id="podCount"></p></div></div>
+  <p class="notice" style="margin:-4px 0 16px">Pods recorded in the data so far. Where a listing doesn't name the machine, it shows as "Machine not stated", so check the roaster's page before buying.</p>
+  <p style="color:var(--muted)">Which machine do you have?</p>
+  <div class="machines" id="podMachines"></div>
+  <div class="filters">
+    <select id="ptaste"><option value="">All tastes</option></select>
+    <select id="pmat"><option value="">Any material</option></select>
+    <label class="check"><input type="checkbox" id="pdecaf"> Decaf only</label>
+    <select id="psort"><option value="new">Newest</option><option value="lo">Price per pod: low to high</option><option value="int-lo">Intensity: mild first</option><option value="int-hi">Intensity: strong first</option></select>
+  </div>
+  <div class="grid" id="podGrid"></div>
+</div></section></div>
+
+<!-- POD DETAIL -->
+<div class="view" id="v-pod"><section><div class="wrap" id="podDetail"></div></section></div>
+
+<!-- ROASTERS -->
+<div class="view" id="v-map"><section><div class="wrap">
+  <div class="sec-head"><div><h2>Roaster map</h2><p>Every roaster placed on the map by town. <span class="why" style="display:inline">Positions are approximate for now and sharpen as exact coordinates are added.</span></p></div></div>
+  <div class="map-tools"><button class="btn primary" id="nearBtn">📍 Find roasters near me</button><span class="why" id="nearMsg" style="margin:0"></span></div>
+  <div class="map-wrap"><div id="mapCanvas"></div><div class="map-pop" id="mapPop" hidden></div></div>
+  <div id="nearList"></div>
+</div></section></div>
+
+<div class="view" id="v-roasters"><section><div class="wrap">
+  <div class="sec-head"><div><h2>Roasters</h2><p>Independent roasters across the UK.</p></div></div>
+  <div class="filters">
+    <input id="rq" placeholder="Search by roaster or city…">
+    <div class="filt-pills">
+      <button type="button" class="pill-btn dark" id="pillRegion"><svg viewBox="0 0 24 24" class="pi" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z"/></svg><span id="regionLbl">Region</span></button>
+      <button type="button" class="pill-btn accent" id="pillFilt"><svg viewBox="0 0 24 24" class="pi" aria-hidden="true"><path d="M4 6h10M18 6h2M4 12h2M10 12h10M4 18h8M16 18h4" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/><circle cx="16" cy="6" r="2.4" fill="currentColor"/><circle cx="8" cy="12" r="2.4" fill="currentColor"/><circle cx="14" cy="18" r="2.4" fill="currentColor"/></svg>Filters <span class="dd-n" id="filtN" hidden></span></button>
+    </div>
+  </div>
+  <p class="why" id="roasterCount"></p><div class="grid" id="roasterGrid"></div><div style="text-align:center;margin-top:20px"><button class="btn" id="rmore" hidden>Show more roasters</button></div>
+</div></section></div>
+
+<!-- FILTER SHEETS -->
+<div class="sheet-bg" id="sheetBg" hidden></div>
+<div class="sheet" id="regionSheet" hidden role="dialog" aria-label="Filter by region"><button class="sheet-grab" id="regionGrab" aria-label="Close"></button><div class="sheet-head"><h3>Filter by region</h3></div><div class="sheet-body" id="regionBody"></div></div>
+<div class="sheet" id="filtSheet" hidden role="dialog" aria-label="Filters"><button class="sheet-grab" id="filtGrab" aria-label="Close"></button><div class="sheet-head"><h3>Filters</h3></div><div class="sheet-body" id="filtBody"></div><div class="sheet-foot"><button class="btn primary block" id="sheetDone">Show roasters</button></div></div>
+<div class="sheet" id="brewSheet" hidden role="dialog" aria-label="Brew recipe"><button class="sheet-grab" id="brewGrab" aria-label="Close"></button><div class="sheet-body" id="brewBody"></div></div>
+
+<!-- ROASTER DETAIL -->
+<div class="view" id="v-roaster"><section><div class="wrap" id="roasterDetail"></div></section></div>
+
+<!-- FOR YOU -->
+<div class="view" id="v-for-you"><section><div class="wrap">
+  <div class="sec-head"><div><h2>For you</h2><p>Tap ♡ on any bean or pod you've enjoyed. We'll suggest others with a similar flavour, roast and process.</p></div><a class="btn primary" href="#account">Get weekly picks by email</a></div>
+  <h3>Coffees you liked</h3>
+  <div class="grid" id="likedGrid" style="margin-bottom:36px"></div>
+  <h3>You might also like</h3>
+  <div class="grid" id="fyGrid"></div>
+  <h3 style="margin-top:36px">Pods you might like</h3>
+  <div class="grid" id="fyPods"></div>
+</div></section></div>
+
+<!-- BREW -->
+<div class="view" id="v-brew"><section><div class="wrap">
+  <div class="sec-head"><div><h2>Brew</h2><p>Choose the equipment you own. Every bean and pod page will then show how to brew it with your kit.</p></div></div>
+  <div class="brewbox" style="margin-top:0">
+    <h3>My equipment</h3>
+    <div id="kitPicker"></div>
+    <p id="kitSaved" class="why" style="margin:6px 0 0"></p>
+    <div class="kit-suggest"><label for="kitSuggest" class="why" style="margin:0">Equipment not listed? Tell us and we'll add it.</label>
+      <div class="ksrow"><input id="kitSuggest" placeholder="e.g. Kalita Wave, Flair 58" maxlength="60"><button type="button" class="btn small" id="kitSuggestBtn">Send</button></div>
+      <p class="why" id="kitSuggestMsg" style="margin:4px 0 0"></p></div>
+  </div>
+  <section style="padding-bottom:0" id="grindSec">
+    <div class="sec-head"><div><h2>Grind settings for your grinder</h2><p>Choose your grinder and we'll tell you where to set it for each of your brewers.</p></div></div>
+    <div class="brewbox" style="margin-top:0">
+      <div class="filters" style="margin:0 0 6px"><label for="myGrinder" style="font-weight:700">My grinder</label><select id="myGrinder" style="flex:1 1 220px;min-width:0;width:100%;max-width:360px"></select></div>
+      <div id="grindTable"></div>
+    </div>
+  </section>
+  <section style="padding-bottom:0" id="machineSec" hidden>
+    <div class="sec-head"><div><h2>Your espresso machine</h2><p>Tell us your machine and we'll tailor the espresso setup to it — with full machine guides to follow.</p></div></div>
+    <div class="brewbox" style="margin-top:0">
+      <div class="filters" style="margin:0 0 6px"><label for="myMachine" style="font-weight:700">My machine</label><select id="myMachine" style="flex:1 1 220px;min-width:0;width:100%;max-width:360px"></select></div>
+      <div id="machineGuide"></div>
+    </div>
+  </section>
+  <section style="padding-bottom:0"><div class="sec-head"><div><h2 id="guideHead">Brewing guides</h2></div><a id="guideToggle" href="javascript:void(0)" hidden></a></div><div class="grid" id="guideGrid"></div></section>
+  <section style="padding-bottom:0" id="kitCoffeesSec" hidden>
+    <div class="sec-head"><div><h2 id="kitCoffeesHead">Coffees for your kit</h2><p>Tap one for the recipe on your equipment.</p></div></div>
+    <div class="grid" id="kitCoffeesGrid"></div>
+    <div style="text-align:center;margin-top:16px"><button class="btn" id="kitCoffeesMore" hidden></button></div>
+  </section>
+</div></section></div>
+
+<!-- ROASTER TERRITORY SETUP (demo) -->
+<div class="view" id="v-territory"><section><div class="wrap">
+  <div class="sec-head"><div><h2>Territory setup <span class="chip">roaster demo</span></h2><p>Choose how close you'll let a new wholesale lead be to a café you already supply. This runs on your device — Crema only receives blocked <em>areas</em>, never your customers' addresses.</p></div></div>
+  <div class="brewbox">
+    <h3 style="margin:0 0 6px">1. How much space do you protect?</h3>
+    <select id="terrRadius" style="max-width:360px;width:100%">
+      <option value="0">No restriction — I'll supply anyone</option>
+      <option value="0.2" selected>Immediate neighbours only (~0.2 mi)</option>
+      <option value="0.5">Same neighbourhood (~0.5 mi)</option>
+      <option value="2">Same town (~2 mi)</option>
+      <option value="5">Wider area (~5 mi)</option>
+    </select>
+    <h3 style="margin:16px 0 6px">2. Where do you already supply?</h3>
+    <p class="why" style="margin:0 0 6px">Postcodes or towns, one per line. These stay on your device.</p>
+    <textarea id="terrStockists" rows="4" style="width:100%;font:inherit;padding:10px;border:1.5px solid var(--line);border-radius:8px" placeholder="EH3 9QL&#10;Stockbridge, Edinburgh"></textarea>
+    <div style="margin-top:12px"><button class="btn primary" id="terrGen">Generate my blocked areas</button></div>
+    <div id="terrOut" style="margin-top:14px"></div>
+    <div id="terrTestWrap" hidden style="margin-top:18px;border-top:1px solid var(--line);padding-top:14px">
+      <h3 style="margin:0 0 6px">3. Try a prospective café</h3>
+      <div class="filters" style="margin:0"><input id="terrTest" placeholder="Café postcode or town" style="max-width:300px"><span id="terrTestOut" class="why" style="margin:0;align-self:center"></span></div>
+    </div>
+  </div>
+</div></section></div>
+
+<!-- COFFEES FOR YOUR KIT -->
+<div class="view" id="v-kitcoffees"><section><div class="wrap">
+  <a class="back" href="#brew">← Back to Brew</a>
+  <div class="sec-head" style="margin-top:12px"><div><h2 id="kcHead">Coffees for your kit</h2><p id="kcSub">Tap one for the recipe on your equipment.</p></div></div>
+  <div class="grid" id="kcGrid"></div>
+  <div style="text-align:center;margin-top:16px"><button class="btn" id="kcMore" hidden></button></div>
+</div></section></div>
+
+<!-- ROASTER PORTAL (demo) -->
+<div class="view" id="v-portal"><section><div class="wrap">
+  <div id="portalLogin">
+    <div class="sec-head"><div><h2>Roaster portal <span class="chip">demo</span></h2><p>See how your roastery performs on Crema — saves, page visits and click-throughs to your website.</p></div></div>
+    <div class="brewbox" style="max-width:440px">
+      <label class="why" style="margin:0">Your roastery</label>
+      <select id="portalPick" style="width:100%;margin:6px 0 12px"></select>
+      <label class="why" style="margin:0">Email</label>
+      <input id="portalEmail" type="email" placeholder="you@roastery.co.uk" style="width:100%;margin:6px 0 12px" autocomplete="email">
+      <button class="btn primary" id="portalLoginBtn">Log in</button>
+      <p class="why" id="portalMsg" style="margin:8px 0 0">Demo login — choose your roastery. The live portal will use a secure email sign-in.</p>
+    </div>
+  </div>
+  <div id="portalDash" hidden></div>
+</div></section></div>
+
+<!-- SHOP -->
+<div class="view" id="v-shop"><section><div class="wrap">
+  <div class="sec-head"><div><h2>Shop the kit</h2><p id="grinderLede"></p></div></div>
+  <h3 style="margin:8px 0 14px">Electric grinders</h3>
+  <div class="grid grinders" id="grinderGrid"></div>
+  <p class="disclaim">Typical UK prices checked November 2026; they change often. Links go to independent UK shops. Crema isn't paid for these links.</p>
+</div></section></div>
+
+
+<!-- ACCOUNT / PROFILE -->
+<div class="view" id="v-account"><section><div class="wrap">
+  <div class="roleseg" id="roleSeg"><button type="button" data-role="lover" class="on">I'm a coffee lover</button><button type="button" data-role="roaster">I'm a roaster</button></div>
+  <div id="acctRoaster" hidden>
+    <div class="sec-head"><div><h2>Roaster login</h2><p>Sign in to your Crema portal to see how many people saved your coffees, visits to your page and click-throughs to your website.</p></div></div>
+    <div class="brewbox" style="max-width:460px">
+      <label class="why" style="margin:0">Your roastery</label>
+      <select id="acctRoastPick" style="width:100%;margin:6px 0 12px"></select>
+      <label class="why" style="margin:0">Email</label>
+      <input id="acctRoastEmail" type="email" placeholder="you@roastery.co.uk" style="width:100%;margin:6px 0 12px" autocomplete="email">
+      <button class="btn primary" id="acctRoastBtn">Log in to portal</button>
+      <p class="why" id="acctRoastMsg" style="margin:8px 0 0">Demo login — choose your roastery. The live portal will use a secure email sign-in.</p>
+      <p class="why" style="margin:10px 0 0">Not on Crema yet? We're onboarding roasters now — get in touch to add yours.</p>
+    </div>
+  </div>
+  <div id="acctLover">
+  <div class="sec-head"><div><h2 id="acctTitle">Your coffee profile</h2><p>Tell us what you like and we'll email you a short list of newly added coffees that match, once a week. Your likes, equipment and grinder are saved with it.</p></div></div>
+  <div class="acct-status" id="acctStatus"></div>
+  <div class="acct-grid">
+    <form class="pf" id="pfForm" autocomplete="on">
+      <div class="row2">
+        <div class="field"><label for="pf-name">First name</label><input id="pf-name" autocomplete="given-name" maxlength="60"></div>
+        <div class="field"><label for="pf-email">Email</label><input id="pf-email" type="email" autocomplete="email" maxlength="120"></div>
+      </div>
+      <h3>Flavours you enjoy</h3>
+      <div class="opts" id="pf-tastes"></div>
+      <h3>Roast levels</h3>
+      <div class="opts" id="pf-roasts"></div>
+      <h3>What you buy</h3>
+      <div class="opts" id="pf-formats"></div>
+      <div class="row2" style="margin-top:14px">
+        <div class="field"><label for="pf-budget">Most you'd pay per cup</label><select id="pf-budget"><option value="">No limit</option><option value="0.5">Up to 50p</option><option value="0.75">Up to 75p</option><option value="1">Up to £1</option><option value="1.5">Up to £1.50</option></select></div>
+        <div class="field"><label for="pf-grind">Do you grind at home?</label><select id="pf-grind"><option value="">Either is fine</option><option value="whole">Yes, send whole beans</option><option value="ground">No, I need it ground</option></select></div>
+      </div>
+      <h3>Your kit and likes</h3>
+      <p class="why" id="pf-kit" style="margin:0"></p>
+      <label class="consent"><input type="checkbox" id="pf-consent"> <span><b>Email me my weekly coffee picks.</b> One email a week, matched to this profile. Every email has a one-click unsubscribe, and we never pass your email to roasters or anyone else.</span></label>
+      <div class="acts"><button class="btn primary" type="submit" id="pf-save">Save my profile</button><span class="why" id="pf-msg" style="margin:0"></span></div>
+      <div class="acts" id="pf-danger" hidden><button class="btn ghost-red" type="button" id="pf-delete">Delete my profile</button></div>
+    </form>
+    <aside>
+      <div class="email-prev" id="emailPrev"></div>
+    </aside>
+  </div>
+  </div>
+</div></section></div>
+
+<!-- ABOUT / METHODOLOGY -->
+<div class="view" id="v-about"><section><div class="wrap about">
+  <span class="eyebrow">How Crema works</span>
+  <h1 style="font-size:2.4rem">Our methodology and standards</h1>
+  <p class="lede" style="color:var(--muted)">Crema helps you find coffee from independent UK roasters. Here is where our information comes from, how we make recommendations, and how to tell us when something is wrong.</p>
+  <div class="promise" style="background:#fff3e9;border-color:#ffd8bf"><b>This is a private preview.</b> Crema is still in development and shared for feedback only. Roaster names, logos and bag images belong to the roasters and are shown here to identify them while we build; they haven't yet given permission for a public launch.</div>
+  <div class="promise"><b>Our promise:</b> recommendations and rankings are never for sale. If we ever show a paid placement, it will be labelled "Sponsored" and kept out of the matching that decides what we suggest to you.</div>
+
+  <h2>Where our information comes from</h2>
+  <ul>
+    <li><b>Roasters.</b> We keep a list of <span data-count="roasters"></span> UK roasters and work through them one by one. Each has a status: fully listed, in progress, or not started yet.</li>
+    <li><b>Coffees.</b> Origin, process, roast, tasting notes and price come from the roaster's own product page, recorded as listed, with the date we checked. If a roaster doesn't say something, such as the roast level, we show "Not stated" rather than guess.</li>
+    <li><b>What roasters offer.</b> Subscriptions, wholesale, cafés, B Corp and the rest are only marked "yes" when the roaster's own website or certifying body shows it, and we record the date checked. Decaf, single origins, light roasts and pods are worked out from the coffees we list, and the roaster's page says so.</li>
+    <li><b>Supermarket coffees.</b> Taken from supermarket listings and each brand's own pack description, including its strength rating. Prices are typical shelf prices on the day we checked.</li>
+    <li><b>Grinder settings.</b> From each manufacturer's own grind chart. Where a manufacturer publishes none, we use independent grind-size measurements and say so.</li>
+  </ul>
+
+  <h2>How we recommend coffees</h2>
+  <p>"You might also like" compares coffees on:</p>
+  <ul>
+    <li>shared tasting notes, and notes from the same flavour family (chocolate, citrus, berries and so on)</li>
+    <li>overall taste group and how close the roast levels are</li>
+    <li>the same process or origin</li>
+    <li>for pods, the same machine</li>
+    <li>price per cup, so suggestions stay in a similar price range</li>
+  </ul>
+  <p>We show no more than two coffees from any one roaster, so you discover new ones. Coffees without tasting notes aren't recommended, because we can't match them fairly. Your likes, equipment and grinder are saved in your own browser, and with your profile if you choose to save one.</p>
+
+  <h2>Prices</h2>
+  <p>We show the price the roaster lists. "From" means it's the smallest of several bag sizes. Price per cup assumes 15g of coffee per cup, or one pod, so a 1kg bag and a 150g bag can be compared fairly. Where the bag size isn't confirmed, the coffee's page says so.</p>
+
+  <h2>Links, logos and names</h2>
+  <p>Shop links currently earn us nothing. If that changes, every paid link will be clearly marked. Roaster names and logos belong to the roasters and are shown only to identify them; any roaster can ask us to change or remove them.</p>
+
+  <h2>Corrections</h2>
+  <p>Coffee changes fast and we will sometimes get things wrong. If you spot a mistake, or you're a roaster and something about you is out of date, tell us and we'll fix it and note the date it was updated. Contact details will be added before launch.</p>
+  <p class="why">This version of the site was built on <span id="builtOn"></span>.</p>
+</div></section></div>
+
+<!-- GUIDE -->
+<div class="view" id="v-guide"><section><div class="wrap" id="guideDetail"></div></section></div>
+
+<!-- WHOLESALE -->
+<div class="view" id="v-wholesale">
+  <section class="hero" style="padding-bottom:20px"><div class="wrap">
+    <span class="eyebrow" style="color:var(--green)">Wholesale</span>
+    <h1>Great coffee for your business</h1>
+    <p class="lede">Compare roasters that supply cafés, restaurants, offices and shops, including pods for office machines. One enquiry, sent to the roasters you choose.</p>
+  </div></section>
+  <section style="padding-top:10px"><div class="wrap">
+    <div class="steps">
+      <div><h3>Find</h3>Enter your postcode and we find the roasters closest to you.</div>
+      <div><h3>Choose up to 5</h3>From your nearest 20, pick the five you think fit. Nobody misses out for being a little further away.</div>
+      <div><h3>Introduce</h3>Send your details once; we email them to your five, who reach out to you.</div>
+    </div>
+  </div></section>
+  <section style="padding-top:10px"><div class="wrap">
+    <div class="sec-head"><div><h2>Wholesale roasters</h2><p id="wsCount"></p></div></div>
+    <p class="notice" style="margin-bottom:16px">Wholesale terms aren't in the data yet. The <b>Example</b> card shows how a listing will look once roasters send their terms.</p>
+    <div class="filters">
+      <input id="wpc" placeholder="Postcode or town, e.g. BS1 or Bristol" maxlength="30" autocomplete="off">
+      <select id="wsupply"><option value="">Bean or pod supply</option><option value="beans">Whole bean supply</option><option value="pods">Pod supply</option></select>
+      <select id="wqty"></select>
+      <select id="wsvc"><option value="">Any support</option></select>
+    </div>
+    <label class="check" style="margin:0 0 12px"><input type="checkbox" id="wMachine"> I need a machine too (lease, rent or included)</label>
+    <div id="wMachinePanel" hidden style="margin:0 0 16px">
+      <div class="callout" style="margin:0 0 12px"><b>Can't buy a machine outright?</b> You don't have to. Below, roasters who <b>lease or include a machine</b> show first — and we'll connect you to dedicated equipment partners who cover your area on lease, rent or buy, so you can spread the cost.</div>
+      <div class="ws-card"><div class="ws-head"><div><h3 style="margin:0">Equipment partner <span class="badge" style="background:#fff4d6;color:#7a5a00">Example</span></h3><span class="rname">Covers your area · lease from ~£12/week</span></div></div><div class="chips"><span class="chip">Machine leasing</span><span class="chip">Rent</span><span class="chip">Install &amp; training</span><span class="chip">Servicing</span></div><p class="why" style="margin:8px 0 0">Dedicated equipment suppliers will be matched here by postcode, the same way as roasters.</p></div>
+    </div>
+    <div class="grid" id="wsGrid"></div>
+    <div style="text-align:center;margin-top:16px"><button class="btn" id="wsAll" hidden>Show all wholesale roasters</button></div>
+  </div></section>
+  <section><div class="wrap">
+    <h2>Send a wholesale enquiry</h2>
+    <form class="form" id="wsForm">
+      <div class="field"><label for="wf-biz">Business name</label><input id="wf-biz" required></div>
+      <div class="field"><label for="wf-type">Business type</label><select id="wf-type"><option>Café</option><option>Restaurant</option><option>Office</option><option>Hotel</option><option>Retail / deli</option><option>Other</option></select></div>
+      <div class="field"><label for="wf-email">Email</label><input id="wf-email" type="email" required></div>
+      <div class="field"><label for="wf-cups">Estimated coffees per day</label><input id="wf-cups" type="number" min="1" step="1" value="50">
+        <p class="why" id="wf-kg" style="margin:6px 0 0"></p></div>
+      <div class="field full"><label for="wf-msg">What are you looking for?</label><textarea id="wf-msg" rows="3" placeholder="e.g. A chocolatey house espresso for milk drinks plus a guest filter"></textarea></div>
+      <div class="full" id="wf-short" style="font-size:.92rem;color:var(--muted)"></div>
+      <div class="full"><button class="btn green">Send enquiry</button></div>
+      <div class="full" id="wf-out"></div>
+    </form>
+  </div></section>
+  <section style="padding-top:0"><div class="wrap"><div class="band" style="background:var(--paper);border:1px solid var(--line)">
+    <div><h2 style="color:var(--ink)">Are you a roaster?</h2><p style="margin:0;color:var(--muted)">List your wholesale offer so cafés can find you.</p></div>
+    <a class="btn" href="#wholesale">Add your roastery</a>
+  </div></div></section>
+</div>
+</main>
+
+<footer class="site-footer"><div class="wrap">
+  <div class="footer-top"><a class="logo footer-logo" href="#home" aria-label="Crema home"><span>crema</span><span class="footer-star" aria-hidden="true">✳</span></a><p>A good day starts<br>with a little <em>curiosity.</em></p><a class="footer-back" href="#home">Back to discovery <span aria-hidden="true">↗</span></a></div>
+  <div class="cols"><div class="footer-intro"><span class="eyebrow">Your independent coffee field guide.</span><p>Connecting curious coffee drinkers with the people who care about every bean.</p><span>Roasted with care. Discovered with Crema.</span></div>
+  <div><b>Find your coffee</b><a href="#beans">Coffee beans</a><a href="#roasters">Independent roasters</a><a href="#pods">Pods &amp; capsules</a><a href="#map">The roaster map</a><a href="#swap">Supermarket swap</a></div>
+  <div><b>Make it a ritual</b><a href="#brew">Brewing guides</a><a href="#shop">Shop the kit</a><a href="#for-you">Saved &amp; for you</a><a href="#account">Weekly coffee picks</a><a href="#about">About Crema</a></div>
+  <div><b>For the trade</b><a href="#wholesale">Wholesale coffee</a><a href="#portal">Roaster portal</a><a href="#about">Our promise</a><a href="#about">How we list coffees</a></div></div>
+  <div class="preview-note" id="preview-note"><b>A work in progress, brewed with care.</b> This is a private prototype. The name, branding and some data aren’t final. Prices are roasters’ listed prices where available; listings marked <b>Example</b> are placeholders.</div>
+  <div class="footer-bottom"><span>© 2026 Crema. For the love of the daily ritual.</span><span>Independent coffee. All across the UK. <span aria-hidden="true">↗</span></span></div>
+</div></footer>

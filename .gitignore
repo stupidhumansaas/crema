@@ -1,0 +1,7 @@
+*.p8
+.env
+
+# Local / generated
+.DS_Store
+graphify-out/
+web/dist/

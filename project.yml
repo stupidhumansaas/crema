@@ -1,0 +1,58 @@
+name: Crema
+options:
+  bundleIdPrefix: com.crema
+  deploymentTarget:
+    iOS: "16.0"
+  xcodeVersion: "16.2"
+  generateEmptyDirectories: true
+  groupSortPosition: top
+
+settings:
+  base:
+    SWIFT_VERSION: "5.9"
+    GENERATE_INFOPLIST_FILE: false
+    MARKETING_VERSION: "1.0"
+    CURRENT_PROJECT_VERSION: "1"
+    DEVELOPMENT_TEAM: ""
+
+packages:
+  Supabase:
+    url: https://github.com/supabase-community/supabase-swift
+    from: "2.0.0"
+  RevenueCat:
+    url: https://github.com/RevenueCat/purchases-ios
+    from: "5.0.0"
+  Kingfisher:
+    url: https://github.com/onevcat/Kingfisher
+    from: "8.0.0"
+
+targets:
+  Crema:
+    type: application
+    platform: iOS
+    sources:
+      - path: Crema
+        excludes:
+          - "**/.DS_Store"
+    resources:
+      - path: Crema/Resources/Assets.xcassets
+      - path: Crema/Resources/Info.plist
+      - path: Crema/Resources/Fonts
+    settings:
+      base:
+        INFOPLIST_FILE: Crema/Resources/Info.plist
+        PRODUCT_BUNDLE_IDENTIFIER: com.crema.app
+        TARGETED_DEVICE_FAMILY: "1"
+        SUPPORTED_PLATFORMS: "iphoneos iphonesimulator"
+        SUPPORTS_MACCATALYST: false
+        CODE_SIGN_STYLE: Automatic
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+        SWIFT_EMIT_LOC_STRINGS: true
+        IPHONEOS_DEPLOYMENT_TARGET: "16.0"
+    dependencies:
+      - package: Supabase
+        product: Supabase
+      - package: RevenueCat
+        product: RevenueCat
+      - package: Kingfisher

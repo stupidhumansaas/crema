@@ -1,0 +1,16 @@
+# Old single-file build and the data pipeline aren't needed on Vercel
+src/
+dist/
+build.py
+tools/
+__pycache__/
+data/*.xlsx
+data/*.csv
+data/directory.json
+data/extra_roasters.json
+data/roaster_overrides.json
+data/logos_review/
+.env*.local
+public/logos/
+node_modules/
+.next/
