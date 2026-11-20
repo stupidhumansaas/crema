@@ -24,6 +24,8 @@ export async function POST(req: NextRequest) {
       supply: String(b.supply ?? ""),
       needsMachine: !!b.needsMachine,
       location: String(b.location ?? ""),
+      brewType: String(b.brewType ?? ""),
+      training: String(b.training ?? ""),
       roasterIds: b.roasterIds,
     },
   });

@@ -83,6 +83,7 @@ def logo_info(extra):
     'check' = the note says the image may not be the logo, so it isn't shown until someone confirms it."""
     url = (extra[0] if len(extra) > 0 else None) or None
     if not url: return None
+    if any(e in str(url).lower() for e in (".svg",".avif",".bmp",".tiff")): return None  # non-raster/AVIF break public-sharing review
     note = str(extra[1]) if len(extra) > 1 and extra[1] else ""
     nl = note.lower()
     return {"url": str(url).strip(), "note": note,
@@ -99,6 +100,23 @@ OFFER_COLS = {
 def yes_no(v):
     t = str(v or "").strip().lower()
     return True if t in ("yes", "y", "true", "1") else False if t in ("no", "n", "false", "0") else None
+
+ADDR_COLS = {"Address (Roasterlist)": "address", "Postcode": "postcode", "Town": "town",
+             "County": "county", "Address type": "addrType", "Roasterlist page": "roasterlistUrl"}
+def read_address(row, idx):
+    out = {}
+    for col, key in ADDR_COLS.items():
+        if col in idx and idx[col] < len(row) and row[idx[col]]:
+            out[key] = str(row[idx[col]]).strip()
+    # Exact coordinates from the workbook (optional). Either column name is accepted.
+    for cols, key in ((("Latitude", "Lat", "lat"), "lat"), (("Longitude", "Lng", "Long", "lng"), "lng")):
+        for col in cols:
+            if col in idx and idx[col] < len(row) and row[idx[col]] not in (None, ""):
+                try:
+                    out[key] = float(row[idx[col]]); break
+                except (TypeError, ValueError):
+                    pass
+    return out
 
 def read_offers(row, idx):
     """{key: True/False} for columns the tracker has filled in; plus evidence URL + date if present."""
@@ -134,6 +152,7 @@ def main(path):
                          "shop": None if status == "No online shop" else shops.get(name), "links": [], "note": "",
                          "sellsPods": False, "wholesale": {"offers": False, "page": None},
                          "logo": logo_info(extra),
+                         **read_address((name, base, status, _prio, _n, _notes, *extra), tidx),
                          **dict(zip(("offers", "offersMeta"), read_offers((name, base, status, _prio, _n, _notes, *extra), tidx)))})
     # Roasters not yet on the tracker (data/extra_roasters.json), so their listings and logos still show
     extra = DATA.parent / "extra_roasters.json"
@@ -161,7 +180,7 @@ def main(path):
                 "notes": tags or listed[:4] or ["Not stated"], "listedNotes": c["notes"] or "", "taste": taste_of(tags or listed),
                 "type": typ, "decaf": "decaf" in typ.lower() or "decaf" in str(c["coffee"]).lower(),
                 "brew": c["brew"] or "", "format": c["format"] or "", "url": c["url"], "source": c["source"],
-                "inStock": True, "addedDays": total - i, "desc": str(c.get("desc") or "").strip(), "bagImg": (str(c.get("bagImg")).strip() if c.get("bagImg") and str(c.get("bagImg")).startswith("http") else ""), "linkType": {"Product page":"product","Listing page":"listing","No link":"none"}.get(str(c.get("linkType") or "").strip(),"")}
+                "inStock": True, "addedDays": total - i, "desc": str(c.get("desc") or "").strip(), "bagImg": (str(c.get("bagImg")).strip() if c.get("bagImg") and str(c.get("bagImg")).startswith("http") and not any(e in str(c.get("bagImg")).lower() for e in (".svg",".avif",".bmp",".tiff")) else ""), "linkType": {"Product page":"product","Listing page":"listing","No link":"none"}.get(str(c.get("linkType") or "").strip(),"")}
         item.update(price_info(c.get("price"), c.get("basis"), c["format"] or "", c["coffee"]))
         if (c["format"] or "") == "Pods":
             nm = item["name"].lower()

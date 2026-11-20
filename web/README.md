@@ -7,7 +7,7 @@ The site is now a Next.js app in this folder, with its data in Supabase. It's ho
 - `/api/directory` serves the whole directory from Supabase and is cached for 10 minutes. `/api/profile` saves weekly-picks profiles and `/api/enquiry` saves wholesale enquiries.
 - Database schema: `supabase/migrations/0001_init.sql`.
 
-**Updating the data:** edit the spreadsheet, run `python3 tools/import_master.py "data/Master Coffee Data.xlsx"`, then run `npm run seed`. The seed script needs `SUPABASE_SECRET_KEY` in `.env.local` (see `.env.example`). The live site picks up the changes within 10 minutes. Logos still go in `data/logos/`.
+**Updating the data:** edit the spreadsheet, run `python3 tools/import_master.py "data/Master_Coffee_Data.xlsx"`, then run `npm run seed`. The seed script needs `SUPABASE_SECRET_KEY` in `.env.local` (see `.env.example`). The live site picks up the changes within 10 minutes. Logos still go in `data/logos/`.
 
 **Running it locally:** `npm install`, then `npm run dev` (needs `.env.local`). Deploy with `npx vercel --prod`.
 

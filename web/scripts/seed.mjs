@@ -1,6 +1,6 @@
 // Push data/directory.json into Supabase.
 //   npm run seed        (reads SUPABASE_URL and SUPABASE_SECRET_KEY from .env.local)
-// Workflow: update the spreadsheet -> python3 tools/import_master.py "data/Master Coffee Data.xlsx" -> npm run seed
+// Workflow: update the spreadsheet -> python3 tools/import_master.py "data/Master_Coffee_Data.xlsx" -> npm run seed
 // Rows that are no longer in directory.json are deleted from Supabase.
 import { createClient } from "@supabase/supabase-js";
 import fs from "node:fs";
@@ -45,7 +45,7 @@ for (const r of data.roasters) {
 const RENAME = { desc: "description" };
 const snake = (k) => RENAME[k] ?? k.replace(/[A-Z]/g, (c) => "_" + c.toLowerCase());
 const COLUMNS = {
-  roasters: "id position name city region status shop links note sells_pods wholesale logo offers offers_meta lat lng geo sample",
+  roasters: "id position name city region status shop links note sells_pods wholesale logo offers offers_meta lat lng geo sample address town county postcode addr_type roasterlist_url",
   beans: "id position roaster name origin producer process process_full roast brew_roast roast_known roast_note notes listed_notes taste type decaf brew format url source in_stock added_days description bag_img link_type price price_basis price_from size_confirmed size per_unit unit",
   supermarket: "id position brand name format kind roast brand_scale notes taste price size price_note source blend system count roaster_id",
   guides: "id position method kind difficulty time kit dose water grind affinity taste_bonus why steps",
